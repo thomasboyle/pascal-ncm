@@ -1,0 +1,21 @@
+{
+  "levels": [
+    4,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "tok_embed": 512,
+  "codebook": 1024,
+  "tok_layers": 8,
+  "dec_layers": 2,
+  "gen_embd": 1600,
+  "gen_layers": 32,
+  "gen_heads": 16,
+  "seq_len": 256,
+  "gen_params": 988640005,
+  "gen_steps": 800,
+  "tok_steps": 2000
+}

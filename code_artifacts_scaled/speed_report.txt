@@ -1,0 +1,9 @@
+device: NVIDIA GeForce GTX 1070 Ti
+levels: [4, 16, 32, 64, 128, 256]  seq_len: 256  generator: 1600 x 32 x 16
+ncm generator params: 988.6M  trained steps: 800
+ncm: 386.5 ms/seq  nfe=5  tokens/s=662.4
+ar matched stack params: 985.0M
+ar: 6240.9 ms/seq  nfe=256  tokens/s=41.0  speedup of ncm vs ar: 16.15x
+full-sequence step: 112.4 ms  (one forward over all 256 tokens)
+iterative x128: 14383.5 ms/seq  nfe=128  tokens/s=17.80  speedup of ncm vs iterative: 37.22x
+iterative x128 is measured per full-sequence forward, times 128. That is the diffusion NFE budget cited for LM1B and Sudoku in arXiv 2610.14162. It is a cost model of full-length refinement, not a trained diffusion model.

@@ -1,0 +1,16 @@
+[cfg] levels=[4, 16, 32, 64, 128, 256] L=256 tok_embed=512 codebook=1024 gen 1600x32x16 lr=0.00015 mode=probe
+VQVAE, Total parameter count: 20.86M
+VQVAE, Non embedding parameter count: 20.60M
+[tok] params = 20.86M
+[data] 239877 seqs of L=256
+[tok-probe] peak MiB 1030.2 ce 3.7071
+NCP Transformer, Total parameter count: 988.64M
+NCP Transformer, Non embedding parameter count: 987.81M
+[gen] params = 988.6M
+Traceback (most recent call last):
+  File "D:\C++\LocalAI\train_scaled.py", line 277, in <module>
+    main()
+  File "D:\C++\LocalAI\train_scaled.py", line 251, in main
+    f"loss {sum(losses)/len(losses):.4f} | skip={trainer.skipped} scale={trainer.loss_scale:.1f}")
+            ~~~~~~~~~~~^~~~~~~~~~~~
+ZeroDivisionError: division by zero

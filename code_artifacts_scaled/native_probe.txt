@@ -1,0 +1,6 @@
+params = 472.9M
+Traceback (most recent call last):
+  File "D:\C++\LocalAI\probe_native.py", line 52, in <module>
+    loss = torch.nn.functional.cross_entropy(logits.reshape(-1, vocab), target.reshape(-1))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[-1, 258]' is invalid for input of size 2621440

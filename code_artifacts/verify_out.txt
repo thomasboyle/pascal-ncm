@@ -1,0 +1,192 @@
+=== GGUF header ===
+arch/general: ReaderField(offset=24, name='general.architecture', parts=[memmap([20], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 108,  46,  97, 114,  99, 104, 105,
+        116, 101,  99, 116, 117, 114, 101], dtype=uint8), memmap([8], dtype=uint32), memmap([3], dtype=uint64), memmap([110,  99, 109], dtype=uint8)], data=[4], types=[<GGUFValueType.STRING: 8>])
+name: <bound method ReaderField.contents of ReaderField(offset=67, name='general.name', parts=[memmap([12], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 108,  46, 110,  97, 109, 101],
+       dtype=uint8), memmap([8], dtype=uint32), memmap([18], dtype=uint64), memmap([ 99, 111, 100, 101,  95, 110,  99, 109,  95,  98, 121, 116, 101,
+         54,  52,  95, 108,  54], dtype=uint8)], data=[4], types=[<GGUFValueType.STRING: 8>])>
+size on disk: 2.46 MB
+
+=== metadata (kv) ===
+  GGUF.version = <bound method ReaderField.contents of ReaderField(offset=4, name='GGUF.version', parts=[memmap([3], dtype=uint32)], data=[0], types=[<GGUFValueType.UINT32: 4>])>
+  GGUF.tensor_count = <bound method ReaderField.contents of ReaderField(offset=8, name='GGUF.tensor_count', parts=[memmap([121], dtype=uint64)], data=[0], types=[<GGUFValueType.UINT64: 10>])>
+  GGUF.kv_count = <bound method ReaderField.contents of ReaderField(offset=16, name='GGUF.kv_count', parts=[memmap([21], dtype=uint64)], data=[0], types=[<GGUFValueType.UINT64: 10>])>
+  general.architecture = <bound method ReaderField.contents of ReaderField(offset=24, name='general.architecture', parts=[memmap([20], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 108,  46,  97, 114,  99, 104, 105,
+        116, 101,  99, 116, 117, 114, 101], dtype=uint8), memmap([8], dtype=uint32), memmap([3], dtype=uint64), memmap([110,  99, 109], dtype=uint8)], data=[4], types=[<GGUFValueType.STRING: 8>])>
+  general.name = <bound method ReaderField.contents of ReaderField(offset=67, name='general.name', parts=[memmap([12], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 108,  46, 110,  97, 109, 101],
+       dtype=uint8), memmap([8], dtype=uint32), memmap([18], dtype=uint64), memmap([ 99, 111, 100, 101,  95, 110,  99, 109,  95,  98, 121, 116, 101,
+         54,  52,  95, 108,  54], dtype=uint8)], data=[4], types=[<GGUFValueType.STRING: 8>])>
+  description = <bound method ReaderField.contents of ReaderField(offset=117, name='description', parts=[memmap([11], dtype=uint64), memmap([100, 101, 115,  99, 114, 105, 112, 116, 105, 111, 110],
+       dtype=uint8), memmap([8], dtype=uint32), memmap([142], dtype=uint64), memmap([ 66, 121, 116, 101,  45, 108, 101, 118, 101, 108,  32,  78,  67,
+         77,  32,  40,  78, 101, 120, 116,  45,  67, 111, 110,  99, 101,
+        112, 116,  32,  77, 111, 100, 101, 108, 105, 110, 103,  41,  32,
+         99, 111, 100, 101,  32, 109, 111, 100, 101, 108,  58,  32, 109,
+        117, 108, 116, 105, 115,  99,  97, 108, 101,  32, 114, 101, 115,
+        105, 100, 117,  97, 108,  32,  86,  81,  45,  86,  65,  69,  32,
+        116, 111, 107, 101, 110, 105, 122, 101, 114,  32,  43,  32,  99,
+        111,  97, 114, 115, 101,  45, 116, 111,  45, 102, 105, 110, 101,
+         32, 103, 101, 110, 101, 114,  97, 116, 111, 114,  46,  32,  65,
+        117, 116, 104, 111, 114,  45, 116, 114,  97, 105, 110, 101, 100,
+         32, 101, 120, 112, 101, 114, 105, 109, 101, 110, 116,  46],
+       dtype=uint8)], data=[4], types=[<GGUFValueType.STRING: 8>])>
+  levels_count = <bound method ReaderField.contents of ReaderField(offset=290, name='levels_count', parts=[memmap([12], dtype=uint64), memmap([108, 101, 118, 101, 108, 115,  95,  99, 111, 117, 110, 116],
+       dtype=uint8), memmap([4], dtype=uint32), memmap([6], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  levels = <bound method ReaderField.contents of ReaderField(offset=318, name='levels', parts=[memmap([6], dtype=uint64), memmap([108, 101, 118, 101, 108, 115], dtype=uint8), memmap([9], dtype=uint32), memmap([5], dtype=uint32), memmap([6], dtype=uint64), memmap([1], dtype=int32), memmap([4], dtype=int32), memmap([8], dtype=int32), memmap([16], dtype=int32), memmap([32], dtype=int32), memmap([64], dtype=int32)], data=[5, 6, 7, 8, 9, 10], types=[<GGUFValueType.ARRAY: 9>, <GGUFValueType.INT32: 5>])>
+  codebook_sizes = <bound method ReaderField.contents of ReaderField(offset=372, name='codebook_sizes', parts=[memmap([14], dtype=uint64), memmap([ 99, 111, 100, 101,  98, 111, 111, 107,  95, 115, 105, 122, 101,
+        115], dtype=uint8), memmap([9], dtype=uint32), memmap([5], dtype=uint32), memmap([6], dtype=uint64), memmap([256], dtype=int32), memmap([256], dtype=int32), memmap([256], dtype=int32), memmap([256], dtype=int32), memmap([256], dtype=int32), memmap([256], dtype=int32)], data=[5, 6, 7, 8, 9, 10], types=[<GGUFValueType.ARRAY: 9>, <GGUFValueType.INT32: 5>])>
+  tokenizer.embed_dim = <bound method ReaderField.contents of ReaderField(offset=434, name='tokenizer.embed_dim', parts=[memmap([19], dtype=uint64), memmap([116, 111, 107, 101, 110, 105, 122, 101, 114,  46, 101, 109,  98,
+        101, 100,  95, 100, 105, 109], dtype=uint8), memmap([4], dtype=uint32), memmap([64], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  tokenizer.in_vocab_size = <bound method ReaderField.contents of ReaderField(offset=469, name='tokenizer.in_vocab_size', parts=[memmap([23], dtype=uint64), memmap([116, 111, 107, 101, 110, 105, 122, 101, 114,  46, 105, 110,  95,
+        118, 111,  99,  97,  98,  95, 115, 105, 122, 101], dtype=uint8), memmap([4], dtype=uint32), memmap([258], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  tokenizer.n_layers = <bound method ReaderField.contents of ReaderField(offset=508, name='tokenizer.n_layers', parts=[memmap([18], dtype=uint64), memmap([116, 111, 107, 101, 110, 105, 122, 101, 114,  46, 110,  95, 108,
+         97, 121, 101, 114, 115], dtype=uint8), memmap([4], dtype=uint32), memmap([4], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.n_embd = <bound method ReaderField.contents of ReaderField(offset=542, name='generator.n_embd', parts=[memmap([16], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 110,  95, 101,
+        109,  98, 100], dtype=uint8), memmap([4], dtype=uint32), memmap([128], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.n_layer = <bound method ReaderField.contents of ReaderField(offset=574, name='generator.n_layer', parts=[memmap([17], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 110,  95, 108,
+         97, 121, 101, 114], dtype=uint8), memmap([4], dtype=uint32), memmap([4], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.n_head = <bound method ReaderField.contents of ReaderField(offset=607, name='generator.n_head', parts=[memmap([16], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 110,  95, 104,
+        101,  97, 100], dtype=uint8), memmap([4], dtype=uint32), memmap([4], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.rope_base = <bound method ReaderField.contents of ReaderField(offset=639, name='generator.rope_base', parts=[memmap([19], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 114, 111, 112,
+        101,  95,  98,  97, 115, 101], dtype=uint8), memmap([4], dtype=uint32), memmap([100000], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.n_levels_predicted = <bound method ReaderField.contents of ReaderField(offset=674, name='generator.n_levels_predicted', parts=[memmap([28], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 110,  95, 108,
+        101, 118, 101, 108, 115,  95, 112, 114, 101, 100, 105,  99, 116,
+        101, 100], dtype=uint8), memmap([4], dtype=uint32), memmap([5], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  seq_len = <bound method ReaderField.contents of ReaderField(offset=718, name='seq_len', parts=[memmap([7], dtype=uint64), memmap([115, 101, 113,  95, 108, 101, 110], dtype=uint8), memmap([4], dtype=uint32), memmap([64], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  eos_token_id = <bound method ReaderField.contents of ReaderField(offset=741, name='eos_token_id', parts=[memmap([12], dtype=uint64), memmap([101, 111, 115,  95, 116, 111, 107, 101, 110,  95, 105, 100],
+       dtype=uint8), memmap([4], dtype=uint32), memmap([256], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  pad_token_id = <bound method ReaderField.contents of ReaderField(offset=769, name='pad_token_id', parts=[memmap([12], dtype=uint64), memmap([112,  97, 100,  95, 116, 111, 107, 101, 110,  95, 105, 100],
+       dtype=uint8), memmap([4], dtype=uint32), memmap([257], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  attn_pattern = <bound method ReaderField.contents of ReaderField(offset=797, name='attn_pattern', parts=[memmap([12], dtype=uint64), memmap([ 97, 116, 116, 110,  95, 112,  97, 116, 116, 101, 114, 110],
+       dtype=uint8), memmap([4], dtype=uint32), memmap([0], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  tokenizer.param_count = <bound method ReaderField.contents of ReaderField(offset=825, name='tokenizer.param_count', parts=[memmap([21], dtype=uint64), memmap([116, 111, 107, 101, 110, 105, 122, 101, 114,  46, 112,  97, 114,
+         97, 109,  95,  99, 111, 117, 110, 116], dtype=uint8), memmap([4], dtype=uint32), memmap([358304], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  generator.param_count = <bound method ReaderField.contents of ReaderField(offset=862, name='generator.param_count', parts=[memmap([21], dtype=uint64), memmap([103, 101, 110, 101, 114,  97, 116, 111, 114,  46, 112,  97, 114,
+         97, 109,  95,  99, 111, 117, 110, 116], dtype=uint8), memmap([4], dtype=uint32), memmap([859274], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+  total_param_count = <bound method ReaderField.contents of ReaderField(offset=899, name='total_param_count', parts=[memmap([17], dtype=uint64), memmap([116, 111, 116,  97, 108,  95, 112,  97, 114,  97, 109,  95,  99,
+        111, 117, 110, 116], dtype=uint8), memmap([4], dtype=uint32), memmap([1217578], dtype=uint32)], data=[3], types=[<GGUFValueType.UINT32: 4>])>
+
+=== tensors (121) ===
+  tokenizer.encoder.wte.weight                  (np.uint64(64), np.uint64(258)) ?
+  tokenizer.encoder.wpe.weight                  (np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.embeddings.0.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.embeddings.1.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.embeddings.2.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.embeddings.3.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.embeddings.4.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.embeddings.5.weight              (np.uint64(64), np.uint64(256)) ?
+  tokenizer.vq.quant_resi.0.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.0.bias                (np.uint64(64),)   ?
+  tokenizer.vq.quant_resi.1.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.1.bias                (np.uint64(64),)   ?
+  tokenizer.vq.quant_resi.2.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.2.bias                (np.uint64(64),)   ?
+  tokenizer.vq.quant_resi.3.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.3.bias                (np.uint64(64),)   ?
+  tokenizer.vq.quant_resi.4.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.4.bias                (np.uint64(64),)   ?
+  tokenizer.vq.quant_resi.5.weight              (np.uint64(3), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.quant_resi.5.bias                (np.uint64(64),)   ?
+  tokenizer.vq.learned_down_l1.0.weight         (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_down_l1.0.bias           (np.uint64(64),)   ?
+  tokenizer.vq.learned_down_l1.1.weight         (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_down_l1.1.bias           (np.uint64(64),)   ?
+  tokenizer.vq.learned_down_l1.2.weight         (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_down_l1.2.bias           (np.uint64(64),)   ?
+  tokenizer.vq.learned_up_l1.0.weight           (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_up_l1.0.bias             (np.uint64(64),)   ?
+  tokenizer.vq.learned_up_l1.1.weight           (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_up_l1.1.bias             (np.uint64(64),)   ?
+  tokenizer.vq.learned_up_l1.2.weight           (np.uint64(4), np.uint64(64), np.uint64(64)) ?
+  tokenizer.vq.learned_up_l1.2.bias             (np.uint64(64),)   ?
+  tokenizer.decoder.ln_f.weight                 (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.ln_1.weight    (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.ln_1.bias      (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.attn.c_attn.weight (np.uint64(64), np.uint64(192)) ?
+  tokenizer.decoder.middle_block.attn.c_attn.bias (np.uint64(192),)  ?
+  tokenizer.decoder.middle_block.attn.c_proj.weight (np.uint64(64), np.uint64(64)) ?
+  tokenizer.decoder.middle_block.attn.c_proj.bias (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.attn.q_norm.weight (np.uint64(16),)   ?
+  tokenizer.decoder.middle_block.attn.k_norm.weight (np.uint64(16),)   ?
+  tokenizer.decoder.middle_block.ln_2.weight    (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.ln_2.bias      (np.uint64(64),)   ?
+  tokenizer.decoder.middle_block.mlp.c_fc.weight (np.uint64(64), np.uint64(256)) ?
+  tokenizer.decoder.middle_block.mlp.c_fc.bias  (np.uint64(256),)  ?
+  tokenizer.decoder.middle_block.mlp.c_proj.weight (np.uint64(256), np.uint64(64)) ?
+  tokenizer.decoder.middle_block.mlp.c_proj.bias (np.uint64(64),)   ?
+  tokenizer.decoder.output_layer.weight         (np.uint64(64), np.uint64(258)) ?
+  generator.lvl_1L                              (np.uint64(124), np.uint64(1)) ?
+  generator.attn_mask_for_masking               (np.uint64(125), np.uint64(125), np.uint64(1), np.uint64(1)) ?
+  generator.transformer.wte.weight              (np.uint64(64), np.uint64(128)) ?
+  generator.transformer.wte.bias                (np.uint64(128),)  ?
+  generator.transformer.wle.weight              (np.uint64(128), np.uint64(5)) ?
+  generator.transformer.blocks.0.ln_1.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.0.ln_1.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.0.attn.c_attn.weight (np.uint64(128), np.uint64(384)) ?
+  generator.transformer.blocks.0.attn.c_attn.bias (np.uint64(384),)  ?
+  generator.transformer.blocks.0.attn.c_proj.weight (np.uint64(128), np.uint64(128)) ?
+  generator.transformer.blocks.0.attn.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.0.attn.q_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.0.attn.k_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.0.ln_2.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.0.ln_2.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.0.mlp.c_fc.weight (np.uint64(128), np.uint64(512)) ?
+  generator.transformer.blocks.0.mlp.c_fc.bias  (np.uint64(512),)  ?
+  generator.transformer.blocks.0.mlp.c_proj.weight (np.uint64(512), np.uint64(128)) ?
+  generator.transformer.blocks.0.mlp.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.1.ln_1.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.1.ln_1.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.1.attn.c_attn.weight (np.uint64(128), np.uint64(384)) ?
+  generator.transformer.blocks.1.attn.c_attn.bias (np.uint64(384),)  ?
+  generator.transformer.blocks.1.attn.c_proj.weight (np.uint64(128), np.uint64(128)) ?
+  generator.transformer.blocks.1.attn.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.1.attn.q_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.1.attn.k_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.1.ln_2.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.1.ln_2.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.1.mlp.c_fc.weight (np.uint64(128), np.uint64(512)) ?
+  generator.transformer.blocks.1.mlp.c_fc.bias  (np.uint64(512),)  ?
+  generator.transformer.blocks.1.mlp.c_proj.weight (np.uint64(512), np.uint64(128)) ?
+  generator.transformer.blocks.1.mlp.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.2.ln_1.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.2.ln_1.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.2.attn.c_attn.weight (np.uint64(128), np.uint64(384)) ?
+  generator.transformer.blocks.2.attn.c_attn.bias (np.uint64(384),)  ?
+  generator.transformer.blocks.2.attn.c_proj.weight (np.uint64(128), np.uint64(128)) ?
+  generator.transformer.blocks.2.attn.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.2.attn.q_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.2.attn.k_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.2.ln_2.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.2.ln_2.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.2.mlp.c_fc.weight (np.uint64(128), np.uint64(512)) ?
+  generator.transformer.blocks.2.mlp.c_fc.bias  (np.uint64(512),)  ?
+  generator.transformer.blocks.2.mlp.c_proj.weight (np.uint64(512), np.uint64(128)) ?
+  generator.transformer.blocks.2.mlp.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.3.ln_1.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.3.ln_1.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.3.attn.c_attn.weight (np.uint64(128), np.uint64(384)) ?
+  generator.transformer.blocks.3.attn.c_attn.bias (np.uint64(384),)  ?
+  generator.transformer.blocks.3.attn.c_proj.weight (np.uint64(128), np.uint64(128)) ?
+  generator.transformer.blocks.3.attn.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.blocks.3.attn.q_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.3.attn.k_norm.weight (np.uint64(32),)   ?
+  generator.transformer.blocks.3.ln_2.weight    (np.uint64(128),)  ?
+  generator.transformer.blocks.3.ln_2.bias      (np.uint64(128),)  ?
+  generator.transformer.blocks.3.mlp.c_fc.weight (np.uint64(128), np.uint64(512)) ?
+  generator.transformer.blocks.3.mlp.c_fc.bias  (np.uint64(512),)  ?
+  generator.transformer.blocks.3.mlp.c_proj.weight (np.uint64(512), np.uint64(128)) ?
+  generator.transformer.blocks.3.mlp.c_proj.bias (np.uint64(128),)  ?
+  generator.transformer.ln_f.weight             (np.uint64(128),)  ?
+  generator.transformer.ln_f.bias               (np.uint64(128),)  ?
+  generator.lm_heads.0.log_inv_T                ()                 ?
+  generator.lm_heads.0.proj.weight              (np.uint64(128), np.uint64(64)) ?
+  generator.lm_heads.1.log_inv_T                ()                 ?
+  generator.lm_heads.1.proj.weight              (np.uint64(128), np.uint64(64)) ?
+  generator.lm_heads.2.log_inv_T                ()                 ?
+  generator.lm_heads.2.proj.weight              (np.uint64(128), np.uint64(64)) ?
+  generator.lm_heads.3.log_inv_T                ()                 ?
+  generator.lm_heads.3.proj.weight              (np.uint64(128), np.uint64(64)) ?
+  generator.lm_heads.4.log_inv_T                ()                 ?
+  generator.lm_heads.4.proj.weight              (np.uint64(128), np.uint64(64)) ?
+total elements: 1217578
+
+=== fidelity check (ckpt vs gguf) ===
+  compared 73 tensors; max abs diff = 4.814e-04 (F16 rounding ~5e-4)

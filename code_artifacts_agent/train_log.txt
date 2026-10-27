@@ -1,0 +1,1876 @@
+23:24:45 [start] budget 28800s left
+23:24:55 [fit] prefix=64 0.93s 4312 code-tok/s 4850 MiB loss=7.201
+23:24:56 [fit] generate (1, 500)
+23:25:03 [fit] prefix=128 1.06s 3784 code-tok/s 5158 MiB loss=7.253
+23:25:03 [fit] generate (1, 500)
+23:25:03 [fit] chosen prefix_len=128
+23:25:03 [data] files train=4545 val=256
+23:25:34 [start] budget 28751s left
+23:25:35 [data] files train=4545 val=256
+23:25:35 [data] continuation train=298318 val=53144 tools=12001
+23:25:37 [data] encoding train targets
+23:25:41 [encode] 128/310319 36 seq/s
+23:25:48 [encode] 5248/310319 485 seq/s
+23:25:55 [encode] 10368/310319 575 seq/s
+23:26:02 [encode] 15488/310319 613 seq/s
+23:26:10 [encode] 20608/310319 634 seq/s
+23:26:17 [encode] 25728/310319 647 seq/s
+23:26:24 [encode] 30848/310319 656 seq/s
+23:26:31 [encode] 35968/310319 663 seq/s
+23:26:38 [encode] 41088/310319 668 seq/s
+23:26:46 [encode] 46208/310319 672 seq/s
+23:26:53 [encode] 51328/310319 676 seq/s
+23:27:00 [encode] 56448/310319 679 seq/s
+23:27:07 [encode] 61568/310319 681 seq/s
+23:27:15 [encode] 66688/310319 683 seq/s
+23:27:22 [encode] 71808/310319 685 seq/s
+23:27:29 [encode] 76928/310319 686 seq/s
+23:27:36 [encode] 82048/310319 688 seq/s
+23:27:44 [encode] 87168/310319 689 seq/s
+23:27:51 [encode] 92288/310319 690 seq/s
+23:27:58 [encode] 97408/310319 691 seq/s
+23:28:05 [encode] 102528/310319 692 seq/s
+23:28:12 [encode] 107648/310319 692 seq/s
+23:28:20 [encode] 112768/310319 693 seq/s
+23:28:27 [encode] 117888/310319 694 seq/s
+23:28:34 [encode] 123008/310319 694 seq/s
+23:28:41 [encode] 128128/310319 695 seq/s
+23:28:49 [encode] 133248/310319 695 seq/s
+23:28:56 [encode] 138368/310319 696 seq/s
+23:29:03 [encode] 143488/310319 696 seq/s
+23:29:10 [encode] 148608/310319 697 seq/s
+23:29:18 [encode] 153728/310319 697 seq/s
+23:29:25 [encode] 158848/310319 697 seq/s
+23:29:32 [encode] 163968/310319 698 seq/s
+23:29:39 [encode] 169088/310319 698 seq/s
+23:29:46 [encode] 174208/310319 698 seq/s
+23:29:54 [encode] 179328/310319 699 seq/s
+23:30:01 [encode] 184448/310319 699 seq/s
+23:30:08 [encode] 189568/310319 699 seq/s
+23:30:15 [encode] 194688/310319 700 seq/s
+23:30:22 [encode] 199808/310319 700 seq/s
+23:30:30 [encode] 204928/310319 701 seq/s
+23:30:37 [encode] 210048/310319 701 seq/s
+23:30:44 [encode] 215168/310319 701 seq/s
+23:30:51 [encode] 220288/310319 702 seq/s
+23:30:58 [encode] 225408/310319 702 seq/s
+23:31:05 [encode] 230528/310319 703 seq/s
+23:31:12 [encode] 235648/310319 703 seq/s
+23:31:19 [encode] 240768/310319 703 seq/s
+23:31:26 [encode] 245888/310319 704 seq/s
+23:31:33 [encode] 251008/310319 704 seq/s
+23:31:41 [encode] 256128/310319 704 seq/s
+23:31:48 [encode] 261248/310319 705 seq/s
+23:31:55 [encode] 266368/310319 705 seq/s
+23:32:02 [encode] 271488/310319 705 seq/s
+23:32:09 [encode] 276608/310319 706 seq/s
+23:32:16 [encode] 281728/310319 706 seq/s
+23:32:23 [encode] 286848/310319 706 seq/s
+23:32:30 [encode] 291968/310319 706 seq/s
+23:32:37 [encode] 297088/310319 707 seq/s
+23:32:45 [encode] 302208/310319 707 seq/s
+23:32:52 [encode] 307328/310319 707 seq/s
+23:32:57 [data] encoding val targets
+23:32:57 [encode] 128/53144 688 seq/s
+23:33:04 [encode] 5248/53144 720 seq/s
+23:33:11 [encode] 10368/53144 720 seq/s
+23:33:19 [encode] 15488/53144 720 seq/s
+23:33:26 [encode] 20608/53144 720 seq/s
+23:33:33 [encode] 25728/53144 720 seq/s
+23:33:40 [encode] 30848/53144 720 seq/s
+23:33:47 [encode] 35968/53144 720 seq/s
+23:33:54 [encode] 41088/53144 720 seq/s
+23:34:01 [encode] 46208/53144 721 seq/s
+23:34:08 [encode] 51328/53144 721 seq/s
+23:34:14 [data] saved D:/C++/LocalAI/code_artifacts_agent\data_p128.npz train=310319 val=53144
+23:34:18 [probe] lr=0.0003 step=0 loss=7.6210
+23:36:04 [probe] lr=0.0003 step=100 loss=4.7351
+23:37:52 [probe] lr=0.0003 step=200 loss=4.0014
+23:39:40 [probe] lr=0.0003 step=300 loss=3.6148
+23:41:28 [probe] lr=0.0003 step=400 loss=3.2484
+23:43:16 [probe] lr=0.0003 val=3.3189 540s
+23:43:18 [probe] lr=0.001 step=0 loss=7.6887
+23:45:05 [probe] lr=0.001 step=100 loss=4.6880
+23:46:53 [probe] lr=0.001 step=200 loss=3.6263
+23:48:41 [probe] lr=0.001 step=300 loss=3.3119
+23:50:29 [probe] lr=0.001 step=400 loss=3.3498
+23:52:17 [probe] lr=0.001 val=3.2611 540s
+23:52:19 [probe] lr=0.003 step=0 loss=7.6614
+23:54:06 [probe] lr=0.003 step=100 loss=5.1847
+23:55:54 [probe] lr=0.003 step=200 loss=4.5662
+23:57:42 [probe] lr=0.003 step=300 loss=4.1464
+23:59:29 [probe] lr=0.003 step=400 loss=3.5791
+00:01:18 [probe] lr=0.003 val=3.5435 540s
+00:01:18 [probe] chosen lr=0.001 val=3.2611
+00:01:18 [train] phase=pretrain step=0 lr=0.001 until export 25407s
+00:01:39 [pretrain] step=20 loss=7.5424 lr=4.00e-05
+00:02:01 [pretrain] step=40 loss=7.1266 lr=8.00e-05
+00:02:22 [pretrain] step=60 loss=6.7215 lr=1.20e-04
+00:02:44 [pretrain] step=80 loss=6.1979 lr=1.60e-04
+00:03:06 [pretrain] step=100 loss=5.6952 lr=2.00e-04
+00:03:27 [pretrain] step=120 loss=5.4060 lr=2.40e-04
+00:03:49 [pretrain] step=140 loss=5.0731 lr=2.80e-04
+00:04:10 [pretrain] step=160 loss=4.7893 lr=3.20e-04
+00:04:32 [pretrain] step=180 loss=4.8458 lr=3.60e-04
+00:04:54 [pretrain] step=200 loss=4.3636 lr=4.00e-04
+00:05:15 [pretrain] step=220 loss=4.6622 lr=4.40e-04
+00:05:37 [pretrain] step=240 loss=4.0817 lr=4.80e-04
+00:05:58 [pretrain] step=260 loss=3.8585 lr=5.20e-04
+00:06:20 [pretrain] step=280 loss=3.8766 lr=5.60e-04
+00:06:41 [pretrain] step=300 loss=3.8713 lr=6.00e-04
+00:07:03 [pretrain] step=320 loss=3.6582 lr=6.40e-04
+00:07:25 [pretrain] step=340 loss=3.7233 lr=6.80e-04
+00:07:46 [pretrain] step=360 loss=3.3893 lr=7.20e-04
+00:08:08 [pretrain] step=380 loss=3.6924 lr=7.60e-04
+00:08:29 [pretrain] step=400 loss=3.5148 lr=8.00e-04
+00:08:51 [pretrain] step=420 loss=3.4444 lr=8.40e-04
+00:09:13 [pretrain] step=440 loss=3.4282 lr=8.80e-04
+00:09:34 [pretrain] step=460 loss=3.3788 lr=9.20e-04
+00:09:56 [pretrain] step=480 loss=3.3356 lr=9.60e-04
+00:10:17 [pretrain] step=500 loss=3.3407 lr=1.00e-03
+00:10:39 [pretrain] step=520 loss=3.3499 lr=1.00e-03
+00:11:00 [pretrain] step=540 loss=3.7699 lr=1.00e-03
+00:11:22 [pretrain] step=560 loss=3.1611 lr=1.00e-03
+00:11:44 [pretrain] step=580 loss=3.4115 lr=1.00e-03
+00:12:05 [pretrain] step=600 loss=3.2821 lr=1.00e-03
+00:12:27 [pretrain] step=620 loss=3.3475 lr=1.00e-03
+00:12:48 [pretrain] step=640 loss=3.1112 lr=1.00e-03
+00:13:10 [pretrain] step=660 loss=3.1183 lr=1.00e-03
+00:13:32 [pretrain] step=680 loss=2.8782 lr=1.00e-03
+00:13:53 [pretrain] step=700 loss=3.1298 lr=1.00e-03
+00:14:15 [pretrain] step=720 loss=2.9715 lr=1.00e-03
+00:14:36 [pretrain] step=740 loss=2.9585 lr=1.00e-03
+00:14:58 [pretrain] step=760 loss=2.9606 lr=1.00e-03
+00:15:19 [pretrain] step=780 loss=2.8089 lr=1.00e-03
+00:15:41 [pretrain] step=800 loss=3.1223 lr=1.00e-03
+00:16:03 [pretrain] step=820 loss=2.8520 lr=1.00e-03
+00:16:24 [pretrain] step=840 loss=3.1564 lr=1.00e-03
+00:16:46 [pretrain] step=860 loss=2.8237 lr=1.00e-03
+00:17:07 [pretrain] step=880 loss=2.6698 lr=1.00e-03
+00:17:29 [pretrain] step=900 loss=2.8031 lr=1.00e-03
+00:17:51 [pretrain] step=920 loss=2.8660 lr=1.00e-03
+00:18:12 [pretrain] step=940 loss=2.9288 lr=1.00e-03
+00:18:34 [pretrain] step=960 loss=2.7963 lr=1.00e-03
+00:18:55 [pretrain] step=980 loss=2.5867 lr=1.00e-03
+00:19:17 [pretrain] step=1000 loss=2.6185 lr=1.00e-03
+00:19:38 [pretrain] step=1020 loss=2.6943 lr=1.00e-03
+00:20:00 [pretrain] step=1040 loss=2.7699 lr=1.00e-03
+00:20:22 [pretrain] step=1060 loss=2.7750 lr=1.00e-03
+00:20:43 [pretrain] step=1080 loss=2.7032 lr=1.00e-03
+00:21:05 [pretrain] step=1100 loss=2.5510 lr=1.00e-03
+00:21:26 [pretrain] step=1120 loss=2.6189 lr=1.00e-03
+00:21:48 [pretrain] step=1140 loss=2.7965 lr=1.00e-03
+00:22:10 [pretrain] step=1160 loss=2.7509 lr=1.00e-03
+00:22:31 [pretrain] step=1180 loss=2.5972 lr=1.00e-03
+00:22:53 [pretrain] step=1200 loss=2.7673 lr=1.00e-03
+00:23:14 [pretrain] step=1220 loss=2.4807 lr=1.00e-03
+00:23:36 [pretrain] step=1240 loss=2.3759 lr=1.00e-03
+00:23:57 [pretrain] step=1260 loss=2.5202 lr=1.00e-03
+00:24:19 [pretrain] step=1280 loss=2.6430 lr=1.00e-03
+00:24:41 [pretrain] step=1300 loss=2.4274 lr=1.00e-03
+00:25:02 [pretrain] step=1320 loss=2.8402 lr=1.00e-03
+00:25:24 [pretrain] step=1340 loss=2.5292 lr=1.00e-03
+00:25:45 [pretrain] step=1360 loss=2.3842 lr=1.00e-03
+00:26:07 [pretrain] step=1380 loss=2.4189 lr=1.00e-03
+00:26:28 [pretrain] step=1400 loss=2.4200 lr=1.00e-03
+00:26:50 [pretrain] step=1420 loss=2.6038 lr=1.00e-03
+00:27:12 [pretrain] step=1440 loss=2.2954 lr=1.00e-03
+00:27:33 [pretrain] step=1460 loss=2.4794 lr=1.00e-03
+00:27:55 [pretrain] step=1480 loss=2.3355 lr=1.00e-03
+00:28:16 [pretrain] step=1500 loss=2.3892 lr=1.00e-03
+00:28:38 [pretrain] step=1520 loss=2.3399 lr=1.00e-03
+00:28:59 [pretrain] step=1540 loss=2.2547 lr=1.00e-03
+00:29:21 [pretrain] step=1560 loss=2.3672 lr=1.00e-03
+00:29:43 [pretrain] step=1580 loss=2.3513 lr=1.00e-03
+00:30:04 [pretrain] step=1600 loss=2.1438 lr=1.00e-03
+00:30:26 [pretrain] step=1620 loss=2.1270 lr=1.00e-03
+00:30:47 [pretrain] step=1640 loss=2.2865 lr=1.00e-03
+00:31:09 [pretrain] step=1660 loss=2.2912 lr=1.00e-03
+00:31:20 [pretrain] val=2.4711
+00:31:20 [ckpt] best_pretrain.pt step=1669 phase=pretrain
+00:31:21 [ckpt] last.pt step=1669 phase=pretrain
+00:31:33 [pretrain] step=1680 loss=2.4786 lr=1.00e-03
+00:31:54 [pretrain] step=1700 loss=2.2396 lr=1.00e-03
+00:32:15 [pretrain] step=1720 loss=2.0457 lr=1.00e-03
+00:32:37 [pretrain] step=1740 loss=2.3111 lr=1.00e-03
+00:32:58 [pretrain] step=1760 loss=2.2794 lr=1.00e-03
+00:33:20 [pretrain] step=1780 loss=2.2761 lr=1.00e-03
+00:33:42 [pretrain] step=1800 loss=2.2902 lr=1.00e-03
+00:34:03 [pretrain] step=1820 loss=2.3448 lr=1.00e-03
+00:34:25 [pretrain] step=1840 loss=2.2064 lr=1.00e-03
+00:34:46 [pretrain] step=1860 loss=2.2259 lr=1.00e-03
+00:35:08 [pretrain] step=1880 loss=2.1782 lr=1.00e-03
+00:35:30 [pretrain] step=1900 loss=2.2761 lr=1.00e-03
+00:35:51 [pretrain] step=1920 loss=2.1619 lr=1.00e-03
+00:36:13 [pretrain] step=1940 loss=2.2136 lr=1.00e-03
+00:36:34 [pretrain] step=1960 loss=2.2164 lr=1.00e-03
+00:36:56 [pretrain] step=1980 loss=2.2097 lr=1.00e-03
+00:37:17 [pretrain] step=2000 loss=2.0625 lr=1.00e-03
+00:37:39 [pretrain] step=2020 loss=2.1838 lr=1.00e-03
+00:38:01 [pretrain] step=2040 loss=2.2564 lr=1.00e-03
+00:38:22 [pretrain] step=2060 loss=2.0158 lr=1.00e-03
+00:38:44 [pretrain] step=2080 loss=2.1287 lr=1.00e-03
+00:39:05 [pretrain] step=2100 loss=2.2061 lr=1.00e-03
+00:39:27 [pretrain] step=2120 loss=2.0750 lr=1.00e-03
+00:39:48 [pretrain] step=2140 loss=2.1425 lr=1.00e-03
+00:40:10 [pretrain] step=2160 loss=2.1304 lr=1.00e-03
+00:40:32 [pretrain] step=2180 loss=2.0123 lr=1.00e-03
+00:40:53 [pretrain] step=2200 loss=2.1324 lr=1.00e-03
+00:41:15 [pretrain] step=2220 loss=2.0760 lr=1.00e-03
+00:41:36 [pretrain] step=2240 loss=2.0002 lr=1.00e-03
+00:41:58 [pretrain] step=2260 loss=2.1992 lr=1.00e-03
+00:42:19 [pretrain] step=2280 loss=2.0405 lr=1.00e-03
+00:42:41 [pretrain] step=2300 loss=2.1290 lr=1.00e-03
+00:43:03 [pretrain] step=2320 loss=2.0633 lr=1.00e-03
+00:43:24 [pretrain] step=2340 loss=1.9301 lr=1.00e-03
+00:43:46 [pretrain] step=2360 loss=1.9530 lr=1.00e-03
+00:44:07 [pretrain] step=2380 loss=2.0566 lr=1.00e-03
+00:44:29 [pretrain] step=2400 loss=2.0549 lr=1.00e-03
+00:44:51 [pretrain] step=2420 loss=1.8625 lr=1.00e-03
+00:45:12 [pretrain] step=2440 loss=1.7797 lr=1.00e-03
+00:45:34 [pretrain] step=2460 loss=2.0525 lr=1.00e-03
+00:45:55 [pretrain] step=2480 loss=1.9913 lr=1.00e-03
+00:46:17 [pretrain] step=2500 loss=1.9745 lr=1.00e-03
+00:46:38 [pretrain] step=2520 loss=2.0597 lr=1.00e-03
+00:47:00 [pretrain] step=2540 loss=1.9351 lr=1.00e-03
+00:47:22 [pretrain] step=2560 loss=1.9225 lr=1.00e-03
+00:47:43 [pretrain] step=2580 loss=1.8841 lr=1.00e-03
+00:48:05 [pretrain] step=2600 loss=2.0253 lr=1.00e-03
+00:48:26 [pretrain] step=2620 loss=1.9697 lr=1.00e-03
+00:48:48 [pretrain] step=2640 loss=2.1062 lr=1.00e-03
+00:49:09 [pretrain] step=2660 loss=1.9536 lr=1.00e-03
+00:49:31 [pretrain] step=2680 loss=2.1129 lr=1.00e-03
+00:49:53 [pretrain] step=2700 loss=2.0156 lr=1.00e-03
+00:50:14 [pretrain] step=2720 loss=2.0459 lr=1.00e-03
+00:50:36 [pretrain] step=2740 loss=1.9523 lr=1.00e-03
+00:50:57 [pretrain] step=2760 loss=1.6860 lr=1.00e-03
+00:51:19 [pretrain] step=2780 loss=1.8622 lr=1.00e-03
+00:51:41 [pretrain] step=2800 loss=1.7497 lr=1.00e-03
+00:52:02 [pretrain] step=2820 loss=1.8245 lr=1.00e-03
+00:52:24 [pretrain] step=2840 loss=1.6476 lr=1.00e-03
+00:52:45 [pretrain] step=2860 loss=1.9277 lr=1.00e-03
+00:53:07 [pretrain] step=2880 loss=2.0871 lr=1.00e-03
+00:53:29 [pretrain] step=2900 loss=1.9822 lr=1.00e-03
+00:53:50 [pretrain] step=2920 loss=2.0409 lr=1.00e-03
+00:54:12 [pretrain] step=2940 loss=2.0094 lr=1.00e-03
+00:54:33 [pretrain] step=2960 loss=1.9776 lr=1.00e-03
+00:54:55 [pretrain] step=2980 loss=1.7264 lr=1.00e-03
+00:55:16 [pretrain] step=3000 loss=1.8662 lr=1.00e-03
+00:55:38 [pretrain] step=3020 loss=2.0156 lr=1.00e-03
+00:56:00 [pretrain] step=3040 loss=2.0085 lr=1.00e-03
+00:56:21 [pretrain] step=3060 loss=2.0698 lr=1.00e-03
+00:56:43 [pretrain] step=3080 loss=1.7523 lr=1.00e-03
+00:57:04 [pretrain] step=3100 loss=1.7774 lr=1.00e-03
+00:57:26 [pretrain] step=3120 loss=1.8629 lr=1.00e-03
+00:57:47 [pretrain] step=3140 loss=1.8869 lr=1.00e-03
+00:58:09 [pretrain] step=3160 loss=1.8644 lr=1.00e-03
+00:58:31 [pretrain] step=3180 loss=1.8503 lr=1.00e-03
+00:58:52 [pretrain] step=3200 loss=1.8949 lr=1.00e-03
+00:59:14 [pretrain] step=3220 loss=1.7267 lr=1.00e-03
+00:59:35 [pretrain] step=3240 loss=1.9316 lr=1.00e-03
+00:59:57 [pretrain] step=3260 loss=2.0171 lr=1.00e-03
+01:00:18 [pretrain] step=3280 loss=2.0969 lr=1.00e-03
+01:00:40 [pretrain] step=3300 loss=1.8923 lr=1.00e-03
+01:01:02 [pretrain] step=3320 loss=1.6070 lr=1.00e-03
+01:01:20 [pretrain] val=2.1473
+01:01:21 [ckpt] best_pretrain.pt step=3336 phase=pretrain
+01:01:22 [ckpt] last.pt step=3336 phase=pretrain
+01:01:27 [pretrain] step=3340 loss=1.6770 lr=1.00e-03
+01:01:48 [pretrain] step=3360 loss=1.9106 lr=1.00e-03
+01:02:09 [pretrain] step=3380 loss=2.0078 lr=1.00e-03
+01:02:31 [pretrain] step=3400 loss=1.9034 lr=1.00e-03
+01:02:52 [pretrain] step=3420 loss=2.0732 lr=1.00e-03
+01:03:14 [pretrain] step=3440 loss=1.8827 lr=1.00e-03
+01:03:35 [pretrain] step=3460 loss=1.7664 lr=1.00e-03
+01:03:57 [pretrain] step=3480 loss=1.9198 lr=1.00e-03
+01:04:19 [pretrain] step=3500 loss=2.0477 lr=1.00e-03
+01:04:40 [pretrain] step=3520 loss=1.9549 lr=1.00e-03
+01:05:02 [pretrain] step=3540 loss=1.9374 lr=1.00e-03
+01:05:23 [pretrain] step=3560 loss=1.8929 lr=1.00e-03
+01:05:45 [pretrain] step=3580 loss=1.7085 lr=1.00e-03
+01:06:06 [pretrain] step=3600 loss=1.7352 lr=1.00e-03
+01:06:28 [pretrain] step=3620 loss=1.9673 lr=1.00e-03
+01:06:50 [pretrain] step=3640 loss=1.7041 lr=1.00e-03
+01:07:11 [pretrain] step=3660 loss=1.7826 lr=1.00e-03
+01:07:33 [pretrain] step=3680 loss=1.6418 lr=1.00e-03
+01:07:54 [pretrain] step=3700 loss=1.6404 lr=1.00e-03
+01:08:16 [pretrain] step=3720 loss=1.7488 lr=1.00e-03
+01:08:37 [pretrain] step=3740 loss=1.8048 lr=1.00e-03
+01:08:59 [pretrain] step=3760 loss=1.7657 lr=1.00e-03
+01:09:21 [pretrain] step=3780 loss=2.0020 lr=1.00e-03
+01:09:42 [pretrain] step=3800 loss=1.7847 lr=1.00e-03
+01:10:04 [pretrain] step=3820 loss=1.9267 lr=1.00e-03
+01:10:25 [pretrain] step=3840 loss=1.8988 lr=1.00e-03
+01:10:47 [pretrain] step=3860 loss=2.0342 lr=1.00e-03
+01:11:09 [pretrain] step=3880 loss=1.7639 lr=1.00e-03
+01:11:30 [pretrain] step=3900 loss=1.9444 lr=1.00e-03
+01:11:52 [pretrain] step=3920 loss=1.5992 lr=1.00e-03
+01:12:13 [pretrain] step=3940 loss=1.6332 lr=1.00e-03
+01:12:35 [pretrain] step=3960 loss=1.6998 lr=1.00e-03
+01:12:56 [pretrain] step=3980 loss=1.5609 lr=1.00e-03
+01:13:18 [pretrain] step=4000 loss=1.6853 lr=1.00e-03
+01:13:39 [pretrain] step=4020 loss=1.7495 lr=1.00e-03
+01:14:01 [pretrain] step=4040 loss=1.7776 lr=1.00e-03
+01:14:23 [pretrain] step=4060 loss=1.7554 lr=1.00e-03
+01:14:44 [pretrain] step=4080 loss=1.7937 lr=1.00e-03
+01:15:06 [pretrain] step=4100 loss=1.6364 lr=1.00e-03
+01:15:27 [pretrain] step=4120 loss=1.8370 lr=1.00e-03
+01:15:49 [pretrain] step=4140 loss=1.6574 lr=1.00e-03
+01:16:10 [pretrain] step=4160 loss=1.8089 lr=1.00e-03
+01:16:32 [pretrain] step=4180 loss=2.1071 lr=1.00e-03
+01:16:54 [pretrain] step=4200 loss=1.9202 lr=1.00e-03
+01:17:15 [pretrain] step=4220 loss=1.6271 lr=1.00e-03
+01:17:37 [pretrain] step=4240 loss=1.8438 lr=1.00e-03
+01:17:58 [pretrain] step=4260 loss=1.8535 lr=1.00e-03
+01:18:20 [pretrain] step=4280 loss=1.7220 lr=1.00e-03
+01:18:42 [pretrain] step=4300 loss=1.4960 lr=1.00e-03
+01:19:03 [pretrain] step=4320 loss=1.8207 lr=1.00e-03
+01:19:25 [pretrain] step=4340 loss=1.6625 lr=1.00e-03
+01:19:46 [pretrain] step=4360 loss=1.7271 lr=1.00e-03
+01:20:08 [pretrain] step=4380 loss=1.7788 lr=1.00e-03
+01:20:29 [pretrain] step=4400 loss=1.8979 lr=1.00e-03
+01:20:51 [pretrain] step=4420 loss=1.7264 lr=1.00e-03
+01:21:12 [pretrain] step=4440 loss=1.6957 lr=1.00e-03
+01:21:34 [pretrain] step=4460 loss=1.7240 lr=1.00e-03
+01:21:56 [pretrain] step=4480 loss=1.6228 lr=1.00e-03
+01:22:17 [pretrain] step=4500 loss=1.6081 lr=1.00e-03
+01:22:39 [pretrain] step=4520 loss=1.7266 lr=1.00e-03
+01:23:00 [pretrain] step=4540 loss=1.7163 lr=1.00e-03
+01:23:22 [pretrain] step=4560 loss=1.5383 lr=1.00e-03
+01:23:43 [pretrain] step=4580 loss=1.7657 lr=1.00e-03
+01:24:05 [pretrain] step=4600 loss=1.6288 lr=1.00e-03
+01:24:27 [pretrain] step=4620 loss=1.7644 lr=1.00e-03
+01:24:48 [pretrain] step=4640 loss=1.8079 lr=1.00e-03
+01:25:10 [pretrain] step=4660 loss=1.6443 lr=1.00e-03
+01:25:31 [pretrain] step=4680 loss=1.7948 lr=1.00e-03
+01:25:53 [pretrain] step=4700 loss=1.6199 lr=1.00e-03
+01:26:14 [pretrain] step=4720 loss=1.7919 lr=1.00e-03
+01:26:36 [pretrain] step=4740 loss=1.7607 lr=1.00e-03
+01:26:58 [pretrain] step=4760 loss=1.6042 lr=1.00e-03
+01:27:19 [pretrain] step=4780 loss=1.7780 lr=1.00e-03
+01:27:41 [pretrain] step=4800 loss=1.5619 lr=1.00e-03
+01:28:02 [pretrain] step=4820 loss=1.7920 lr=1.00e-03
+01:28:24 [pretrain] step=4840 loss=1.5881 lr=1.00e-03
+01:28:45 [pretrain] step=4860 loss=1.7515 lr=1.00e-03
+01:29:07 [pretrain] step=4880 loss=1.7064 lr=1.00e-03
+01:29:29 [pretrain] step=4900 loss=1.7305 lr=1.00e-03
+01:29:50 [pretrain] step=4920 loss=1.9304 lr=1.00e-03
+01:30:12 [pretrain] step=4940 loss=1.7640 lr=1.00e-03
+01:30:33 [pretrain] step=4960 loss=1.7182 lr=1.00e-03
+01:30:55 [pretrain] step=4980 loss=1.6128 lr=1.00e-03
+01:31:16 [pretrain] step=5000 loss=1.6940 lr=1.00e-03
+01:31:21 [pretrain] val=2.1734
+01:31:23 [ckpt] last.pt step=5003 phase=pretrain
+01:31:41 [pretrain] step=5020 loss=1.4975 lr=1.00e-03
+01:32:02 [pretrain] step=5040 loss=1.8239 lr=1.00e-03
+01:32:24 [pretrain] step=5060 loss=1.7244 lr=1.00e-03
+01:32:45 [pretrain] step=5080 loss=1.5778 lr=1.00e-03
+01:33:07 [pretrain] step=5100 loss=1.7976 lr=1.00e-03
+01:33:28 [pretrain] step=5120 loss=1.8118 lr=1.00e-03
+01:33:50 [pretrain] step=5140 loss=1.7184 lr=1.00e-03
+01:34:12 [pretrain] step=5160 loss=1.8744 lr=1.00e-03
+01:34:33 [pretrain] step=5180 loss=1.5693 lr=1.00e-03
+01:34:55 [pretrain] step=5200 loss=1.6557 lr=1.00e-03
+01:35:16 [pretrain] step=5220 loss=1.5776 lr=1.00e-03
+01:35:38 [pretrain] step=5240 loss=1.6438 lr=1.00e-03
+01:35:59 [pretrain] step=5260 loss=1.5318 lr=1.00e-03
+01:36:21 [pretrain] step=5280 loss=1.7499 lr=1.00e-03
+01:36:43 [pretrain] step=5300 loss=1.6337 lr=1.00e-03
+01:37:04 [pretrain] step=5320 loss=1.7135 lr=1.00e-03
+01:37:26 [pretrain] step=5340 loss=1.4759 lr=1.00e-03
+01:37:47 [pretrain] step=5360 loss=1.6740 lr=1.00e-03
+01:38:09 [pretrain] step=5380 loss=1.6944 lr=1.00e-03
+01:38:31 [pretrain] step=5400 loss=1.7969 lr=1.00e-03
+01:38:52 [pretrain] step=5420 loss=1.7793 lr=1.00e-03
+01:39:14 [pretrain] step=5440 loss=1.6744 lr=1.00e-03
+01:39:35 [pretrain] step=5460 loss=1.6789 lr=1.00e-03
+01:39:57 [pretrain] step=5480 loss=1.5496 lr=1.00e-03
+01:40:18 [pretrain] step=5500 loss=1.5339 lr=1.00e-03
+01:40:40 [pretrain] step=5520 loss=1.6068 lr=1.00e-03
+01:41:02 [pretrain] step=5540 loss=1.6595 lr=1.00e-03
+01:41:21 [pretrain] non-finite loss at step 5559
+01:44:23 [start] budget 20422s left
+01:44:23 [data] loading D:/C++/LocalAI/code_artifacts_agent\data_p128.npz
+01:44:27 [train] phase=pretrain step=5003 lr=0.001 until export 19219s
+01:44:45 [pretrain] step=5020 loss=1.5197 lr=1.00e-03
+01:45:06 [pretrain] step=5040 loss=1.4525 lr=1.00e-03
+01:45:27 [pretrain] step=5060 loss=1.6557 lr=1.00e-03
+01:45:49 [pretrain] step=5080 loss=1.5985 lr=1.00e-03
+01:46:10 [pretrain] step=5100 loss=1.5354 lr=1.00e-03
+01:46:31 [pretrain] step=5120 loss=1.6610 lr=1.00e-03
+01:46:52 [pretrain] step=5140 loss=1.5831 lr=1.00e-03
+01:47:13 [pretrain] step=5160 loss=1.7932 lr=1.00e-03
+01:47:34 [pretrain] step=5180 loss=1.8575 lr=1.00e-03
+01:47:56 [pretrain] step=5200 loss=1.6471 lr=1.00e-03
+01:48:17 [pretrain] step=5220 loss=1.6714 lr=1.00e-03
+01:48:39 [pretrain] step=5240 loss=1.4952 lr=1.00e-03
+01:49:00 [pretrain] step=5260 loss=1.6788 lr=1.00e-03
+01:49:22 [pretrain] step=5280 loss=1.5493 lr=1.00e-03
+01:49:44 [pretrain] step=5300 loss=1.5915 lr=1.00e-03
+01:50:05 [pretrain] step=5320 loss=1.7733 lr=1.00e-03
+01:50:27 [pretrain] step=5340 loss=1.8630 lr=1.00e-03
+01:50:48 [pretrain] step=5360 loss=1.5316 lr=1.00e-03
+01:51:10 [pretrain] step=5380 loss=1.6749 lr=1.00e-03
+01:51:31 [pretrain] step=5400 loss=1.6591 lr=1.00e-03
+01:51:53 [pretrain] step=5420 loss=1.5805 lr=1.00e-03
+01:52:15 [pretrain] step=5440 loss=1.7768 lr=1.00e-03
+01:52:36 [pretrain] step=5460 loss=1.5057 lr=1.00e-03
+01:52:58 [pretrain] step=5480 loss=1.8642 lr=1.00e-03
+01:53:19 [pretrain] step=5500 loss=1.5623 lr=1.00e-03
+01:53:41 [pretrain] step=5520 loss=1.4889 lr=1.00e-03
+01:54:03 [pretrain] step=5540 loss=1.5629 lr=1.00e-03
+01:54:24 [pretrain] step=5560 loss=1.4639 lr=1.00e-03
+01:54:46 [pretrain] step=5580 loss=1.7208 lr=1.00e-03
+01:55:07 [pretrain] step=5600 loss=1.5928 lr=1.00e-03
+01:55:29 [pretrain] step=5620 loss=1.5358 lr=1.00e-03
+01:55:50 [pretrain] step=5640 loss=1.5278 lr=1.00e-03
+01:56:12 [pretrain] step=5660 loss=1.6598 lr=1.00e-03
+01:56:33 [pretrain] step=5680 loss=1.5782 lr=1.00e-03
+01:56:55 [pretrain] step=5700 loss=1.6846 lr=1.00e-03
+01:57:17 [pretrain] step=5720 loss=2.0678 lr=1.00e-03
+01:57:38 [pretrain] step=5740 loss=1.6913 lr=1.00e-03
+01:58:00 [pretrain] step=5760 loss=1.8193 lr=1.00e-03
+01:58:21 [pretrain] step=5780 loss=1.7377 lr=1.00e-03
+01:58:43 [pretrain] step=5800 loss=1.7458 lr=1.00e-03
+01:59:04 [pretrain] step=5820 loss=1.5904 lr=1.00e-03
+01:59:26 [pretrain] step=5840 loss=1.7392 lr=1.00e-03
+01:59:48 [pretrain] step=5860 loss=1.6161 lr=1.00e-03
+02:00:09 [pretrain] step=5880 loss=1.6072 lr=1.00e-03
+02:00:31 [pretrain] step=5900 loss=1.6417 lr=1.00e-03
+02:00:52 [pretrain] step=5920 loss=1.5326 lr=1.00e-03
+02:01:14 [pretrain] step=5940 loss=1.5487 lr=1.00e-03
+02:01:35 [pretrain] step=5960 loss=1.8344 lr=1.00e-03
+02:01:57 [pretrain] step=5980 loss=1.5999 lr=1.00e-03
+02:02:18 [pretrain] step=6000 loss=1.7630 lr=1.00e-03
+02:02:40 [pretrain] step=6020 loss=1.5720 lr=1.00e-03
+02:03:02 [pretrain] step=6040 loss=1.6575 lr=1.00e-03
+02:03:23 [pretrain] step=6060 loss=1.6052 lr=1.00e-03
+02:03:45 [pretrain] step=6080 loss=1.6187 lr=1.00e-03
+02:04:06 [pretrain] step=6100 loss=1.5212 lr=1.00e-03
+02:04:28 [pretrain] step=6120 loss=1.7116 lr=1.00e-03
+02:04:49 [pretrain] step=6140 loss=1.8575 lr=1.00e-03
+02:05:11 [pretrain] step=6160 loss=1.6466 lr=1.00e-03
+02:05:32 [pretrain] step=6180 loss=1.5582 lr=1.00e-03
+02:05:54 [pretrain] step=6200 loss=1.4806 lr=1.00e-03
+02:06:16 [pretrain] step=6220 loss=1.6909 lr=1.00e-03
+02:06:37 [pretrain] step=6240 loss=1.7311 lr=1.00e-03
+02:06:59 [pretrain] step=6260 loss=1.5125 lr=1.00e-03
+02:07:20 [pretrain] step=6280 loss=1.8210 lr=1.00e-03
+02:07:42 [pretrain] step=6300 loss=1.7114 lr=1.00e-03
+02:08:03 [pretrain] step=6320 loss=1.4255 lr=1.00e-03
+02:08:25 [pretrain] step=6340 loss=1.6671 lr=1.00e-03
+02:08:47 [pretrain] step=6360 loss=1.5551 lr=1.00e-03
+02:09:08 [pretrain] step=6380 loss=1.5028 lr=1.00e-03
+02:09:30 [pretrain] step=6400 loss=1.6212 lr=1.00e-03
+02:09:51 [pretrain] step=6420 loss=1.4301 lr=1.00e-03
+02:10:13 [pretrain] step=6440 loss=1.5328 lr=1.00e-03
+02:10:34 [pretrain] step=6460 loss=1.5370 lr=1.00e-03
+02:10:56 [pretrain] step=6480 loss=1.7361 lr=1.00e-03
+02:11:18 [pretrain] step=6500 loss=1.4246 lr=1.00e-03
+02:11:39 [pretrain] step=6520 loss=1.6485 lr=1.00e-03
+02:12:01 [pretrain] step=6540 loss=1.7257 lr=1.00e-03
+02:12:22 [pretrain] step=6560 loss=1.6449 lr=1.00e-03
+02:12:44 [pretrain] step=6580 loss=1.7703 lr=1.00e-03
+02:13:05 [pretrain] step=6600 loss=1.4971 lr=1.00e-03
+02:13:27 [pretrain] step=6620 loss=1.4072 lr=1.00e-03
+02:13:48 [pretrain] step=6640 loss=1.4706 lr=1.00e-03
+02:14:10 [pretrain] step=6660 loss=1.6649 lr=1.00e-03
+02:14:29 [pretrain] val=2.1185
+02:14:29 [ckpt] best_pretrain.pt step=6676 phase=pretrain
+02:14:30 [ckpt] last.pt step=6676 phase=pretrain
+02:14:34 [pretrain] step=6680 loss=1.5479 lr=1.00e-03
+02:14:55 [pretrain] step=6700 loss=1.5394 lr=1.00e-03
+02:15:17 [pretrain] step=6720 loss=1.5746 lr=1.00e-03
+02:15:38 [pretrain] step=6740 loss=1.5599 lr=1.00e-03
+02:16:00 [pretrain] step=6760 loss=1.4141 lr=1.00e-03
+02:16:21 [pretrain] step=6780 loss=1.6915 lr=1.00e-03
+02:16:43 [pretrain] step=6800 loss=1.6366 lr=1.00e-03
+02:17:04 [pretrain] step=6820 loss=1.4868 lr=1.00e-03
+02:17:26 [pretrain] step=6840 loss=1.6297 lr=1.00e-03
+02:17:47 [pretrain] step=6860 loss=1.5559 lr=1.00e-03
+02:18:09 [pretrain] step=6880 loss=1.5628 lr=1.00e-03
+02:18:31 [pretrain] step=6900 loss=1.6217 lr=1.00e-03
+02:18:52 [pretrain] step=6920 loss=1.4528 lr=1.00e-03
+02:19:14 [pretrain] step=6940 loss=1.6565 lr=1.00e-03
+02:19:35 [pretrain] step=6960 loss=1.7034 lr=1.00e-03
+02:19:57 [pretrain] step=6980 loss=1.4325 lr=1.00e-03
+02:20:18 [pretrain] step=7000 loss=1.4142 lr=1.00e-03
+02:20:40 [pretrain] step=7020 loss=1.6473 lr=1.00e-03
+02:21:01 [pretrain] step=7040 loss=1.6899 lr=1.00e-03
+02:21:23 [pretrain] step=7060 loss=1.6350 lr=1.00e-03
+02:21:45 [pretrain] step=7080 loss=1.6121 lr=1.00e-03
+02:22:06 [pretrain] step=7100 loss=1.4579 lr=1.00e-03
+02:22:28 [pretrain] step=7120 loss=1.4135 lr=1.00e-03
+02:22:49 [pretrain] step=7140 loss=1.7167 lr=1.00e-03
+02:23:11 [pretrain] step=7160 loss=1.6934 lr=1.00e-03
+02:23:32 [pretrain] step=7180 loss=1.5109 lr=1.00e-03
+02:23:54 [pretrain] step=7200 loss=1.6581 lr=1.00e-03
+02:24:15 [pretrain] step=7220 loss=1.6107 lr=1.00e-03
+02:24:37 [pretrain] step=7240 loss=1.9344 lr=1.00e-03
+02:24:59 [pretrain] step=7260 loss=1.6305 lr=1.00e-03
+02:25:20 [pretrain] step=7280 loss=1.5276 lr=1.00e-03
+02:25:42 [pretrain] step=7300 loss=1.6728 lr=1.00e-03
+02:26:03 [pretrain] step=7320 loss=1.4235 lr=1.00e-03
+02:26:25 [pretrain] step=7340 loss=1.5178 lr=1.00e-03
+02:26:46 [pretrain] step=7360 loss=1.4396 lr=1.00e-03
+02:27:08 [pretrain] step=7380 loss=1.4494 lr=1.00e-03
+02:27:29 [pretrain] step=7400 loss=1.6025 lr=1.00e-03
+02:27:51 [pretrain] step=7420 loss=1.5985 lr=1.00e-03
+02:28:13 [pretrain] step=7440 loss=1.6752 lr=1.00e-03
+02:28:34 [pretrain] step=7460 loss=1.4384 lr=1.00e-03
+02:28:56 [pretrain] step=7480 loss=1.5883 lr=1.00e-03
+02:29:17 [pretrain] step=7500 loss=1.6756 lr=1.00e-03
+02:29:39 [pretrain] step=7520 loss=1.6499 lr=1.00e-03
+02:30:00 [pretrain] step=7540 loss=1.6919 lr=1.00e-03
+02:30:22 [pretrain] step=7560 loss=1.5494 lr=1.00e-03
+02:30:44 [pretrain] step=7580 loss=1.6392 lr=1.00e-03
+02:31:05 [pretrain] step=7600 loss=1.4199 lr=1.00e-03
+02:31:27 [pretrain] step=7620 loss=1.4877 lr=1.00e-03
+02:31:48 [pretrain] step=7640 loss=1.7092 lr=1.00e-03
+02:32:10 [pretrain] step=7660 loss=1.5325 lr=1.00e-03
+02:32:31 [pretrain] step=7680 loss=1.6169 lr=1.00e-03
+02:32:53 [pretrain] step=7700 loss=1.4382 lr=1.00e-03
+02:33:14 [pretrain] step=7720 loss=1.4433 lr=1.00e-03
+02:33:36 [pretrain] step=7740 loss=1.4526 lr=1.00e-03
+02:33:58 [pretrain] step=7760 loss=1.6389 lr=1.00e-03
+02:34:19 [pretrain] step=7780 loss=1.3086 lr=1.00e-03
+02:34:41 [pretrain] step=7800 loss=1.4794 lr=1.00e-03
+02:35:02 [pretrain] step=7820 loss=1.3780 lr=1.00e-03
+02:35:24 [pretrain] step=7840 loss=1.3753 lr=1.00e-03
+02:35:45 [pretrain] step=7860 loss=1.5825 lr=1.00e-03
+02:36:07 [pretrain] step=7880 loss=1.4373 lr=1.00e-03
+02:36:28 [pretrain] step=7900 loss=1.3005 lr=1.00e-03
+02:36:50 [pretrain] step=7920 loss=1.6033 lr=1.00e-03
+02:37:12 [pretrain] step=7940 loss=1.6046 lr=1.00e-03
+02:37:33 [pretrain] step=7960 loss=1.6363 lr=1.00e-03
+02:37:55 [pretrain] step=7980 loss=1.3376 lr=1.00e-03
+02:38:16 [pretrain] step=8000 loss=1.4191 lr=1.00e-03
+02:38:38 [pretrain] step=8020 loss=1.4198 lr=1.00e-03
+02:38:59 [pretrain] step=8040 loss=1.7201 lr=1.00e-03
+02:39:21 [pretrain] step=8060 loss=1.6777 lr=1.00e-03
+02:39:42 [pretrain] step=8080 loss=1.7226 lr=1.00e-03
+02:40:04 [pretrain] step=8100 loss=1.6241 lr=1.00e-03
+02:40:26 [pretrain] step=8120 loss=1.6234 lr=1.00e-03
+02:40:47 [pretrain] step=8140 loss=1.3273 lr=1.00e-03
+02:41:09 [pretrain] step=8160 loss=1.4175 lr=1.00e-03
+02:41:30 [pretrain] step=8180 loss=1.5799 lr=1.00e-03
+02:41:52 [pretrain] step=8200 loss=1.5530 lr=1.00e-03
+02:42:13 [pretrain] step=8220 loss=1.4104 lr=1.00e-03
+02:42:35 [pretrain] step=8240 loss=1.5162 lr=1.00e-03
+02:42:57 [pretrain] step=8260 loss=1.6517 lr=1.00e-03
+02:43:18 [pretrain] step=8280 loss=1.5939 lr=1.00e-03
+02:43:40 [pretrain] step=8300 loss=1.3403 lr=1.00e-03
+02:44:01 [pretrain] step=8320 loss=1.5505 lr=1.00e-03
+02:44:23 [pretrain] step=8340 loss=1.5745 lr=1.00e-03
+02:44:30 [pretrain] val=2.0253
+02:44:30 [ckpt] best_pretrain.pt step=8345 phase=pretrain
+02:44:31 [ckpt] last.pt step=8345 phase=pretrain
+02:44:47 [pretrain] step=8360 loss=1.5916 lr=1.00e-03
+02:45:08 [pretrain] step=8380 loss=1.6826 lr=1.00e-03
+02:45:30 [pretrain] step=8400 loss=1.3751 lr=1.00e-03
+02:45:51 [pretrain] step=8420 loss=1.5869 lr=1.00e-03
+02:46:13 [pretrain] step=8440 loss=1.7075 lr=1.00e-03
+02:46:34 [pretrain] step=8460 loss=1.5785 lr=1.00e-03
+02:46:56 [pretrain] step=8480 loss=1.3998 lr=1.00e-03
+02:47:18 [pretrain] step=8500 loss=1.3177 lr=1.00e-03
+02:47:39 [pretrain] step=8520 loss=1.6229 lr=1.00e-03
+02:48:01 [pretrain] step=8540 loss=1.5177 lr=1.00e-03
+02:48:22 [pretrain] step=8560 loss=1.4635 lr=1.00e-03
+02:48:44 [pretrain] step=8580 loss=1.6343 lr=1.00e-03
+02:49:05 [pretrain] step=8600 loss=1.5553 lr=1.00e-03
+02:49:27 [pretrain] step=8620 loss=1.5305 lr=1.00e-03
+02:49:49 [pretrain] step=8640 loss=1.6456 lr=1.00e-03
+02:50:10 [pretrain] step=8660 loss=1.4854 lr=1.00e-03
+02:50:32 [pretrain] step=8680 loss=1.4901 lr=1.00e-03
+02:50:53 [pretrain] step=8700 loss=1.3463 lr=1.00e-03
+02:51:15 [pretrain] step=8720 loss=1.6058 lr=1.00e-03
+02:51:36 [pretrain] step=8740 loss=1.7192 lr=1.00e-03
+02:51:58 [pretrain] step=8760 loss=1.3168 lr=1.00e-03
+02:52:19 [pretrain] step=8780 loss=1.7394 lr=1.00e-03
+02:52:41 [pretrain] step=8800 loss=1.4538 lr=1.00e-03
+02:53:03 [pretrain] step=8820 loss=1.5075 lr=1.00e-03
+02:53:24 [pretrain] step=8840 loss=1.3792 lr=1.00e-03
+02:53:46 [pretrain] step=8860 loss=1.5060 lr=1.00e-03
+02:54:07 [pretrain] step=8880 loss=1.3939 lr=1.00e-03
+02:54:29 [pretrain] step=8900 loss=1.4637 lr=1.00e-03
+02:54:50 [pretrain] step=8920 loss=1.3669 lr=1.00e-03
+02:55:12 [pretrain] step=8940 loss=1.5595 lr=1.00e-03
+02:55:34 [pretrain] step=8960 loss=1.3707 lr=1.00e-03
+02:55:55 [pretrain] step=8980 loss=1.6102 lr=1.00e-03
+02:56:17 [pretrain] step=9000 loss=1.4770 lr=1.00e-03
+02:56:38 [pretrain] step=9020 loss=1.4260 lr=1.00e-03
+02:57:00 [pretrain] step=9040 loss=1.5745 lr=1.00e-03
+02:57:21 [pretrain] step=9060 loss=1.2847 lr=1.00e-03
+02:57:43 [pretrain] step=9080 loss=1.5630 lr=1.00e-03
+02:58:04 [pretrain] step=9100 loss=1.2727 lr=1.00e-03
+02:58:26 [pretrain] step=9120 loss=1.4563 lr=1.00e-03
+02:58:48 [pretrain] step=9140 loss=1.3526 lr=1.00e-03
+02:59:09 [pretrain] step=9160 loss=1.4145 lr=1.00e-03
+02:59:31 [pretrain] step=9180 loss=1.3662 lr=1.00e-03
+02:59:52 [pretrain] step=9200 loss=1.4182 lr=1.00e-03
+03:00:14 [pretrain] step=9220 loss=1.3762 lr=1.00e-03
+03:00:35 [pretrain] step=9240 loss=1.4185 lr=1.00e-03
+03:00:57 [pretrain] step=9260 loss=1.3368 lr=1.00e-03
+03:01:18 [pretrain] step=9280 loss=1.2757 lr=1.00e-03
+03:01:40 [pretrain] step=9300 loss=1.3962 lr=1.00e-03
+03:02:02 [pretrain] step=9320 loss=1.5985 lr=1.00e-03
+03:02:23 [pretrain] step=9340 loss=1.5032 lr=1.00e-03
+03:02:45 [pretrain] step=9360 loss=1.4520 lr=1.00e-03
+03:03:06 [pretrain] step=9380 loss=1.5562 lr=1.00e-03
+03:03:28 [pretrain] step=9400 loss=1.5128 lr=1.00e-03
+03:03:49 [pretrain] step=9420 loss=1.6568 lr=1.00e-03
+03:04:11 [pretrain] step=9440 loss=1.5291 lr=1.00e-03
+03:04:33 [pretrain] step=9460 loss=1.3972 lr=1.00e-03
+03:04:54 [pretrain] step=9480 loss=1.3845 lr=1.00e-03
+03:05:16 [pretrain] step=9500 loss=1.4843 lr=1.00e-03
+03:05:37 [pretrain] step=9520 loss=1.4759 lr=1.00e-03
+03:05:59 [pretrain] step=9540 loss=1.5295 lr=1.00e-03
+03:06:20 [pretrain] step=9560 loss=1.4134 lr=1.00e-03
+03:06:42 [pretrain] step=9580 loss=1.6713 lr=1.00e-03
+03:07:03 [pretrain] step=9600 loss=1.2554 lr=1.00e-03
+03:07:25 [pretrain] step=9620 loss=1.3084 lr=1.00e-03
+03:07:47 [pretrain] step=9640 loss=1.5351 lr=1.00e-03
+03:08:08 [pretrain] step=9660 loss=1.5715 lr=1.00e-03
+03:08:30 [pretrain] step=9680 loss=1.4885 lr=1.00e-03
+03:08:51 [pretrain] step=9700 loss=1.3282 lr=1.00e-03
+03:09:13 [pretrain] step=9720 loss=1.4752 lr=1.00e-03
+03:09:34 [pretrain] step=9740 loss=1.3728 lr=1.00e-03
+03:09:56 [pretrain] step=9760 loss=1.4009 lr=1.00e-03
+03:10:17 [pretrain] step=9780 loss=1.3895 lr=1.00e-03
+03:10:39 [pretrain] step=9800 loss=1.5476 lr=1.00e-03
+03:11:00 [pretrain] step=9820 loss=1.8780 lr=1.00e-03
+03:11:22 [pretrain] step=9840 loss=1.5260 lr=1.00e-03
+03:11:43 [pretrain] step=9860 loss=1.2684 lr=1.00e-03
+03:12:05 [pretrain] step=9880 loss=1.4156 lr=1.00e-03
+03:12:27 [pretrain] step=9900 loss=1.4321 lr=1.00e-03
+03:12:48 [pretrain] step=9920 loss=1.4968 lr=1.00e-03
+03:13:10 [pretrain] step=9940 loss=1.3694 lr=1.00e-03
+03:13:31 [pretrain] step=9960 loss=1.5467 lr=1.00e-03
+03:13:53 [pretrain] step=9980 loss=1.4512 lr=1.00e-03
+03:14:14 [pretrain] step=10000 loss=1.4987 lr=1.00e-03
+03:14:30 [pretrain] val=1.8835
+03:14:30 [ckpt] best_pretrain.pt step=10013 phase=pretrain
+03:14:32 [ckpt] last.pt step=10013 phase=pretrain
+03:14:39 [pretrain] step=10020 loss=1.5047 lr=1.00e-03
+03:15:00 [pretrain] step=10040 loss=1.5411 lr=1.00e-03
+03:15:21 [pretrain] step=10060 loss=1.4186 lr=1.00e-03
+03:15:42 [pretrain] step=10080 loss=1.6817 lr=1.00e-03
+03:16:04 [pretrain] step=10100 loss=1.4600 lr=1.00e-03
+03:16:26 [pretrain] step=10120 loss=1.5294 lr=1.00e-03
+03:16:47 [pretrain] step=10140 loss=1.5509 lr=1.00e-03
+03:17:09 [pretrain] step=10160 loss=1.5851 lr=1.00e-03
+03:17:30 [pretrain] step=10180 loss=1.6472 lr=1.00e-03
+03:17:52 [pretrain] step=10200 loss=1.5533 lr=1.00e-03
+03:18:13 [pretrain] step=10220 loss=1.6257 lr=1.00e-03
+03:18:35 [pretrain] step=10240 loss=1.4873 lr=1.00e-03
+03:18:56 [pretrain] step=10260 loss=1.4609 lr=1.00e-03
+03:19:18 [pretrain] step=10280 loss=1.5633 lr=1.00e-03
+03:19:40 [pretrain] step=10300 loss=1.2522 lr=1.00e-03
+03:20:01 [pretrain] step=10320 loss=1.3187 lr=1.00e-03
+03:20:23 [pretrain] step=10340 loss=1.4117 lr=1.00e-03
+03:20:44 [pretrain] step=10360 loss=1.3640 lr=1.00e-03
+03:21:06 [pretrain] step=10380 loss=1.7063 lr=1.00e-03
+03:21:27 [pretrain] step=10400 loss=1.6261 lr=1.00e-03
+03:21:49 [pretrain] step=10420 loss=1.4347 lr=1.00e-03
+03:22:10 [pretrain] step=10440 loss=1.5280 lr=1.00e-03
+03:22:32 [pretrain] step=10460 loss=1.4617 lr=1.00e-03
+03:22:53 [pretrain] step=10480 loss=1.3598 lr=1.00e-03
+03:23:15 [pretrain] step=10500 loss=1.4080 lr=1.00e-03
+03:23:37 [pretrain] step=10520 loss=1.6264 lr=1.00e-03
+03:23:58 [pretrain] step=10540 loss=1.4546 lr=1.00e-03
+03:24:20 [pretrain] step=10560 loss=1.3505 lr=1.00e-03
+03:24:41 [pretrain] step=10580 loss=1.3568 lr=1.00e-03
+03:25:03 [pretrain] step=10600 loss=1.4490 lr=1.00e-03
+03:25:24 [pretrain] step=10620 loss=1.5894 lr=1.00e-03
+03:25:46 [pretrain] step=10640 loss=1.4150 lr=1.00e-03
+03:26:07 [pretrain] step=10660 loss=1.3294 lr=1.00e-03
+03:26:29 [pretrain] step=10680 loss=1.4351 lr=1.00e-03
+03:26:51 [pretrain] step=10700 loss=1.2655 lr=1.00e-03
+03:27:12 [pretrain] step=10720 loss=1.2963 lr=1.00e-03
+03:27:34 [pretrain] step=10740 loss=1.3287 lr=1.00e-03
+03:27:55 [pretrain] step=10760 loss=1.3359 lr=1.00e-03
+03:28:17 [pretrain] step=10780 loss=1.6376 lr=1.00e-03
+03:28:38 [pretrain] step=10800 loss=1.2113 lr=1.00e-03
+03:29:00 [pretrain] step=10820 loss=1.4486 lr=1.00e-03
+03:29:21 [pretrain] step=10840 loss=1.5140 lr=1.00e-03
+03:29:43 [pretrain] step=10860 loss=1.4922 lr=1.00e-03
+03:30:05 [pretrain] step=10880 loss=1.4882 lr=1.00e-03
+03:30:26 [pretrain] step=10900 loss=1.4573 lr=1.00e-03
+03:30:48 [pretrain] step=10920 loss=1.3742 lr=1.00e-03
+03:31:09 [pretrain] step=10940 loss=1.5827 lr=1.00e-03
+03:31:31 [pretrain] step=10960 loss=1.0442 lr=1.00e-03
+03:31:52 [pretrain] step=10980 loss=1.5984 lr=1.00e-03
+03:32:14 [pretrain] step=11000 loss=1.3897 lr=1.00e-03
+03:32:35 [pretrain] step=11020 loss=1.6575 lr=1.00e-03
+03:32:57 [pretrain] step=11040 loss=1.7235 lr=1.00e-03
+03:33:19 [pretrain] step=11060 loss=1.4496 lr=1.00e-03
+03:33:40 [pretrain] step=11080 loss=1.3796 lr=1.00e-03
+03:34:02 [pretrain] step=11100 loss=1.4441 lr=1.00e-03
+03:34:23 [pretrain] step=11120 loss=1.7084 lr=1.00e-03
+03:34:45 [pretrain] step=11140 loss=1.7660 lr=1.00e-03
+03:35:06 [pretrain] step=11160 loss=1.5345 lr=1.00e-03
+03:35:28 [pretrain] step=11180 loss=1.2641 lr=1.00e-03
+03:35:49 [pretrain] step=11200 loss=1.4698 lr=1.00e-03
+03:36:11 [pretrain] step=11220 loss=1.4455 lr=1.00e-03
+03:36:33 [pretrain] step=11240 loss=1.3454 lr=1.00e-03
+03:36:54 [pretrain] step=11260 loss=1.3548 lr=1.00e-03
+03:37:16 [pretrain] step=11280 loss=1.6316 lr=1.00e-03
+03:37:37 [pretrain] step=11300 loss=1.4471 lr=1.00e-03
+03:37:59 [pretrain] step=11320 loss=1.3952 lr=1.00e-03
+03:38:20 [pretrain] step=11340 loss=1.3985 lr=1.00e-03
+03:38:42 [pretrain] step=11360 loss=1.4348 lr=1.00e-03
+03:39:03 [pretrain] step=11380 loss=1.4284 lr=1.00e-03
+03:39:25 [pretrain] step=11400 loss=1.4420 lr=1.00e-03
+03:39:46 [pretrain] step=11420 loss=1.4630 lr=1.00e-03
+03:40:08 [pretrain] step=11440 loss=1.2946 lr=1.00e-03
+03:40:30 [pretrain] step=11460 loss=1.1953 lr=1.00e-03
+03:40:51 [pretrain] step=11480 loss=1.3065 lr=1.00e-03
+03:41:13 [pretrain] step=11500 loss=1.3617 lr=1.00e-03
+03:41:34 [pretrain] step=11520 loss=1.5456 lr=1.00e-03
+03:41:56 [pretrain] step=11540 loss=1.6291 lr=1.00e-03
+03:42:17 [pretrain] step=11560 loss=1.5872 lr=1.00e-03
+03:42:39 [pretrain] step=11580 loss=1.3938 lr=1.00e-03
+03:43:00 [pretrain] step=11600 loss=1.2769 lr=1.00e-03
+03:43:22 [pretrain] step=11620 loss=1.4637 lr=1.00e-03
+03:43:44 [pretrain] step=11640 loss=1.2322 lr=1.00e-03
+03:44:05 [pretrain] step=11660 loss=1.2894 lr=1.00e-03
+03:44:27 [pretrain] step=11680 loss=1.4648 lr=1.00e-03
+03:44:30 [pretrain] val=1.9181
+03:44:32 [ckpt] last.pt step=11682 phase=pretrain
+03:44:51 [pretrain] step=11700 loss=1.3807 lr=1.00e-03
+03:45:12 [pretrain] step=11720 loss=1.3443 lr=1.00e-03
+03:45:34 [pretrain] step=11740 loss=1.2623 lr=1.00e-03
+03:45:55 [pretrain] step=11760 loss=1.5049 lr=1.00e-03
+03:46:17 [pretrain] step=11780 loss=1.5482 lr=1.00e-03
+03:46:38 [pretrain] step=11800 loss=1.4645 lr=1.00e-03
+03:47:00 [pretrain] step=11820 loss=1.4404 lr=1.00e-03
+03:47:21 [pretrain] step=11840 loss=1.3230 lr=1.00e-03
+03:47:43 [pretrain] step=11860 loss=1.4270 lr=1.00e-03
+03:48:05 [pretrain] step=11880 loss=1.2565 lr=1.00e-03
+03:48:26 [pretrain] step=11900 loss=1.4557 lr=1.00e-03
+03:48:48 [pretrain] step=11920 loss=1.4701 lr=1.00e-03
+03:49:09 [pretrain] step=11940 loss=1.4147 lr=1.00e-03
+03:49:31 [pretrain] step=11960 loss=1.1850 lr=1.00e-03
+03:49:52 [pretrain] step=11980 loss=1.5216 lr=1.00e-03
+03:50:14 [pretrain] step=12000 loss=1.4821 lr=1.00e-03
+03:50:35 [pretrain] step=12020 loss=1.2108 lr=1.00e-03
+03:50:57 [pretrain] step=12040 loss=1.2658 lr=1.00e-03
+03:51:18 [pretrain] step=12060 loss=1.5153 lr=1.00e-03
+03:51:40 [pretrain] step=12080 loss=1.3090 lr=1.00e-03
+03:52:02 [pretrain] step=12100 loss=1.2328 lr=1.00e-03
+03:52:23 [pretrain] step=12120 loss=1.4663 lr=1.00e-03
+03:52:45 [pretrain] step=12140 loss=1.3978 lr=1.00e-03
+03:53:06 [pretrain] step=12160 loss=1.4745 lr=1.00e-03
+03:53:28 [pretrain] step=12180 loss=1.1975 lr=1.00e-03
+03:53:49 [pretrain] step=12200 loss=1.5765 lr=1.00e-03
+03:54:11 [pretrain] step=12220 loss=1.4887 lr=1.00e-03
+03:54:32 [pretrain] step=12240 loss=1.4324 lr=1.00e-03
+03:54:54 [pretrain] step=12260 loss=1.4243 lr=1.00e-03
+03:55:16 [pretrain] step=12280 loss=1.5580 lr=1.00e-03
+03:55:37 [pretrain] step=12300 loss=1.3787 lr=1.00e-03
+03:55:59 [pretrain] step=12320 loss=1.5487 lr=1.00e-03
+03:56:20 [pretrain] step=12340 loss=1.4489 lr=1.00e-03
+03:56:42 [pretrain] step=12360 loss=1.3509 lr=1.00e-03
+03:57:03 [pretrain] step=12380 loss=1.6423 lr=1.00e-03
+03:57:25 [pretrain] step=12400 loss=1.5709 lr=1.00e-03
+03:57:46 [pretrain] step=12420 loss=1.3291 lr=1.00e-03
+03:58:08 [pretrain] step=12440 loss=1.5295 lr=1.00e-03
+03:58:29 [pretrain] step=12460 loss=1.4251 lr=1.00e-03
+03:58:51 [pretrain] step=12480 loss=1.3307 lr=1.00e-03
+03:59:13 [pretrain] step=12500 loss=1.2554 lr=1.00e-03
+03:59:34 [pretrain] step=12520 loss=1.3243 lr=1.00e-03
+03:59:56 [pretrain] step=12540 loss=1.4580 lr=1.00e-03
+04:00:17 [pretrain] step=12560 loss=1.3844 lr=1.00e-03
+04:00:39 [pretrain] step=12580 loss=1.6242 lr=1.00e-03
+04:01:00 [pretrain] step=12600 loss=1.4157 lr=1.00e-03
+04:01:22 [pretrain] step=12620 loss=1.4168 lr=1.00e-03
+04:01:43 [pretrain] step=12640 loss=1.5845 lr=1.00e-03
+04:02:05 [pretrain] step=12660 loss=1.6033 lr=1.00e-03
+04:02:27 [pretrain] step=12680 loss=1.5902 lr=1.00e-03
+04:02:48 [pretrain] step=12700 loss=1.4565 lr=1.00e-03
+04:03:10 [pretrain] step=12720 loss=1.4320 lr=1.00e-03
+04:03:31 [pretrain] step=12740 loss=1.2473 lr=1.00e-03
+04:03:53 [pretrain] step=12760 loss=1.4589 lr=1.00e-03
+04:04:14 [pretrain] step=12780 loss=1.3390 lr=1.00e-03
+04:04:36 [pretrain] step=12800 loss=1.3373 lr=1.00e-03
+04:04:57 [pretrain] step=12820 loss=1.0788 lr=1.00e-03
+04:05:19 [pretrain] step=12840 loss=1.3156 lr=1.00e-03
+04:05:40 [pretrain] step=12860 loss=1.4598 lr=1.00e-03
+04:06:02 [pretrain] step=12880 loss=1.5027 lr=1.00e-03
+04:06:24 [pretrain] step=12900 loss=1.5088 lr=1.00e-03
+04:06:45 [pretrain] step=12920 loss=1.5591 lr=1.00e-03
+04:07:07 [pretrain] step=12940 loss=1.3863 lr=1.00e-03
+04:07:28 [pretrain] step=12960 loss=1.2178 lr=1.00e-03
+04:07:50 [pretrain] step=12980 loss=1.1615 lr=1.00e-03
+04:08:11 [pretrain] step=13000 loss=1.3279 lr=1.00e-03
+04:08:33 [pretrain] step=13020 loss=1.4189 lr=1.00e-03
+04:08:55 [pretrain] step=13040 loss=1.5541 lr=1.00e-03
+04:09:16 [pretrain] step=13060 loss=1.4694 lr=1.00e-03
+04:09:38 [pretrain] step=13080 loss=1.4509 lr=1.00e-03
+04:09:59 [pretrain] step=13100 loss=1.4305 lr=1.00e-03
+04:10:21 [pretrain] step=13120 loss=1.2794 lr=1.00e-03
+04:10:42 [pretrain] step=13140 loss=1.1646 lr=1.00e-03
+04:11:04 [pretrain] step=13160 loss=1.3121 lr=1.00e-03
+04:11:25 [pretrain] step=13180 loss=1.4177 lr=1.00e-03
+04:11:47 [pretrain] step=13200 loss=1.2187 lr=1.00e-03
+04:12:08 [pretrain] step=13220 loss=1.5286 lr=1.00e-03
+04:12:30 [pretrain] step=13240 loss=1.4390 lr=1.00e-03
+04:12:52 [pretrain] step=13260 loss=1.4610 lr=1.00e-03
+04:13:13 [pretrain] step=13280 loss=1.3052 lr=1.00e-03
+04:13:35 [pretrain] step=13300 loss=1.4792 lr=1.00e-03
+04:13:56 [pretrain] step=13320 loss=1.2563 lr=1.00e-03
+04:14:18 [pretrain] step=13340 loss=1.3089 lr=1.00e-03
+04:14:31 [pretrain] val=1.9492
+04:14:32 [ckpt] last.pt step=13351 phase=pretrain
+04:14:42 [pretrain] step=13360 loss=1.3953 lr=1.00e-03
+04:15:03 [pretrain] step=13380 loss=1.1249 lr=1.00e-03
+04:15:24 [pretrain] step=13400 loss=1.4696 lr=1.00e-03
+04:15:45 [pretrain] step=13420 loss=1.4988 lr=1.00e-03
+04:16:07 [pretrain] step=13440 loss=1.3160 lr=1.00e-03
+04:16:28 [pretrain] step=13460 loss=1.4564 lr=1.00e-03
+04:16:50 [pretrain] step=13480 loss=1.3973 lr=1.00e-03
+04:17:11 [pretrain] step=13500 loss=1.2103 lr=1.00e-03
+04:17:33 [pretrain] step=13520 loss=1.3682 lr=1.00e-03
+04:17:54 [pretrain] step=13540 loss=1.4022 lr=1.00e-03
+04:18:16 [pretrain] step=13560 loss=1.4172 lr=1.00e-03
+04:18:37 [pretrain] step=13580 loss=1.2648 lr=1.00e-03
+04:18:59 [pretrain] step=13600 loss=1.4780 lr=1.00e-03
+04:19:21 [pretrain] step=13620 loss=1.2965 lr=1.00e-03
+04:19:42 [pretrain] step=13640 loss=1.2681 lr=1.00e-03
+04:20:04 [pretrain] step=13660 loss=1.2077 lr=1.00e-03
+04:20:25 [pretrain] step=13680 loss=1.3800 lr=1.00e-03
+04:20:47 [pretrain] step=13700 loss=1.2714 lr=1.00e-03
+04:21:08 [pretrain] step=13720 loss=1.4490 lr=1.00e-03
+04:21:30 [pretrain] step=13740 loss=1.3734 lr=1.00e-03
+04:21:51 [pretrain] step=13760 loss=1.3083 lr=1.00e-03
+04:22:13 [pretrain] step=13780 loss=1.2971 lr=1.00e-03
+04:22:35 [pretrain] step=13800 loss=1.4423 lr=1.00e-03
+04:22:56 [pretrain] step=13820 loss=1.4593 lr=1.00e-03
+04:23:18 [pretrain] step=13840 loss=1.1903 lr=1.00e-03
+04:23:39 [pretrain] step=13860 loss=1.5004 lr=1.00e-03
+04:24:01 [pretrain] step=13880 loss=1.4710 lr=1.00e-03
+04:24:22 [pretrain] step=13900 loss=1.3876 lr=1.00e-03
+04:24:44 [pretrain] step=13920 loss=1.4367 lr=1.00e-03
+04:25:05 [pretrain] step=13940 loss=1.4178 lr=1.00e-03
+04:25:27 [pretrain] step=13960 loss=1.1775 lr=1.00e-03
+04:25:48 [pretrain] step=13980 loss=1.3714 lr=1.00e-03
+04:26:10 [pretrain] step=14000 loss=1.4602 lr=1.00e-03
+04:26:32 [pretrain] step=14020 loss=1.1829 lr=1.00e-03
+04:26:53 [pretrain] step=14040 loss=1.4553 lr=1.00e-03
+04:27:15 [pretrain] step=14060 loss=1.3298 lr=1.00e-03
+04:27:36 [pretrain] step=14080 loss=1.3716 lr=1.00e-03
+04:27:58 [pretrain] step=14100 loss=1.3480 lr=1.00e-03
+04:28:19 [pretrain] step=14120 loss=1.3871 lr=1.00e-03
+04:28:41 [pretrain] step=14140 loss=1.4810 lr=1.00e-03
+04:29:02 [pretrain] step=14160 loss=1.4245 lr=1.00e-03
+04:29:24 [pretrain] step=14180 loss=1.4111 lr=1.00e-03
+04:29:46 [pretrain] step=14200 loss=1.4912 lr=1.00e-03
+04:30:07 [pretrain] step=14220 loss=1.4950 lr=1.00e-03
+04:30:29 [pretrain] step=14240 loss=1.2728 lr=1.00e-03
+04:30:50 [pretrain] step=14260 loss=1.2164 lr=1.00e-03
+04:31:12 [pretrain] step=14280 loss=1.3198 lr=1.00e-03
+04:31:33 [pretrain] step=14300 loss=1.0557 lr=1.00e-03
+04:31:55 [pretrain] step=14320 loss=1.1958 lr=1.00e-03
+04:32:17 [pretrain] step=14340 loss=1.3252 lr=1.00e-03
+04:32:38 [pretrain] step=14360 loss=1.4352 lr=1.00e-03
+04:33:00 [pretrain] step=14380 loss=1.4880 lr=1.00e-03
+04:33:21 [pretrain] step=14400 loss=1.3613 lr=1.00e-03
+04:33:43 [pretrain] step=14420 loss=1.1840 lr=1.00e-03
+04:34:04 [pretrain] step=14440 loss=1.3527 lr=1.00e-03
+04:34:26 [pretrain] step=14460 loss=1.3979 lr=1.00e-03
+04:34:48 [pretrain] step=14480 loss=1.5147 lr=1.00e-03
+04:35:09 [pretrain] step=14500 loss=1.3705 lr=1.00e-03
+04:35:31 [pretrain] step=14520 loss=1.2874 lr=1.00e-03
+04:35:52 [pretrain] step=14540 loss=1.2983 lr=1.00e-03
+04:36:14 [pretrain] step=14560 loss=1.2139 lr=1.00e-03
+04:36:35 [pretrain] step=14580 loss=1.1571 lr=1.00e-03
+04:36:57 [pretrain] step=14600 loss=1.7031 lr=1.00e-03
+04:37:18 [pretrain] step=14620 loss=1.3223 lr=1.00e-03
+04:37:40 [pretrain] step=14640 loss=1.3733 lr=1.00e-03
+04:38:01 [pretrain] step=14660 loss=1.3893 lr=1.00e-03
+04:38:23 [pretrain] step=14680 loss=1.4889 lr=1.00e-03
+04:38:45 [pretrain] step=14700 loss=1.3385 lr=1.00e-03
+04:39:06 [pretrain] step=14720 loss=1.2550 lr=1.00e-03
+04:39:28 [pretrain] step=14740 loss=1.4937 lr=1.00e-03
+04:39:49 [pretrain] step=14760 loss=1.3170 lr=1.00e-03
+04:40:11 [pretrain] step=14780 loss=1.1910 lr=1.00e-03
+04:40:32 [pretrain] step=14800 loss=1.1916 lr=1.00e-03
+04:40:54 [pretrain] step=14820 loss=1.7466 lr=1.00e-03
+04:41:16 [pretrain] step=14840 loss=1.3324 lr=1.00e-03
+04:41:37 [pretrain] step=14860 loss=1.4085 lr=1.00e-03
+04:41:59 [pretrain] step=14880 loss=1.4626 lr=1.00e-03
+04:42:20 [pretrain] step=14900 loss=1.3609 lr=1.00e-03
+04:42:42 [pretrain] step=14920 loss=1.1828 lr=1.00e-03
+04:43:03 [pretrain] step=14940 loss=1.3367 lr=1.00e-03
+04:43:25 [pretrain] step=14960 loss=1.6657 lr=1.00e-03
+04:43:46 [pretrain] step=14980 loss=1.2256 lr=1.00e-03
+04:44:08 [pretrain] step=15000 loss=1.4643 lr=1.00e-03
+04:44:30 [pretrain] step=15020 loss=1.4270 lr=1.00e-03
+04:44:32 [pretrain] val=1.8162
+04:44:33 [ckpt] best_pretrain.pt step=15021 phase=pretrain
+04:44:33 [ckpt] last.pt step=15021 phase=pretrain
+04:44:54 [pretrain] step=15040 loss=1.2578 lr=1.00e-03
+04:45:15 [pretrain] step=15060 loss=1.1338 lr=1.00e-03
+04:45:36 [pretrain] step=15080 loss=1.4131 lr=1.00e-03
+04:45:58 [pretrain] step=15100 loss=1.3433 lr=1.00e-03
+04:46:19 [pretrain] step=15120 loss=1.2825 lr=1.00e-03
+04:46:41 [pretrain] step=15140 loss=1.3873 lr=1.00e-03
+04:47:02 [pretrain] step=15160 loss=1.4220 lr=1.00e-03
+04:47:24 [pretrain] step=15180 loss=1.2255 lr=1.00e-03
+04:47:45 [pretrain] step=15200 loss=1.1695 lr=1.00e-03
+04:48:07 [pretrain] step=15220 loss=1.2324 lr=1.00e-03
+04:48:29 [pretrain] step=15240 loss=1.3596 lr=1.00e-03
+04:48:50 [pretrain] step=15260 loss=1.1172 lr=1.00e-03
+04:49:12 [pretrain] step=15280 loss=1.3148 lr=1.00e-03
+04:49:33 [pretrain] step=15300 loss=1.5092 lr=1.00e-03
+04:49:55 [pretrain] step=15320 loss=1.3725 lr=1.00e-03
+04:50:16 [pretrain] step=15340 loss=1.3175 lr=1.00e-03
+04:50:38 [pretrain] step=15360 loss=1.3889 lr=1.00e-03
+04:50:59 [pretrain] step=15380 loss=1.3663 lr=1.00e-03
+04:51:21 [pretrain] step=15400 loss=1.5163 lr=1.00e-03
+04:51:43 [pretrain] step=15420 loss=1.5499 lr=1.00e-03
+04:52:04 [pretrain] step=15440 loss=1.3121 lr=1.00e-03
+04:52:26 [pretrain] step=15460 loss=1.2326 lr=1.00e-03
+04:52:47 [pretrain] step=15480 loss=1.4173 lr=1.00e-03
+04:53:09 [pretrain] step=15500 loss=1.4350 lr=1.00e-03
+04:53:30 [pretrain] step=15520 loss=1.4515 lr=1.00e-03
+04:53:52 [pretrain] step=15540 loss=1.2076 lr=1.00e-03
+04:54:13 [pretrain] step=15560 loss=1.3418 lr=1.00e-03
+04:54:35 [pretrain] step=15580 loss=1.2644 lr=1.00e-03
+04:54:57 [pretrain] step=15600 loss=1.3948 lr=1.00e-03
+04:55:18 [pretrain] step=15620 loss=1.3692 lr=1.00e-03
+04:55:40 [pretrain] step=15640 loss=1.1528 lr=1.00e-03
+04:56:01 [pretrain] step=15660 loss=1.5112 lr=1.00e-03
+04:56:23 [pretrain] step=15680 loss=1.5549 lr=1.00e-03
+04:56:44 [pretrain] step=15700 loss=1.3513 lr=1.00e-03
+04:57:06 [pretrain] step=15720 loss=1.1986 lr=1.00e-03
+04:57:27 [pretrain] step=15740 loss=1.3221 lr=1.00e-03
+04:57:49 [pretrain] step=15760 loss=1.3586 lr=1.00e-03
+04:58:11 [pretrain] step=15780 loss=1.4280 lr=1.00e-03
+04:58:32 [pretrain] step=15800 loss=1.3260 lr=1.00e-03
+04:58:54 [pretrain] step=15820 loss=1.4663 lr=1.00e-03
+04:59:15 [pretrain] step=15840 loss=1.5144 lr=1.00e-03
+04:59:37 [pretrain] step=15860 loss=1.3896 lr=1.00e-03
+04:59:58 [pretrain] step=15880 loss=1.4559 lr=1.00e-03
+05:00:20 [pretrain] step=15900 loss=1.4464 lr=1.00e-03
+05:00:42 [pretrain] step=15920 loss=1.3007 lr=1.00e-03
+05:01:03 [pretrain] step=15940 loss=1.4436 lr=1.00e-03
+05:01:25 [pretrain] step=15960 loss=1.2300 lr=1.00e-03
+05:01:46 [pretrain] step=15980 loss=1.4182 lr=1.00e-03
+05:02:08 [pretrain] step=16000 loss=1.6060 lr=1.00e-03
+05:02:29 [pretrain] step=16020 loss=1.3617 lr=1.00e-03
+05:02:51 [pretrain] step=16040 loss=1.2154 lr=1.00e-03
+05:03:12 [pretrain] step=16060 loss=1.0303 lr=1.00e-03
+05:03:34 [pretrain] step=16080 loss=1.5569 lr=1.00e-03
+05:03:56 [pretrain] step=16100 loss=1.1247 lr=1.00e-03
+05:04:17 [pretrain] step=16120 loss=1.5163 lr=1.00e-03
+05:04:39 [pretrain] step=16140 loss=1.2878 lr=1.00e-03
+05:05:00 [pretrain] step=16160 loss=1.3073 lr=1.00e-03
+05:05:22 [pretrain] step=16180 loss=1.3758 lr=1.00e-03
+05:05:43 [pretrain] step=16200 loss=1.4682 lr=1.00e-03
+05:06:05 [pretrain] step=16220 loss=1.3214 lr=1.00e-03
+05:06:27 [pretrain] step=16240 loss=1.2319 lr=1.00e-03
+05:06:48 [pretrain] step=16260 loss=1.3277 lr=1.00e-03
+05:07:10 [pretrain] step=16280 loss=1.3472 lr=1.00e-03
+05:07:31 [pretrain] step=16300 loss=1.4954 lr=1.00e-03
+05:07:53 [pretrain] step=16320 loss=1.3128 lr=1.00e-03
+05:08:14 [pretrain] step=16340 loss=1.4835 lr=1.00e-03
+05:08:36 [pretrain] step=16360 loss=1.3020 lr=1.00e-03
+05:08:57 [pretrain] step=16380 loss=1.4615 lr=1.00e-03
+05:09:19 [pretrain] step=16400 loss=1.4537 lr=1.00e-03
+05:09:41 [pretrain] step=16420 loss=1.2205 lr=1.00e-03
+05:10:02 [pretrain] step=16440 loss=1.4208 lr=1.00e-03
+05:10:24 [pretrain] step=16460 loss=1.3419 lr=1.00e-03
+05:10:45 [pretrain] step=16480 loss=1.4598 lr=1.00e-03
+05:11:07 [pretrain] step=16500 loss=1.3098 lr=1.00e-03
+05:11:28 [pretrain] step=16520 loss=1.3398 lr=1.00e-03
+05:11:50 [pretrain] step=16540 loss=1.1112 lr=1.00e-03
+05:12:12 [pretrain] step=16560 loss=1.2759 lr=1.00e-03
+05:12:33 [pretrain] step=16580 loss=1.5600 lr=1.00e-03
+05:12:55 [pretrain] step=16600 loss=1.4057 lr=1.00e-03
+05:13:16 [pretrain] step=16620 loss=1.3243 lr=1.00e-03
+05:13:38 [pretrain] step=16640 loss=1.5435 lr=1.00e-03
+05:13:59 [pretrain] step=16660 loss=1.2675 lr=1.00e-03
+05:14:21 [pretrain] step=16680 loss=1.3145 lr=1.00e-03
+05:14:33 [pretrain] val=1.9588
+05:14:34 [ckpt] last.pt step=16690 phase=pretrain
+05:14:45 [pretrain] step=16700 loss=1.2650 lr=1.00e-03
+05:15:06 [pretrain] step=16720 loss=1.1643 lr=1.00e-03
+05:15:27 [pretrain] step=16740 loss=1.2161 lr=1.00e-03
+05:15:49 [pretrain] step=16760 loss=1.4094 lr=1.00e-03
+05:16:10 [pretrain] step=16780 loss=1.2119 lr=1.00e-03
+05:16:32 [pretrain] step=16800 loss=1.4810 lr=1.00e-03
+05:16:53 [pretrain] step=16820 loss=1.4022 lr=1.00e-03
+05:17:15 [pretrain] step=16840 loss=1.3249 lr=1.00e-03
+05:17:36 [pretrain] step=16860 loss=1.5758 lr=1.00e-03
+05:17:58 [pretrain] step=16880 loss=1.4451 lr=1.00e-03
+05:18:20 [pretrain] step=16900 loss=1.3099 lr=1.00e-03
+05:18:41 [pretrain] step=16920 loss=1.2328 lr=1.00e-03
+05:19:03 [pretrain] step=16940 loss=1.3558 lr=1.00e-03
+05:19:24 [pretrain] step=16960 loss=1.3216 lr=1.00e-03
+05:19:46 [pretrain] step=16980 loss=1.2771 lr=1.00e-03
+05:20:07 [pretrain] step=17000 loss=1.3196 lr=1.00e-03
+05:20:29 [pretrain] step=17020 loss=1.2824 lr=1.00e-03
+05:20:50 [pretrain] step=17040 loss=1.3403 lr=1.00e-03
+05:21:12 [pretrain] step=17060 loss=1.3392 lr=1.00e-03
+05:21:34 [pretrain] step=17080 loss=1.5365 lr=1.00e-03
+05:21:55 [pretrain] step=17100 loss=1.4035 lr=1.00e-03
+05:22:17 [pretrain] step=17120 loss=1.3579 lr=1.00e-03
+05:22:38 [pretrain] step=17140 loss=1.3290 lr=1.00e-03
+05:23:00 [pretrain] step=17160 loss=1.3425 lr=1.00e-03
+05:23:21 [pretrain] step=17180 loss=1.3761 lr=1.00e-03
+05:23:43 [pretrain] step=17200 loss=1.4407 lr=1.00e-03
+05:24:04 [pretrain] step=17220 loss=1.3278 lr=1.00e-03
+05:24:26 [pretrain] step=17240 loss=1.5128 lr=1.00e-03
+05:24:47 [pretrain] step=17260 loss=1.3500 lr=1.00e-03
+05:25:09 [pretrain] step=17280 loss=1.2965 lr=1.00e-03
+05:25:31 [pretrain] step=17300 loss=1.0953 lr=1.00e-03
+05:25:52 [pretrain] step=17320 loss=1.2848 lr=1.00e-03
+05:26:14 [pretrain] step=17340 loss=1.3779 lr=1.00e-03
+05:26:35 [pretrain] step=17360 loss=1.4313 lr=1.00e-03
+05:26:57 [pretrain] step=17380 loss=1.2029 lr=1.00e-03
+05:27:18 [pretrain] step=17400 loss=1.0973 lr=1.00e-03
+05:27:40 [pretrain] step=17420 loss=1.3406 lr=1.00e-03
+05:28:01 [pretrain] step=17440 loss=1.4938 lr=1.00e-03
+05:28:23 [pretrain] step=17460 loss=1.2173 lr=1.00e-03
+05:28:45 [pretrain] step=17480 loss=1.3183 lr=1.00e-03
+05:29:06 [pretrain] step=17500 loss=1.5325 lr=1.00e-03
+05:29:28 [pretrain] step=17520 loss=1.4274 lr=1.00e-03
+05:29:49 [pretrain] step=17540 loss=1.4268 lr=1.00e-03
+05:30:11 [pretrain] step=17560 loss=1.4107 lr=1.00e-03
+05:30:32 [pretrain] step=17580 loss=1.5078 lr=1.00e-03
+05:30:54 [pretrain] step=17600 loss=1.3604 lr=1.00e-03
+05:31:15 [pretrain] step=17620 loss=1.3337 lr=1.00e-03
+05:31:37 [pretrain] step=17640 loss=1.3136 lr=1.00e-03
+05:31:58 [pretrain] step=17660 loss=1.3125 lr=1.00e-03
+05:32:20 [pretrain] step=17680 loss=1.3042 lr=1.00e-03
+05:32:42 [pretrain] step=17700 loss=1.4860 lr=1.00e-03
+05:33:03 [pretrain] step=17720 loss=1.1586 lr=1.00e-03
+05:33:25 [pretrain] step=17740 loss=1.2627 lr=1.00e-03
+05:33:46 [pretrain] step=17760 loss=1.5247 lr=1.00e-03
+05:34:08 [pretrain] step=17780 loss=1.3508 lr=1.00e-03
+05:34:29 [pretrain] step=17800 loss=1.4523 lr=1.00e-03
+05:34:47 [ckpt] pretrain_end.pt step=17815 phase=finetune
+05:34:47 [train] switching to mixed finetune
+05:34:52 [finetune] step=17820 loss=1.4554 lr=1.00e-03
+05:35:13 [finetune] step=17840 loss=1.3766 lr=1.00e-03
+05:35:34 [finetune] step=17860 loss=1.2236 lr=1.00e-03
+05:35:56 [finetune] step=17880 loss=1.1415 lr=1.00e-03
+05:36:17 [finetune] step=17900 loss=1.2400 lr=1.00e-03
+05:36:39 [finetune] step=17920 loss=1.2306 lr=1.00e-03
+05:37:00 [finetune] step=17940 loss=0.8707 lr=1.00e-03
+05:37:22 [finetune] step=17960 loss=1.0037 lr=1.00e-03
+05:37:43 [finetune] step=17980 loss=0.9906 lr=1.00e-03
+05:38:05 [finetune] step=18000 loss=0.8072 lr=1.00e-03
+05:38:27 [finetune] step=18020 loss=0.8266 lr=1.00e-03
+05:38:48 [finetune] step=18040 loss=1.4283 lr=1.00e-03
+05:39:10 [finetune] step=18060 loss=1.2958 lr=1.00e-03
+05:39:31 [finetune] step=18080 loss=0.7742 lr=1.00e-03
+05:39:53 [finetune] step=18100 loss=1.5026 lr=1.00e-03
+05:40:14 [finetune] step=18120 loss=1.3252 lr=1.00e-03
+05:40:36 [finetune] step=18140 loss=0.9580 lr=1.00e-03
+05:40:57 [finetune] step=18160 loss=0.8072 lr=1.00e-03
+05:41:19 [finetune] step=18180 loss=1.5667 lr=9.99e-04
+05:41:40 [finetune] step=18200 loss=1.4701 lr=9.99e-04
+05:42:02 [finetune] step=18220 loss=1.4493 lr=9.99e-04
+05:42:23 [finetune] step=18240 loss=0.8512 lr=9.98e-04
+05:42:45 [finetune] step=18260 loss=1.4648 lr=9.98e-04
+05:43:07 [finetune] step=18280 loss=1.5703 lr=9.97e-04
+05:43:28 [finetune] step=18300 loss=1.4247 lr=9.96e-04
+05:43:50 [finetune] step=18320 loss=1.4249 lr=9.95e-04
+05:44:11 [finetune] step=18340 loss=0.7885 lr=9.94e-04
+05:44:33 [finetune] val=1.8577
+05:44:35 [finetune] parse=0/20 val=1.8577
+05:44:36 [ckpt] best_tool.pt step=18359 phase=finetune
+05:44:37 [ckpt] last.pt step=18359 phase=finetune
+05:44:38 [finetune] step=18360 loss=0.8484 lr=9.93e-04
+05:44:59 [finetune] step=18380 loss=0.7470 lr=9.92e-04
+05:45:20 [finetune] step=18400 loss=1.4813 lr=9.91e-04
+05:45:42 [finetune] step=18420 loss=1.3911 lr=9.89e-04
+05:46:03 [finetune] step=18440 loss=1.2364 lr=9.88e-04
+05:46:25 [finetune] step=18460 loss=0.7205 lr=9.86e-04
+05:46:46 [finetune] step=18480 loss=0.5350 lr=9.85e-04
+05:47:08 [finetune] step=18500 loss=1.3883 lr=9.83e-04
+05:47:29 [finetune] step=18520 loss=1.2648 lr=9.81e-04
+05:47:51 [finetune] step=18540 loss=1.6669 lr=9.79e-04
+05:48:13 [finetune] step=18560 loss=0.5776 lr=9.77e-04
+05:48:34 [finetune] step=18580 loss=0.6600 lr=9.75e-04
+05:48:56 [finetune] step=18600 loss=0.5884 lr=9.73e-04
+05:49:17 [finetune] step=18620 loss=0.5923 lr=9.71e-04
+05:49:39 [finetune] step=18640 loss=0.5721 lr=9.69e-04
+05:50:00 [finetune] step=18660 loss=1.6448 lr=9.67e-04
+05:50:22 [finetune] step=18680 loss=1.5443 lr=9.64e-04
+05:50:43 [finetune] step=18700 loss=0.6779 lr=9.62e-04
+05:51:05 [finetune] step=18720 loss=0.7760 lr=9.59e-04
+05:51:27 [finetune] step=18740 loss=1.4000 lr=9.56e-04
+05:51:48 [finetune] step=18760 loss=0.4957 lr=9.53e-04
+05:52:10 [finetune] step=18780 loss=1.1689 lr=9.51e-04
+05:52:31 [finetune] step=18800 loss=1.3196 lr=9.48e-04
+05:52:53 [finetune] step=18820 loss=0.7353 lr=9.45e-04
+05:53:14 [finetune] step=18840 loss=1.3924 lr=9.42e-04
+05:53:36 [finetune] step=18860 loss=1.4728 lr=9.38e-04
+05:53:57 [finetune] step=18880 loss=1.4522 lr=9.35e-04
+05:54:19 [finetune] step=18900 loss=1.3312 lr=9.32e-04
+05:54:40 [finetune] step=18920 loss=1.5219 lr=9.29e-04
+05:55:02 [finetune] step=18940 loss=0.5701 lr=9.25e-04
+05:55:24 [finetune] step=18960 loss=1.4493 lr=9.22e-04
+05:55:45 [finetune] step=18980 loss=1.3385 lr=9.18e-04
+05:56:07 [finetune] step=19000 loss=0.8441 lr=9.14e-04
+05:56:28 [finetune] step=19020 loss=1.5065 lr=9.10e-04
+05:56:50 [finetune] step=19040 loss=0.6229 lr=9.07e-04
+05:57:11 [finetune] step=19060 loss=1.4869 lr=9.03e-04
+05:57:33 [finetune] step=19080 loss=0.4155 lr=8.99e-04
+05:57:54 [finetune] step=19100 loss=1.4837 lr=8.95e-04
+05:58:16 [finetune] step=19120 loss=0.5196 lr=8.91e-04
+05:58:37 [finetune] step=19140 loss=1.5034 lr=8.86e-04
+05:58:59 [finetune] step=19160 loss=0.6766 lr=8.82e-04
+05:59:20 [finetune] step=19180 loss=1.3140 lr=8.78e-04
+05:59:42 [finetune] step=19200 loss=1.4134 lr=8.73e-04
+06:00:04 [finetune] step=19220 loss=1.2859 lr=8.69e-04
+06:00:25 [finetune] step=19240 loss=1.2457 lr=8.64e-04
+06:00:47 [finetune] step=19260 loss=0.5086 lr=8.60e-04
+06:01:08 [finetune] step=19280 loss=1.3043 lr=8.55e-04
+06:01:30 [finetune] step=19300 loss=1.3557 lr=8.50e-04
+06:01:51 [finetune] step=19320 loss=0.5062 lr=8.46e-04
+06:02:13 [finetune] step=19340 loss=1.1917 lr=8.41e-04
+06:02:34 [finetune] step=19360 loss=1.3875 lr=8.36e-04
+06:02:56 [finetune] step=19380 loss=1.5031 lr=8.31e-04
+06:03:17 [finetune] step=19400 loss=0.4781 lr=8.26e-04
+06:03:39 [finetune] step=19420 loss=0.5928 lr=8.21e-04
+06:04:00 [finetune] step=19440 loss=0.4868 lr=8.16e-04
+06:04:22 [finetune] step=19460 loss=1.2836 lr=8.10e-04
+06:04:44 [finetune] step=19480 loss=0.6697 lr=8.05e-04
+06:05:05 [finetune] step=19500 loss=0.5254 lr=8.00e-04
+06:05:27 [finetune] step=19520 loss=1.2819 lr=7.95e-04
+06:05:48 [finetune] step=19540 loss=1.3908 lr=7.89e-04
+06:06:09 [finetune] step=19560 loss=1.5708 lr=7.84e-04
+06:06:30 [finetune] step=19580 loss=1.4282 lr=7.79e-04
+06:06:50 [finetune] step=19600 loss=1.2874 lr=7.73e-04
+06:07:10 [finetune] step=19620 loss=1.3031 lr=7.68e-04
+06:07:30 [finetune] step=19640 loss=1.2752 lr=7.63e-04
+06:07:50 [finetune] step=19660 loss=1.2436 lr=7.58e-04
+06:08:10 [finetune] step=19680 loss=1.4306 lr=7.52e-04
+06:08:30 [finetune] step=19700 loss=1.2338 lr=7.47e-04
+06:08:51 [finetune] step=19720 loss=0.6718 lr=7.41e-04
+06:09:11 [finetune] step=19740 loss=0.4745 lr=7.36e-04
+06:09:31 [finetune] step=19760 loss=1.3027 lr=7.30e-04
+06:09:51 [finetune] step=19780 loss=0.3311 lr=7.25e-04
+06:10:11 [finetune] step=19800 loss=1.3092 lr=7.19e-04
+06:10:31 [finetune] step=19820 loss=0.4056 lr=7.14e-04
+06:10:51 [finetune] step=19840 loss=0.4647 lr=7.08e-04
+06:11:11 [finetune] step=19860 loss=1.3812 lr=7.02e-04
+06:11:31 [finetune] step=19880 loss=0.4462 lr=6.97e-04
+06:11:51 [finetune] step=19900 loss=1.3439 lr=6.91e-04
+06:12:12 [finetune] step=19920 loss=0.3944 lr=6.85e-04
+06:12:32 [finetune] step=19940 loss=0.4225 lr=6.79e-04
+06:12:52 [finetune] step=19960 loss=1.3938 lr=6.74e-04
+06:13:12 [finetune] step=19980 loss=0.3704 lr=6.68e-04
+06:13:32 [finetune] step=20000 loss=1.5125 lr=6.62e-04
+06:13:52 [finetune] step=20020 loss=1.2285 lr=6.56e-04
+06:14:12 [finetune] step=20040 loss=1.4294 lr=6.50e-04
+06:14:32 [finetune] step=20060 loss=1.3927 lr=6.44e-04
+06:14:34 [finetune] val=1.7599
+06:14:35 [finetune] parse=0/20 val=1.7599
+06:14:36 [ckpt] last.pt step=20060 phase=finetune
+06:14:56 [finetune] step=20080 loss=1.1526 lr=6.37e-04
+06:15:17 [finetune] step=20100 loss=0.4732 lr=6.31e-04
+06:15:37 [finetune] step=20120 loss=1.3881 lr=6.25e-04
+06:15:57 [finetune] step=20140 loss=0.2881 lr=6.19e-04
+06:16:17 [finetune] step=20160 loss=0.3581 lr=6.13e-04
+06:16:37 [finetune] step=20180 loss=0.4514 lr=6.07e-04
+06:16:57 [finetune] step=20200 loss=1.3173 lr=6.01e-04
+06:17:17 [finetune] step=20220 loss=0.3786 lr=5.95e-04
+06:17:37 [finetune] step=20240 loss=0.4389 lr=5.89e-04
+06:17:57 [finetune] step=20260 loss=0.3768 lr=5.83e-04
+06:18:17 [finetune] step=20280 loss=1.4269 lr=5.76e-04
+06:18:38 [finetune] step=20300 loss=0.4861 lr=5.70e-04
+06:18:58 [finetune] step=20320 loss=0.4782 lr=5.64e-04
+06:19:18 [finetune] step=20340 loss=0.5879 lr=5.58e-04
+06:19:38 [finetune] step=20360 loss=0.5960 lr=5.52e-04
+06:19:58 [finetune] step=20380 loss=0.4109 lr=5.46e-04
+06:20:18 [finetune] step=20400 loss=1.5116 lr=5.39e-04
+06:20:38 [finetune] step=20420 loss=1.1916 lr=5.33e-04
+06:20:58 [finetune] step=20440 loss=1.3061 lr=5.27e-04
+06:21:18 [finetune] step=20460 loss=0.3625 lr=5.21e-04
+06:21:38 [finetune] step=20480 loss=0.4473 lr=5.15e-04
+06:21:59 [finetune] step=20500 loss=0.4432 lr=5.08e-04
+06:22:19 [finetune] step=20520 loss=1.3280 lr=5.02e-04
+06:22:39 [finetune] step=20540 loss=1.3181 lr=4.96e-04
+06:22:59 [finetune] step=20560 loss=0.3404 lr=4.90e-04
+06:23:19 [finetune] step=20580 loss=0.3734 lr=4.83e-04
+06:23:39 [finetune] step=20600 loss=1.1771 lr=4.77e-04
+06:23:59 [finetune] step=20620 loss=0.3362 lr=4.71e-04
+06:24:19 [finetune] step=20640 loss=1.3700 lr=4.65e-04
+06:24:39 [finetune] step=20660 loss=0.2837 lr=4.59e-04
+06:24:59 [finetune] step=20680 loss=0.3371 lr=4.52e-04
+06:25:19 [finetune] step=20700 loss=1.3680 lr=4.46e-04
+06:25:40 [finetune] step=20720 loss=1.3298 lr=4.40e-04
+06:26:00 [finetune] step=20740 loss=0.4049 lr=4.34e-04
+06:26:20 [finetune] step=20760 loss=0.3360 lr=4.28e-04
+06:26:40 [finetune] step=20780 loss=0.3205 lr=4.22e-04
+06:27:00 [finetune] step=20800 loss=0.4720 lr=4.16e-04
+06:27:20 [finetune] step=20820 loss=1.2361 lr=4.09e-04
+06:27:40 [finetune] step=20840 loss=0.2618 lr=4.03e-04
+06:28:00 [finetune] step=20860 loss=1.2717 lr=3.97e-04
+06:28:20 [finetune] step=20880 loss=0.4524 lr=3.91e-04
+06:28:40 [finetune] step=20900 loss=0.4105 lr=3.85e-04
+06:29:01 [finetune] step=20920 loss=0.2505 lr=3.79e-04
+06:29:21 [finetune] step=20940 loss=0.4096 lr=3.73e-04
+06:29:41 [finetune] step=20960 loss=0.2824 lr=3.67e-04
+06:30:01 [finetune] step=20980 loss=1.1161 lr=3.61e-04
+06:30:21 [finetune] step=21000 loss=1.2201 lr=3.55e-04
+06:30:41 [finetune] step=21020 loss=0.4393 lr=3.49e-04
+06:31:01 [finetune] step=21040 loss=0.4084 lr=3.43e-04
+06:31:21 [finetune] step=21060 loss=0.3429 lr=3.37e-04
+06:31:41 [finetune] step=21080 loss=1.3638 lr=3.32e-04
+06:32:01 [finetune] step=21100 loss=1.0363 lr=3.26e-04
+06:32:22 [finetune] step=21120 loss=0.4668 lr=3.20e-04
+06:32:42 [finetune] step=21140 loss=0.3543 lr=3.14e-04
+06:33:02 [finetune] step=21160 loss=1.1791 lr=3.08e-04
+06:33:22 [finetune] step=21180 loss=1.0212 lr=3.03e-04
+06:33:42 [finetune] step=21200 loss=1.2523 lr=2.97e-04
+06:34:02 [finetune] step=21220 loss=0.4130 lr=2.91e-04
+06:34:22 [finetune] step=21240 loss=0.4778 lr=2.86e-04
+06:34:42 [finetune] step=21260 loss=1.2092 lr=2.80e-04
+06:35:02 [finetune] step=21280 loss=0.4449 lr=2.74e-04
+06:35:22 [finetune] step=21300 loss=1.1602 lr=2.69e-04
+06:35:43 [finetune] step=21320 loss=1.0993 lr=2.63e-04
+06:36:03 [finetune] step=21340 loss=0.3162 lr=2.58e-04
+06:36:23 [finetune] step=21360 loss=1.2945 lr=2.53e-04
+06:36:43 [finetune] step=21380 loss=1.3163 lr=2.47e-04
+06:37:03 [finetune] step=21400 loss=1.3247 lr=2.42e-04
+06:37:23 [finetune] step=21420 loss=0.3262 lr=2.37e-04
+06:37:43 [finetune] step=21440 loss=0.3395 lr=2.31e-04
+06:38:03 [finetune] step=21460 loss=0.2867 lr=2.26e-04
+06:38:23 [finetune] step=21480 loss=1.3735 lr=2.21e-04
+06:38:43 [finetune] step=21500 loss=1.7037 lr=2.16e-04
+06:39:04 [finetune] step=21520 loss=1.2514 lr=2.11e-04
+06:39:24 [finetune] step=21540 loss=1.2324 lr=2.06e-04
+06:39:44 [finetune] step=21560 loss=0.3604 lr=2.01e-04
+06:40:04 [finetune] step=21580 loss=1.2158 lr=1.96e-04
+06:40:24 [finetune] step=21600 loss=0.2969 lr=1.91e-04
+06:40:44 [finetune] step=21620 loss=0.2037 lr=1.86e-04
+06:41:04 [finetune] step=21640 loss=0.5309 lr=1.81e-04
+06:41:24 [finetune] step=21660 loss=0.4027 lr=1.76e-04
+06:41:44 [finetune] step=21680 loss=0.2396 lr=1.72e-04
+06:42:04 [finetune] step=21700 loss=1.1495 lr=1.67e-04
+06:42:25 [finetune] step=21720 loss=1.3394 lr=1.62e-04
+06:42:45 [finetune] step=21740 loss=1.1466 lr=1.58e-04
+06:43:05 [finetune] step=21760 loss=0.4053 lr=1.53e-04
+06:43:25 [finetune] step=21780 loss=1.0096 lr=1.49e-04
+06:43:45 [finetune] step=21800 loss=0.2305 lr=1.44e-04
+06:44:05 [finetune] step=21820 loss=0.4149 lr=1.40e-04
+06:44:25 [finetune] step=21840 loss=1.3055 lr=1.36e-04
+06:44:34 [finetune] val=1.7081
+06:44:35 [finetune] parse=0/20 val=1.7081
+06:44:37 [ckpt] last.pt step=21847 phase=finetune
+06:44:50 [finetune] step=21860 loss=1.2721 lr=1.31e-04
+06:45:10 [finetune] step=21880 loss=1.1838 lr=1.27e-04
+06:45:30 [finetune] step=21900 loss=1.4471 lr=1.22e-04
+06:45:50 [finetune] step=21920 loss=1.1493 lr=1.18e-04
+06:46:10 [finetune] step=21940 loss=1.3293 lr=1.14e-04
+06:46:30 [finetune] step=21960 loss=1.2763 lr=1.10e-04
+06:46:50 [finetune] step=21980 loss=0.2095 lr=1.07e-04
+06:47:10 [finetune] step=22000 loss=1.2173 lr=1.03e-04
+06:47:31 [finetune] step=22020 loss=0.3516 lr=9.90e-05
+06:47:51 [finetune] step=22040 loss=1.3937 lr=9.54e-05
+06:48:11 [finetune] step=22060 loss=1.1135 lr=9.17e-05
+06:48:31 [finetune] step=22080 loss=1.1354 lr=8.82e-05
+06:48:51 [finetune] step=22100 loss=0.2914 lr=8.47e-05
+06:49:11 [finetune] step=22120 loss=1.1403 lr=8.13e-05
+06:49:31 [finetune] step=22140 loss=0.1944 lr=7.79e-05
+06:49:51 [finetune] step=22160 loss=1.1642 lr=7.46e-05
+06:50:11 [finetune] step=22180 loss=1.1991 lr=7.14e-05
+06:50:31 [finetune] step=22200 loss=0.3500 lr=6.82e-05
+06:50:52 [finetune] step=22220 loss=0.4337 lr=6.51e-05
+06:51:12 [finetune] step=22240 loss=1.2621 lr=6.21e-05
+06:51:32 [finetune] step=22260 loss=1.3458 lr=5.91e-05
+06:51:52 [finetune] step=22280 loss=0.2804 lr=5.62e-05
+06:52:12 [finetune] step=22300 loss=0.3042 lr=5.34e-05
+06:52:32 [finetune] step=22320 loss=1.1994 lr=5.06e-05
+06:52:52 [finetune] step=22340 loss=0.2284 lr=4.79e-05
+06:53:12 [finetune] step=22360 loss=0.3218 lr=4.53e-05
+06:53:32 [finetune] step=22380 loss=0.9939 lr=4.28e-05
+06:53:52 [finetune] step=22400 loss=0.3749 lr=4.03e-05
+06:54:13 [finetune] step=22420 loss=0.2363 lr=3.79e-05
+06:54:33 [finetune] step=22440 loss=1.1523 lr=3.55e-05
+06:54:53 [finetune] step=22460 loss=0.3057 lr=3.33e-05
+06:55:13 [finetune] step=22480 loss=0.3718 lr=3.11e-05
+06:55:33 [finetune] step=22500 loss=0.3119 lr=2.90e-05
+06:55:53 [finetune] step=22520 loss=1.2590 lr=2.69e-05
+06:56:13 [finetune] step=22540 loss=0.3608 lr=2.49e-05
+06:56:33 [finetune] step=22560 loss=1.2268 lr=2.30e-05
+06:56:53 [finetune] step=22580 loss=0.3858 lr=2.12e-05
+06:57:13 [finetune] step=22600 loss=0.8985 lr=1.95e-05
+06:57:34 [finetune] step=22620 loss=0.3516 lr=1.78e-05
+06:57:54 [finetune] step=22640 loss=0.2506 lr=1.62e-05
+06:58:14 [finetune] step=22660 loss=1.2472 lr=1.46e-05
+06:58:34 [finetune] step=22680 loss=1.1008 lr=1.32e-05
+06:58:54 [finetune] step=22700 loss=0.2756 lr=1.18e-05
+06:59:14 [finetune] step=22720 loss=0.2446 lr=1.05e-05
+06:59:34 [finetune] step=22740 loss=1.2388 lr=9.28e-06
+06:59:54 [finetune] step=22760 loss=1.1170 lr=8.13e-06
+07:00:14 [finetune] step=22780 loss=1.2510 lr=7.05e-06
+07:00:34 [finetune] step=22800 loss=1.3358 lr=6.05e-06
+07:00:54 [finetune] step=22820 loss=0.3906 lr=5.12e-06
+07:01:15 [finetune] step=22840 loss=1.2197 lr=4.27e-06
+07:01:35 [finetune] step=22860 loss=0.3213 lr=3.50e-06
+07:01:55 [finetune] step=22880 loss=1.0780 lr=2.80e-06
+07:02:15 [finetune] step=22900 loss=1.1787 lr=2.19e-06
+07:02:35 [finetune] step=22920 loss=0.3879 lr=1.64e-06
+07:02:55 [finetune] step=22940 loss=1.1231 lr=1.18e-06
+07:03:15 [finetune] step=22960 loss=0.2512 lr=7.91e-07
+07:03:35 [finetune] step=22980 loss=1.2392 lr=4.80e-07
+07:03:55 [finetune] step=23000 loss=0.2474 lr=2.47e-07
+07:04:15 [finetune] step=23020 loss=0.2704 lr=9.01e-08
+07:04:36 [finetune] step=23040 loss=0.1702 lr=1.08e-08
+07:04:47 [ckpt] last.pt step=23050 phase=finetune
+07:04:47 [export] checkpoint best_tool.pt
+07:04:50 [export] D:/C++/LocalAI/ncm_gguf/code_ncm_q8.gguf 149.8 MB max_abs_sample=0.3153
+07:04:59 [check]
+parsed 0/20
+think_names_file 0/20
+copied_args 0/20
+sample:
+
+followup:
+no read to follow
+
+07:04:59 [done]
+08:46:52 [cont] budget 10800s from best_pretrain lr=0.0003
+08:46:52 [data] loading D:/C++/LocalAI/code_artifacts_agent\data_p128.npz
+08:46:55 [cont] loaded best_pretrain.pt step=15021 session_step=0
+08:46:56 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n/ / the referee. regurenn the en we netnnnentnnt then tnnnenenn then nenn the rentenen when thhe ten eenennt the nnn nur thee  attionniatintain ntoination  in tationaionniatinatioonataatiaato then hean deenntonnation a
+  src\SystemTemps.cpp hit=1 ##inllude#ndiidininilililiinnulllililiiilinnuulh\n#inlliiliuuidiniilulllliinuulllinllin  ullliniliiiiiiiliinlluniiiiiiiilliilllh\n#inlllicclliiiiuiilniinliuudinclude<<iiinvoidion/diivallnma"\n#inludersttiitistristrin
+  src\WindowCatalog.cpp hit=1 \n#include <<div/land/d/ontinion.hhh"\n#include "alldd//adindandintation/rallaaaalllallntaonnnnoonationaatizationshh\n#include <atationaddadddnntitation/callllntionnnonttinatiniztationalllalunatioonooonnnatiinaatation
+  CLAUDE.md hit=0  the ehhere eee e recurenn the en we ne when th nenn theirefeer all (ll valualvalualee calliully rereree eere r all (lay` and addinitialatattalliztaninitialiiiitialilattallatatatizentialilition nn the neneee the the nnnn
+08:47:22 [cont] step=15041 loss=1.8338 lr=3.00e-05
+08:47:45 [cont] step=15061 loss=1.4088 lr=6.00e-05
+08:48:06 [cont] step=15081 loss=1.3383 lr=9.00e-05
+08:48:26 [cont] step=15101 loss=1.3430 lr=1.20e-04
+08:48:46 [cont] step=15121 loss=1.2426 lr=1.50e-04
+08:49:06 [cont] step=15141 loss=1.2445 lr=1.80e-04
+08:49:28 [cont] step=15161 loss=1.3116 lr=2.10e-04
+08:49:56 [cont] step=15181 loss=1.2812 lr=2.40e-04
+08:50:24 [cont] step=15201 loss=1.3363 lr=2.70e-04
+08:50:52 [cont] step=15221 loss=1.4874 lr=3.00e-04
+08:51:17 [cont] step=15241 loss=1.1716 lr=3.00e-04
+08:51:39 [cont] step=15261 loss=1.2413 lr=3.00e-04
+08:52:07 [cont] step=15281 loss=1.4876 lr=3.00e-04
+08:52:31 [cont] step=15301 loss=1.1816 lr=3.00e-04
+08:52:56 [cont] step=15321 loss=1.4343 lr=3.00e-04
+08:53:20 [cont] step=15341 loss=1.3244 lr=3.00e-04
+08:53:44 [cont] step=15361 loss=1.3170 lr=3.00e-04
+08:54:09 [cont] step=15381 loss=1.0501 lr=3.00e-04
+08:54:33 [cont] step=15401 loss=1.1589 lr=3.00e-04
+08:55:02 [cont] step=15421 loss=1.3815 lr=3.00e-04
+08:55:26 [cont] step=15441 loss=1.2619 lr=3.00e-04
+08:55:50 [cont] step=15461 loss=1.1084 lr=3.00e-04
+08:56:13 [cont] step=15481 loss=1.1884 lr=3.00e-04
+08:56:37 [cont] step=15501 loss=1.2968 lr=3.00e-04
+08:57:01 [cont] step=15521 loss=1.3316 lr=3.00e-04
+08:57:24 [cont] step=15541 loss=1.3303 lr=3.00e-04
+08:57:48 [cont] step=15561 loss=1.2539 lr=3.00e-04
+08:58:11 [cont] step=15581 loss=1.1707 lr=3.00e-04
+08:58:34 [cont] step=15601 loss=1.2153 lr=3.00e-04
+08:58:58 [cont] step=15621 loss=1.1531 lr=3.00e-04
+08:59:21 [cont] step=15641 loss=1.3113 lr=3.00e-04
+08:59:44 [cont] step=15661 loss=1.2373 lr=3.00e-04
+09:00:08 [cont] step=15681 loss=1.1808 lr=3.00e-04
+09:00:31 [cont] step=15701 loss=1.2278 lr=3.00e-04
+09:00:55 [cont] step=15721 loss=1.0979 lr=3.00e-04
+09:01:18 [cont] step=15741 loss=1.2868 lr=3.00e-04
+09:01:42 [cont] step=15761 loss=1.2758 lr=3.00e-04
+09:02:06 [cont] step=15781 loss=1.1338 lr=3.00e-04
+09:02:29 [cont] step=15801 loss=1.0681 lr=3.00e-04
+09:02:53 [cont] step=15821 loss=1.1499 lr=3.00e-04
+09:03:16 [cont] step=15841 loss=1.3573 lr=3.00e-04
+09:03:39 [cont] step=15861 loss=1.3869 lr=3.00e-04
+09:04:03 [cont] step=15881 loss=1.3296 lr=3.00e-04
+09:04:26 [cont] step=15901 loss=1.3245 lr=3.00e-04
+09:04:50 [cont] step=15921 loss=1.4259 lr=3.00e-04
+09:05:14 [cont] step=15941 loss=1.2031 lr=3.00e-04
+09:05:37 [cont] step=15961 loss=1.1649 lr=3.00e-04
+09:06:01 [cont] step=15981 loss=1.3553 lr=3.00e-04
+09:06:24 [cont] step=16001 loss=1.2390 lr=3.00e-04
+09:06:48 [cont] step=16021 loss=1.3792 lr=3.00e-04
+09:07:11 [cont] step=16041 loss=1.2350 lr=3.00e-04
+09:07:35 [cont] step=16061 loss=1.2813 lr=3.00e-04
+09:07:58 [cont] step=16081 loss=1.3131 lr=3.00e-04
+09:08:22 [cont] step=16101 loss=1.2934 lr=3.00e-04
+09:08:45 [cont] step=16121 loss=1.1422 lr=3.00e-04
+09:09:09 [cont] step=16141 loss=1.0177 lr=3.00e-04
+09:09:33 [cont] step=16161 loss=1.2830 lr=3.00e-04
+09:09:55 [cont] step=16181 loss=1.2895 lr=3.00e-04
+09:10:17 [cont] step=16201 loss=1.3060 lr=3.00e-04
+09:10:38 [cont] step=16221 loss=1.1890 lr=3.00e-04
+09:10:58 [cont] step=16241 loss=1.2678 lr=3.00e-04
+09:11:18 [cont] step=16261 loss=1.3342 lr=3.00e-04
+09:11:38 [cont] step=16281 loss=1.0189 lr=3.00e-04
+09:11:59 [cont] step=16301 loss=1.1888 lr=3.00e-04
+09:12:19 [cont] step=16321 loss=1.3070 lr=3.00e-04
+09:12:39 [cont] step=16341 loss=1.1451 lr=3.00e-04
+09:13:00 [cont] step=16361 loss=1.3341 lr=3.00e-04
+09:13:20 [cont] step=16381 loss=1.5346 lr=3.00e-04
+09:13:45 [cont] step=16401 loss=1.2043 lr=3.00e-04
+09:14:07 [cont] step=16421 loss=1.0994 lr=3.00e-04
+09:14:29 [cont] step=16441 loss=1.2972 lr=3.00e-04
+09:14:53 [cont] step=16461 loss=1.4195 lr=3.00e-04
+09:15:16 [cont] step=16481 loss=1.0417 lr=3.00e-04
+09:15:39 [cont] step=16501 loss=1.1287 lr=3.00e-04
+09:16:02 [cont] step=16521 loss=1.2234 lr=3.00e-04
+09:16:25 [cont] step=16541 loss=1.4658 lr=3.00e-04
+09:16:48 [cont] step=16561 loss=1.1353 lr=3.00e-04
+09:16:58 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n// rereenenddnnednnnnend the nnnnten nenen nen nenn the refennnd. then nnten nennnennnnnnnnnennnnt net nn then nenn then ent heerffennnd on the refennnd  hhennennnnn then then don the refennnd. then nn then nenn the ee
+  src\SystemTemps.cpp hit=1 \n#include <cstdit.h>\n#include <nh>\n#include <\n#incld\n#includ\ninclue\ninclue\ninclue\ninclue#include\nnnlus...h\n#inclldee <rerror/mooser.oroos...oroos...oreerorrrrorError/eerrros//errrrs/errorrErrors.ei
+  src\WindowCatalog.cpp hit=1 hh\n\n#include <atiitinnppopotionsh>\n#include <s.h>\n#include <toto/tool/Col>ContenrraltContatinzationnattinzatiiontinttinnonaterError(orrrorrrrorrrorrrorrrorrrorrrrrrrorrrrrrrorrrorrrorrroornnenderenceeddrendrendre
+  CLAUDE.md hit=0  the the eefened cerened rennened nn thelreferennnenddnd fernenn  ontthe refeeen conthe nenenine  erendd cereened nn the rerendettininitie.Bitianinitiinninitiinninitinnninitiinniniinitialiittintereded cerenddddendenc, re
+09:16:58 [cont] val=1.7561 id_hits=2/4
+09:17:00 [ckpt] cont_best.pt step=16567 phase=cont
+09:17:00 [ckpt] cont_last.pt step=16567 phase=cont
+09:17:17 [cont] step=16581 loss=0.9327 lr=3.00e-04
+09:17:38 [cont] step=16601 loss=1.3027 lr=3.00e-04
+09:17:59 [cont] step=16621 loss=1.1195 lr=3.00e-04
+09:18:19 [cont] step=16641 loss=1.3299 lr=3.00e-04
+09:18:43 [cont] step=16661 loss=1.2226 lr=3.00e-04
+09:19:06 [cont] step=16681 loss=1.1586 lr=3.00e-04
+09:19:27 [cont] step=16701 loss=1.0840 lr=3.00e-04
+09:19:51 [cont] step=16721 loss=1.2136 lr=3.00e-04
+09:20:13 [cont] step=16741 loss=1.0834 lr=3.00e-04
+09:20:38 [cont] step=16761 loss=1.1944 lr=3.00e-04
+09:21:00 [cont] step=16781 loss=1.1507 lr=3.00e-04
+09:21:21 [cont] step=16801 loss=1.2672 lr=3.00e-04
+09:21:43 [cont] step=16821 loss=1.2127 lr=3.00e-04
+09:22:04 [cont] step=16841 loss=1.3587 lr=3.00e-04
+09:22:26 [cont] step=16861 loss=1.1816 lr=3.00e-04
+09:22:47 [cont] step=16881 loss=1.2004 lr=3.00e-04
+09:23:08 [cont] step=16901 loss=1.1911 lr=3.00e-04
+09:23:30 [cont] step=16921 loss=1.0940 lr=3.00e-04
+09:23:52 [cont] step=16941 loss=1.1951 lr=3.00e-04
+09:24:14 [cont] step=16961 loss=1.3206 lr=3.00e-04
+09:24:36 [cont] step=16981 loss=1.3347 lr=3.00e-04
+09:24:59 [cont] step=17001 loss=1.0724 lr=3.00e-04
+09:25:19 [cont] step=17021 loss=1.3044 lr=3.00e-04
+09:25:41 [cont] step=17041 loss=1.3379 lr=3.00e-04
+09:26:04 [cont] step=17061 loss=1.3752 lr=3.00e-04
+09:26:28 [cont] step=17081 loss=1.2188 lr=3.00e-04
+09:26:50 [cont] step=17101 loss=1.2180 lr=3.00e-04
+09:27:12 [cont] step=17121 loss=1.1895 lr=3.00e-04
+09:27:34 [cont] step=17141 loss=1.2661 lr=3.00e-04
+09:27:57 [cont] step=17161 loss=1.0187 lr=3.00e-04
+09:28:19 [cont] step=17181 loss=1.1462 lr=3.00e-04
+09:28:42 [cont] step=17201 loss=1.4166 lr=3.00e-04
+09:29:05 [cont] step=17221 loss=1.2644 lr=3.00e-04
+09:29:26 [cont] step=17241 loss=1.2559 lr=3.00e-04
+09:29:46 [cont] step=17261 loss=1.1496 lr=3.00e-04
+09:30:07 [cont] step=17281 loss=1.0660 lr=3.00e-04
+09:30:29 [cont] step=17301 loss=1.0841 lr=3.00e-04
+09:30:52 [cont] step=17321 loss=1.1027 lr=3.00e-04
+09:31:15 [cont] step=17341 loss=1.1991 lr=3.00e-04
+09:31:37 [cont] step=17361 loss=1.2612 lr=3.00e-04
+09:32:00 [cont] step=17381 loss=1.2546 lr=3.00e-04
+09:32:23 [cont] step=17401 loss=1.2002 lr=3.00e-04
+09:32:44 [cont] step=17421 loss=1.2468 lr=3.00e-04
+09:33:10 [cont] step=17441 loss=1.2434 lr=3.00e-04
+09:33:34 [cont] step=17461 loss=1.2808 lr=3.00e-04
+09:33:59 [cont] step=17481 loss=1.0683 lr=3.00e-04
+09:34:23 [cont] step=17501 loss=1.4139 lr=3.00e-04
+09:34:48 [cont] step=17521 loss=1.2426 lr=3.00e-04
+09:35:13 [cont] step=17541 loss=1.3383 lr=3.00e-04
+09:35:37 [cont] step=17561 loss=1.2814 lr=3.00e-04
+09:36:02 [cont] step=17581 loss=1.2477 lr=3.00e-04
+09:36:27 [cont] step=17601 loss=1.2988 lr=3.00e-04
+09:36:52 [cont] step=17621 loss=1.1109 lr=3.00e-04
+09:37:17 [cont] step=17641 loss=1.0599 lr=3.00e-04
+09:37:41 [cont] step=17661 loss=1.1944 lr=3.00e-04
+09:38:06 [cont] step=17681 loss=0.9199 lr=3.00e-04
+09:38:30 [cont] step=17701 loss=1.4431 lr=3.00e-04
+09:38:54 [cont] step=17721 loss=1.1431 lr=3.00e-04
+09:39:18 [cont] step=17741 loss=1.0128 lr=3.00e-04
+09:39:44 [cont] step=17761 loss=1.0655 lr=3.00e-04
+09:40:09 [cont] step=17781 loss=1.1433 lr=3.00e-04
+09:40:34 [cont] step=17801 loss=1.3266 lr=3.00e-04
+09:40:59 [cont] step=17821 loss=1.2663 lr=3.00e-04
+09:41:20 [cont] step=17841 loss=1.1421 lr=3.00e-04
+09:41:40 [cont] step=17861 loss=1.2639 lr=3.00e-04
+09:42:00 [cont] step=17881 loss=1.2894 lr=3.00e-04
+09:42:21 [cont] step=17901 loss=1.0520 lr=3.00e-04
+09:42:41 [cont] step=17921 loss=1.1240 lr=3.00e-04
+09:43:02 [cont] step=17941 loss=1.2573 lr=3.00e-04
+09:43:23 [cont] step=17961 loss=1.2481 lr=3.00e-04
+09:43:48 [cont] step=17981 loss=1.2386 lr=3.00e-04
+09:44:13 [cont] step=18001 loss=1.1709 lr=3.00e-04
+09:44:36 [cont] step=18021 loss=1.3776 lr=3.00e-04
+09:44:56 [cont] step=18041 loss=1.2222 lr=3.00e-04
+09:45:17 [cont] step=18061 loss=1.2629 lr=3.00e-04
+09:45:38 [cont] step=18081 loss=1.1691 lr=3.00e-04
+09:46:00 [cont] step=18101 loss=1.1194 lr=3.00e-04
+09:46:21 [cont] step=18121 loss=1.2270 lr=3.00e-04
+09:46:43 [cont] step=18141 loss=1.4623 lr=3.00e-04
+09:47:03 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n/  / hhrrer pereeee hereeeeeeeeerer hrr heeeeer her pereference raaaaarefeeenence he hearararaareer hereferenced the tharararaareer hrr her her her pereeer her her her her  eeeeer her hee cereeer her preeeeeerer heeeee
+  src\SystemTemps.cpp hit=1 \n#include <csddth.h>\n#include <unclul>\n#incl>\n#incll unclul>\n#inclucclnnnncllincll>\n#incll\n#inclu unclull\n#incll\n#incll\n#incll\n#inclucncunclulllnnull\n#inclu unclull\n#incl>\n#incl>\n#includ unn
+  src\WindowCatalog.cpp hit=1 \n#include <csddth.h>\n#include <<cclul>\n#incl>\n#incl>\n#incl>\n#includ ccnnl>\n#incll\n#incll\n#incl>\n#incll\n#incl>\n#incll\n#incll\n#incll\n#inclu unclull\n#inclu unclull\n#incl>\n#incl>\n#includ
+  CLAUDE.md hit=0 ::\n##include tion>\n\nWe line the threeer rr hrr her hrr her her peeeereenenc the heeferee, rerr hereerennned the threadaar iinitinininininininininininininininitiniinnininnniinitianiizitive the thereferereference 
+09:47:03 [cont] val=1.7069 id_hits=2/4
+09:47:04 [ckpt] cont_best.pt step=18157 phase=cont
+09:47:05 [ckpt] cont_last.pt step=18157 phase=cont
+09:47:10 [cont] step=18161 loss=1.2347 lr=3.00e-04
+09:47:31 [cont] step=18181 loss=1.1351 lr=3.00e-04
+09:47:51 [cont] step=18201 loss=1.2487 lr=3.00e-04
+09:48:12 [cont] step=18221 loss=1.1623 lr=3.00e-04
+09:48:32 [cont] step=18241 loss=1.1971 lr=3.00e-04
+09:48:53 [cont] step=18261 loss=1.4305 lr=3.00e-04
+09:49:15 [cont] step=18281 loss=1.2327 lr=3.00e-04
+09:49:38 [cont] step=18301 loss=1.2819 lr=3.00e-04
+09:50:00 [cont] step=18321 loss=0.9963 lr=3.00e-04
+09:50:21 [cont] step=18341 loss=1.3581 lr=3.00e-04
+09:50:42 [cont] step=18361 loss=1.1251 lr=3.00e-04
+09:51:07 [cont] step=18381 loss=1.3283 lr=3.00e-04
+09:51:32 [cont] step=18401 loss=1.1903 lr=3.00e-04
+09:52:01 [cont] step=18421 loss=1.1507 lr=3.00e-04
+09:52:24 [cont] step=18441 loss=1.2705 lr=3.00e-04
+09:52:47 [cont] step=18461 loss=1.1157 lr=3.00e-04
+09:53:10 [cont] step=18481 loss=1.1222 lr=3.00e-04
+09:53:33 [cont] step=18501 loss=1.0740 lr=3.00e-04
+09:53:56 [cont] step=18521 loss=1.1598 lr=3.00e-04
+09:54:18 [cont] step=18541 loss=1.2852 lr=3.00e-04
+09:54:42 [cont] step=18561 loss=1.3497 lr=3.00e-04
+09:55:05 [cont] step=18581 loss=1.4038 lr=3.00e-04
+09:55:29 [cont] step=18601 loss=1.3595 lr=3.00e-04
+09:55:54 [cont] step=18621 loss=1.1248 lr=3.00e-04
+09:56:19 [cont] step=18641 loss=1.2425 lr=3.00e-04
+09:56:41 [cont] step=18661 loss=1.3270 lr=3.00e-04
+09:57:04 [cont] step=18681 loss=1.1590 lr=3.00e-04
+09:57:27 [cont] step=18701 loss=1.1583 lr=3.00e-04
+09:57:50 [cont] step=18721 loss=1.2963 lr=3.00e-04
+09:58:12 [cont] step=18741 loss=1.1988 lr=3.00e-04
+09:58:35 [cont] step=18761 loss=1.2425 lr=3.00e-04
+09:58:57 [cont] step=18781 loss=1.2292 lr=3.00e-04
+09:59:20 [cont] step=18801 loss=1.0830 lr=3.00e-04
+09:59:44 [cont] step=18821 loss=1.3907 lr=3.00e-04
+10:00:04 [cont] step=18841 loss=1.2618 lr=3.00e-04
+10:00:25 [cont] step=18861 loss=1.2292 lr=3.00e-04
+10:00:45 [cont] step=18881 loss=1.0950 lr=3.00e-04
+10:01:06 [cont] step=18901 loss=1.3292 lr=3.00e-04
+10:01:26 [cont] step=18921 loss=1.3299 lr=3.00e-04
+10:01:47 [cont] step=18941 loss=1.1500 lr=3.00e-04
+10:02:07 [cont] step=18961 loss=1.0459 lr=3.00e-04
+10:02:27 [cont] step=18981 loss=1.3663 lr=3.00e-04
+10:02:48 [cont] step=19001 loss=1.1210 lr=3.00e-04
+10:03:08 [cont] step=19021 loss=1.1517 lr=3.00e-04
+10:03:29 [cont] step=19041 loss=1.2706 lr=3.00e-04
+10:03:49 [cont] step=19061 loss=1.0409 lr=3.00e-04
+10:04:09 [cont] step=19081 loss=1.0990 lr=3.00e-04
+10:04:30 [cont] step=19101 loss=1.1409 lr=3.00e-04
+10:04:51 [cont] step=19121 loss=1.2651 lr=3.00e-04
+10:05:11 [cont] step=19141 loss=1.2310 lr=3.00e-04
+10:05:32 [cont] step=19161 loss=1.3074 lr=3.00e-04
+10:05:52 [cont] step=19181 loss=1.1148 lr=3.00e-04
+10:06:12 [cont] step=19201 loss=1.2766 lr=3.00e-04
+10:06:33 [cont] step=19221 loss=1.2109 lr=3.00e-04
+10:06:53 [cont] step=19241 loss=1.1767 lr=3.00e-04
+10:07:14 [cont] step=19261 loss=1.1287 lr=3.00e-04
+10:07:34 [cont] step=19281 loss=1.0583 lr=3.00e-04
+10:07:55 [cont] step=19301 loss=1.0940 lr=3.00e-04
+10:08:15 [cont] step=19321 loss=1.1027 lr=3.00e-04
+10:08:35 [cont] step=19341 loss=1.1275 lr=3.00e-04
+10:08:56 [cont] step=19361 loss=1.2295 lr=3.00e-04
+10:09:16 [cont] step=19381 loss=1.2477 lr=3.00e-04
+10:09:37 [cont] step=19401 loss=1.2478 lr=3.00e-04
+10:09:57 [cont] step=19421 loss=1.0302 lr=3.00e-04
+10:10:17 [cont] step=19441 loss=1.0878 lr=3.00e-04
+10:10:38 [cont] step=19461 loss=1.2089 lr=3.00e-04
+10:10:58 [cont] step=19481 loss=1.3025 lr=3.00e-04
+10:11:19 [cont] step=19501 loss=1.0632 lr=3.00e-04
+10:11:39 [cont] step=19521 loss=1.3013 lr=3.00e-04
+10:12:00 [cont] step=19541 loss=1.3802 lr=3.00e-04
+10:12:20 [cont] step=19561 loss=1.0972 lr=3.00e-04
+10:12:40 [cont] step=19581 loss=0.9043 lr=3.00e-04
+10:13:01 [cont] step=19601 loss=1.4412 lr=3.00e-04
+10:13:22 [cont] step=19621 loss=1.3182 lr=3.00e-04
+10:13:42 [cont] step=19641 loss=1.1595 lr=3.00e-04
+10:14:03 [cont] step=19661 loss=1.2540 lr=3.00e-04
+10:14:23 [cont] step=19681 loss=1.2282 lr=3.00e-04
+10:14:43 [cont] step=19701 loss=1.1013 lr=3.00e-04
+10:15:04 [cont] step=19721 loss=1.3283 lr=3.00e-04
+10:15:24 [cont] step=19741 loss=1.1918 lr=3.00e-04
+10:15:45 [cont] step=19761 loss=1.1517 lr=3.00e-04
+10:16:05 [cont] step=19781 loss=1.1826 lr=3.00e-04
+10:16:28 [cont] step=19801 loss=1.3572 lr=3.00e-04
+10:16:51 [cont] step=19821 loss=1.0682 lr=3.00e-04
+10:17:08 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n// //Orereferencesertertrrttter the rerterres the t therrerennnchnn thenn the then when donte harer arefereddener the hrrerened  rrerrerereexecation opation`tatanntantizatin-i-iniitialiatiizzed, the rereer, weeweenn   
+  src\SystemTemps.cpp hit=1 \n#include <cstdlity>\n#include <uulll>\n#includuniilll\n#iiclu<llllll>\n#incle>nnullln\n#inclu<nnulll>\n#inclu<llllll>\n#includ nullllllllllllllllllllllllllllllllllll\n#inclu< nullllllnllll>\n#includ niicld>ln
+  src\WindowCatalog.cpp hit=1 \n#include <custate>\n#include <unllll>\n#includunuinclluinccld>\n#incue uincld>\n#incue uuncld>\n#inleenuiiclu>lnulll>\n#includuniillllllllllllllllllllllluncullllllln\n#inclu< nulllllllllll>\n#includ <incld>\n
+  CLAUDE.md hit=0 ::\n\n#include ma>\n----------ddron:\n#include "ablld-------nn--h"\n\n#include \n#includiinationh>\ninclude <stdint>\n#include <inlln/ulaaililith.\n\n#include <innitiitablinn-ininniiitiallilitererreererererrrr
+10:17:08 [cont] val=1.7080 id_hits=2/4
+10:17:09 [ckpt] cont_last.pt step=19833 phase=cont
+10:17:20 [cont] step=19841 loss=1.0658 lr=3.00e-04
+10:17:47 [cont] step=19861 loss=1.0914 lr=3.00e-04
+10:18:14 [cont] step=19881 loss=1.0774 lr=3.00e-04
+10:18:41 [cont] step=19901 loss=1.2665 lr=3.00e-04
+10:19:08 [cont] step=19921 loss=1.1343 lr=3.00e-04
+10:19:34 [cont] step=19941 loss=1.2153 lr=3.00e-04
+10:20:02 [cont] step=19961 loss=1.2738 lr=3.00e-04
+10:20:26 [cont] step=19981 loss=1.2480 lr=3.00e-04
+10:20:53 [cont] step=20001 loss=1.0205 lr=3.00e-04
+10:21:20 [cont] step=20021 loss=1.0256 lr=3.00e-04
+10:21:45 [cont] step=20041 loss=1.3064 lr=3.00e-04
+10:22:10 [cont] step=20061 loss=1.1334 lr=3.00e-04
+10:22:35 [cont] step=20081 loss=1.4231 lr=3.00e-04
+10:22:59 [cont] step=20101 loss=1.3305 lr=3.00e-04
+10:23:24 [cont] step=20121 loss=1.3047 lr=3.00e-04
+10:23:49 [cont] step=20141 loss=1.1670 lr=3.00e-04
+10:24:12 [cont] step=20161 loss=1.2117 lr=3.00e-04
+10:24:35 [cont] step=20181 loss=1.1165 lr=3.00e-04
+10:24:56 [cont] step=20201 loss=1.2071 lr=3.00e-04
+10:25:18 [cont] step=20221 loss=1.2262 lr=3.00e-04
+10:25:40 [cont] step=20241 loss=1.0377 lr=3.00e-04
+10:26:02 [cont] step=20261 loss=1.3405 lr=3.00e-04
+10:26:23 [cont] step=20281 loss=1.2810 lr=3.00e-04
+10:26:43 [cont] step=20301 loss=1.2805 lr=3.00e-04
+10:27:04 [cont] step=20321 loss=1.1825 lr=3.00e-04
+10:27:25 [cont] step=20341 loss=1.4666 lr=3.00e-04
+10:27:45 [cont] step=20361 loss=1.0852 lr=3.00e-04
+10:28:07 [cont] step=20381 loss=1.3253 lr=3.00e-04
+10:28:32 [cont] step=20401 loss=1.1651 lr=3.00e-04
+10:28:53 [cont] step=20421 loss=1.2571 lr=3.00e-04
+10:29:13 [cont] step=20441 loss=1.0938 lr=3.00e-04
+10:29:34 [cont] step=20461 loss=1.0963 lr=3.00e-04
+10:29:55 [cont] step=20481 loss=1.2372 lr=3.00e-04
+10:30:15 [cont] step=20501 loss=1.4000 lr=3.00e-04
+10:30:36 [cont] step=20521 loss=1.1183 lr=3.00e-04
+10:30:56 [cont] step=20541 loss=1.3344 lr=3.00e-04
+10:31:17 [cont] step=20561 loss=1.2646 lr=3.00e-04
+10:31:37 [cont] step=20581 loss=1.0723 lr=3.00e-04
+10:31:58 [cont] step=20601 loss=1.1329 lr=3.00e-04
+10:32:18 [cont] step=20621 loss=1.3478 lr=3.00e-04
+10:32:39 [cont] step=20641 loss=1.0452 lr=3.00e-04
+10:32:59 [cont] step=20661 loss=1.0208 lr=3.00e-04
+10:33:20 [cont] step=20681 loss=1.3489 lr=3.00e-04
+10:33:40 [cont] step=20701 loss=1.2225 lr=3.00e-04
+10:34:01 [cont] step=20721 loss=1.0163 lr=3.00e-04
+10:34:21 [cont] step=20741 loss=1.4972 lr=3.00e-04
+10:34:42 [cont] step=20761 loss=1.3095 lr=3.00e-04
+10:35:02 [cont] step=20781 loss=1.1355 lr=3.00e-04
+10:35:23 [cont] step=20801 loss=1.2134 lr=3.00e-04
+10:35:43 [cont] step=20821 loss=1.3329 lr=3.00e-04
+10:36:04 [cont] step=20841 loss=1.1121 lr=3.00e-04
+10:36:24 [cont] step=20861 loss=1.2128 lr=3.00e-04
+10:36:45 [cont] step=20881 loss=1.4455 lr=3.00e-04
+10:37:05 [cont] step=20901 loss=1.1424 lr=3.00e-04
+10:37:26 [cont] step=20921 loss=1.1761 lr=3.00e-04
+10:37:46 [cont] step=20941 loss=1.3578 lr=3.00e-04
+10:38:07 [cont] step=20961 loss=1.2718 lr=3.00e-04
+10:38:27 [cont] step=20981 loss=1.3289 lr=3.00e-04
+10:38:48 [cont] step=21001 loss=1.3611 lr=3.00e-04
+10:39:08 [cont] step=21021 loss=1.2395 lr=3.00e-04
+10:39:29 [cont] step=21041 loss=1.3686 lr=3.00e-04
+10:39:49 [cont] step=21061 loss=1.1921 lr=3.00e-04
+10:40:10 [cont] step=21081 loss=1.1893 lr=3.00e-04
+10:40:30 [cont] step=21101 loss=1.1264 lr=3.00e-04
+10:40:51 [cont] step=21121 loss=1.1249 lr=3.00e-04
+10:41:12 [cont] step=21141 loss=1.2092 lr=3.00e-04
+10:41:32 [cont] step=21161 loss=1.1888 lr=3.00e-04
+10:41:53 [cont] step=21181 loss=1.3525 lr=3.00e-04
+10:42:13 [cont] step=21201 loss=1.1209 lr=3.00e-04
+10:42:34 [cont] step=21221 loss=1.0869 lr=3.00e-04
+10:42:54 [cont] step=21241 loss=1.1570 lr=3.00e-04
+10:43:14 [cont] step=21261 loss=1.2908 lr=3.00e-04
+10:43:35 [cont] step=21281 loss=1.1555 lr=3.00e-04
+10:43:55 [cont] step=21301 loss=1.3311 lr=3.00e-04
+10:44:17 [cont] step=21321 loss=1.0406 lr=3.00e-04
+10:44:38 [cont] step=21341 loss=1.1442 lr=3.00e-04
+10:44:58 [cont] step=21361 loss=1.3197 lr=3.00e-04
+10:45:19 [cont] step=21381 loss=1.2340 lr=3.00e-04
+10:45:39 [cont] step=21401 loss=1.2020 lr=3.00e-04
+10:46:00 [cont] step=21421 loss=1.1365 lr=3.00e-04
+10:46:20 [cont] step=21441 loss=1.2140 lr=3.00e-04
+10:46:41 [cont] step=21461 loss=1.1995 lr=3.00e-04
+10:47:01 [cont] step=21481 loss=1.2070 lr=3.00e-04
+10:47:11 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n//// deneed rererre hreeferencettthe e nnderereerer hreeereenent on theneent theneennt then therrererre ferenned tohat  that thonoe  an aand datiationn and anndd and and  daddoo\n// bool-oollatiooaitizationn bool oool
+  src\SystemTemps.cpp hit=1 \n#include <cstdnnnncllullluluulllulluulluuuluullulullulluuuluulllulluuulluuluulllulluullullluuuluullullllluluullluuluuullluluulluulluullluululllluuluuulluuluullululuulluuuluulllulluulluulllllllnlul>\n#include <strinnn
+  src\WindowCatalog.cpp hit=1 \n#include <cstdnnnnccluluuuluulllulluullluuluulluulul>\n#ulclddlluuluullluuluuullulluullululuulluuuluulllluluullluuluullluuluulluulluullluuluullluuluuulluuluulluuuluulluuuluullluuluulluuulululluuluulluuuluulllllluulon
+  CLAUDE.md hit=0 Erore hhore roore oooeoerrereen oo tool ook oole deedeeefereeded\n\n\n\nffool  ooool tool oool deededefereenent the hreferenced.\n\nbbool ollowininiggotainnoo\n\n\n\no\n\n\n\n\n\n\n\nftool lool  eeed  ne
+10:47:11 [cont] val=1.6581 id_hits=2/4
+10:47:13 [ckpt] cont_best.pt step=21489 phase=cont
+10:47:14 [ckpt] cont_last.pt step=21489 phase=cont
+10:47:26 [cont] step=21501 loss=1.2353 lr=3.00e-04
+10:47:46 [cont] step=21521 loss=1.0651 lr=3.00e-04
+10:48:07 [cont] step=21541 loss=1.1574 lr=3.00e-04
+10:48:27 [cont] step=21561 loss=1.2227 lr=3.00e-04
+10:48:48 [cont] step=21581 loss=1.1811 lr=3.00e-04
+10:49:08 [cont] step=21601 loss=1.2714 lr=3.00e-04
+10:49:29 [cont] step=21621 loss=1.2518 lr=3.00e-04
+10:49:49 [cont] step=21641 loss=1.2002 lr=3.00e-04
+10:50:12 [cont] step=21661 loss=1.0135 lr=3.00e-04
+10:50:33 [cont] step=21681 loss=1.2573 lr=3.00e-04
+10:50:55 [cont] step=21701 loss=0.8966 lr=3.00e-04
+10:51:16 [cont] step=21721 loss=1.2485 lr=3.00e-04
+10:51:37 [cont] step=21741 loss=1.2901 lr=3.00e-04
+10:52:00 [cont] step=21761 loss=1.0697 lr=3.00e-04
+10:52:22 [cont] step=21781 loss=1.2595 lr=3.00e-04
+10:52:45 [cont] step=21801 loss=1.3615 lr=3.00e-04
+10:53:07 [cont] step=21821 loss=1.1741 lr=3.00e-04
+10:53:30 [cont] step=21841 loss=1.1590 lr=3.00e-04
+10:53:51 [cont] step=21861 loss=1.4343 lr=3.00e-04
+10:54:11 [cont] step=21881 loss=1.1614 lr=3.00e-04
+10:54:32 [cont] step=21901 loss=1.1509 lr=3.00e-04
+10:54:53 [cont] step=21921 loss=1.3448 lr=3.00e-04
+10:55:18 [cont] step=21941 loss=1.1531 lr=3.00e-04
+10:55:42 [cont] step=21961 loss=1.2566 lr=3.00e-04
+10:56:03 [cont] step=21981 loss=1.3091 lr=3.00e-04
+10:56:24 [cont] step=22001 loss=1.2091 lr=3.00e-04
+10:56:45 [cont] step=22021 loss=0.9120 lr=3.00e-04
+10:57:05 [cont] step=22041 loss=1.0976 lr=3.00e-04
+10:57:26 [cont] step=22061 loss=1.1856 lr=3.00e-04
+10:57:46 [cont] step=22081 loss=1.3965 lr=3.00e-04
+10:58:07 [cont] step=22101 loss=1.0212 lr=3.00e-04
+10:58:27 [cont] step=22121 loss=1.1501 lr=3.00e-04
+10:58:48 [cont] step=22141 loss=1.1811 lr=3.00e-04
+10:59:08 [cont] step=22161 loss=1.1601 lr=3.00e-04
+10:59:29 [cont] step=22181 loss=1.2869 lr=3.00e-04
+10:59:49 [cont] step=22201 loss=1.2543 lr=3.00e-04
+11:00:10 [cont] step=22221 loss=1.3863 lr=3.00e-04
+11:00:30 [cont] step=22241 loss=1.2316 lr=3.00e-04
+11:00:51 [cont] step=22261 loss=1.2390 lr=3.00e-04
+11:01:11 [cont] step=22281 loss=1.2272 lr=3.00e-04
+11:01:32 [cont] step=22301 loss=1.1958 lr=3.00e-04
+11:01:52 [cont] step=22321 loss=1.2189 lr=3.00e-04
+11:02:14 [cont] step=22341 loss=1.2794 lr=3.00e-04
+11:02:35 [cont] step=22361 loss=1.1429 lr=3.00e-04
+11:02:56 [cont] step=22381 loss=1.1188 lr=3.00e-04
+11:03:17 [cont] step=22401 loss=1.3080 lr=3.00e-04
+11:03:38 [cont] step=22421 loss=1.2188 lr=3.00e-04
+11:04:00 [cont] step=22441 loss=1.4202 lr=3.00e-04
+11:04:22 [cont] step=22461 loss=1.3565 lr=3.00e-04
+11:04:42 [cont] step=22481 loss=1.2307 lr=3.00e-04
+11:05:03 [cont] step=22501 loss=1.3809 lr=3.00e-04
+11:05:23 [cont] step=22521 loss=1.2062 lr=3.00e-04
+11:05:44 [cont] step=22541 loss=1.0128 lr=3.00e-04
+11:06:04 [cont] step=22561 loss=1.2065 lr=3.00e-04
+11:06:24 [cont] step=22581 loss=1.2841 lr=3.00e-04
+11:06:45 [cont] step=22601 loss=1.0799 lr=3.00e-04
+11:07:05 [cont] step=22621 loss=1.2976 lr=3.00e-04
+11:07:26 [cont] step=22641 loss=1.2296 lr=3.00e-04
+11:07:46 [cont] step=22661 loss=1.0394 lr=3.00e-04
+11:08:08 [cont] step=22681 loss=1.3804 lr=3.00e-04
+11:08:30 [cont] step=22701 loss=1.2014 lr=3.00e-04
+11:08:52 [cont] step=22721 loss=1.2897 lr=3.00e-04
+11:09:14 [cont] step=22741 loss=1.2846 lr=3.00e-04
+11:09:36 [cont] step=22761 loss=1.1638 lr=3.00e-04
+11:09:57 [cont] step=22781 loss=1.0671 lr=3.00e-04
+11:10:17 [cont] step=22801 loss=1.0494 lr=3.00e-04
+11:10:40 [cont] step=22821 loss=1.1028 lr=3.00e-04
+11:11:01 [cont] step=22841 loss=1.3185 lr=3.00e-04
+11:11:23 [cont] step=22861 loss=1.2323 lr=3.00e-04
+11:11:44 [cont] step=22881 loss=1.3666 lr=3.00e-04
+11:12:06 [cont] step=22901 loss=1.1798 lr=2.99e-04
+11:12:29 [cont] step=22921 loss=1.0717 lr=2.99e-04
+11:12:54 [cont] step=22941 loss=1.1167 lr=2.98e-04
+11:13:16 [cont] step=22961 loss=1.2189 lr=2.97e-04
+11:13:38 [cont] step=22981 loss=1.2172 lr=2.96e-04
+11:13:59 [cont] step=23001 loss=1.2057 lr=2.95e-04
+11:14:24 [cont] step=23021 loss=1.0556 lr=2.93e-04
+11:14:44 [cont] step=23041 loss=1.1029 lr=2.92e-04
+11:15:05 [cont] step=23061 loss=1.1523 lr=2.90e-04
+11:15:26 [cont] step=23081 loss=1.0684 lr=2.88e-04
+11:15:48 [cont] step=23101 loss=1.2233 lr=2.86e-04
+11:16:09 [cont] step=23121 loss=1.0229 lr=2.84e-04
+11:16:30 [cont] step=23141 loss=1.3043 lr=2.82e-04
+11:16:51 [cont] step=23161 loss=1.1770 lr=2.80e-04
+11:17:12 [cont] step=23181 loss=1.1764 lr=2.78e-04
+11:17:16 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n//  // \n// /// re herre kerence rare adre herrr hrr here refere conttheneenthee aread ae rerenc read adrrerrenc daaaaaaad ad adrrer hererererer herekerererrrer here errrre hererrr her here read re aderererer herererer
+  src\SystemTemps.cpp hit=1 \n#include <ccuulin\n#includ<<clluncicicnculllc\n#include#incluclllllliinculllc\n#includcuincl>\n#includcuniclucluiiulnincunclucinclucninculllccincluculccuccl>\n#includ uiiclucluncicicnculclucluncicicnculllc\n#inc
+  src\WindowCatalog.cpp hit=1 \n#include <ccurlln\n#include<unlinccliinculllc\n#include#unllccingiclunnculllc\n#includ<culllc\n#includcuniclucllulluncnculll>>incluclunculllccint>nculccuccl>\n#includ uiiclucluncicicnculclucclulluncnculll>>inclcc
+  CLAUDE.md hit=0 \n##\n# findentt rrrrrrr hrrerererererererererererererer herereratoniatinaaaatatizataaaaatizzation\n\n\n\nWeccint the referrerenation-intialin-iiiinitianiinitianiintinnini-ainitialilitiabiititererererererererererer
+11:17:16 [cont] val=1.6597 id_hits=2/4
+11:17:17 [ckpt] cont_last.pt step=23183 phase=cont
+11:17:36 [cont] step=23201 loss=0.9805 lr=2.75e-04
+11:17:56 [cont] step=23221 loss=1.0410 lr=2.73e-04
+11:18:20 [cont] step=23241 loss=0.9411 lr=2.69e-04
+11:18:48 [cont] step=23261 loss=1.1996 lr=2.66e-04
+11:19:18 [cont] step=23281 loss=1.2830 lr=2.61e-04
+11:19:47 [cont] step=23301 loss=1.0633 lr=2.57e-04
+11:20:17 [cont] step=23321 loss=0.9885 lr=2.52e-04
+11:20:46 [cont] step=23341 loss=1.0846 lr=2.48e-04
+11:21:15 [cont] step=23361 loss=1.0213 lr=2.43e-04
+11:21:41 [cont] step=23381 loss=1.2575 lr=2.38e-04
+11:22:08 [cont] step=23401 loss=1.2186 lr=2.33e-04
+11:22:33 [cont] step=23421 loss=1.2885 lr=2.29e-04
+11:22:58 [cont] step=23441 loss=1.2151 lr=2.24e-04
+11:23:21 [cont] step=23461 loss=1.0797 lr=2.20e-04
+11:23:46 [cont] step=23481 loss=1.1281 lr=2.15e-04
+11:24:10 [cont] step=23501 loss=1.0592 lr=2.10e-04
+11:24:33 [cont] step=23521 loss=1.1662 lr=2.05e-04
+11:24:56 [cont] step=23541 loss=1.1341 lr=2.01e-04
+11:25:18 [cont] step=23561 loss=1.3278 lr=1.96e-04
+11:25:40 [cont] step=23581 loss=0.9996 lr=1.92e-04
+11:26:02 [cont] step=23601 loss=0.9753 lr=1.87e-04
+11:26:23 [cont] step=23621 loss=1.2223 lr=1.82e-04
+11:26:46 [cont] step=23641 loss=1.1575 lr=1.78e-04
+11:27:07 [cont] step=23661 loss=1.0779 lr=1.73e-04
+11:27:29 [cont] step=23681 loss=1.1848 lr=1.68e-04
+11:27:51 [cont] step=23701 loss=0.8882 lr=1.63e-04
+11:28:15 [cont] step=23721 loss=1.1403 lr=1.58e-04
+11:28:37 [cont] step=23741 loss=1.0763 lr=1.54e-04
+11:28:59 [cont] step=23761 loss=1.2206 lr=1.49e-04
+11:29:22 [cont] step=23781 loss=1.3077 lr=1.44e-04
+11:29:47 [cont] step=23801 loss=1.2534 lr=1.38e-04
+11:30:10 [cont] step=23821 loss=1.0963 lr=1.33e-04
+11:30:34 [cont] step=23841 loss=1.0156 lr=1.28e-04
+11:30:58 [cont] step=23861 loss=1.3341 lr=1.23e-04
+11:31:22 [cont] step=23881 loss=1.1763 lr=1.18e-04
+11:31:46 [cont] step=23901 loss=1.2791 lr=1.13e-04
+11:32:10 [cont] step=23921 loss=1.1467 lr=1.08e-04
+11:32:34 [cont] step=23941 loss=1.1724 lr=1.03e-04
+11:33:00 [cont] step=23961 loss=1.1378 lr=9.72e-05
+11:33:24 [cont] step=23981 loss=1.2126 lr=9.23e-05
+11:33:48 [cont] step=24001 loss=1.3072 lr=8.77e-05
+11:34:13 [cont] step=24021 loss=1.3655 lr=8.28e-05
+11:34:34 [cont] step=24041 loss=1.0605 lr=7.85e-05
+11:34:56 [cont] step=24061 loss=1.1709 lr=7.45e-05
+11:35:19 [cont] step=24081 loss=1.1935 lr=7.01e-05
+11:35:41 [cont] step=24101 loss=1.2250 lr=6.61e-05
+11:36:03 [cont] step=24121 loss=1.2230 lr=6.22e-05
+11:36:24 [cont] step=24141 loss=1.1925 lr=5.86e-05
+11:36:49 [cont] step=24161 loss=1.3372 lr=5.43e-05
+11:37:12 [cont] step=24181 loss=0.9265 lr=5.05e-05
+11:37:35 [cont] step=24201 loss=1.0462 lr=4.68e-05
+11:37:58 [cont] step=24221 loss=0.9079 lr=4.32e-05
+11:38:21 [cont] step=24241 loss=1.1893 lr=3.98e-05
+11:38:44 [cont] step=24261 loss=1.1131 lr=3.64e-05
+11:39:07 [cont] step=24281 loss=1.0833 lr=3.32e-05
+11:39:30 [cont] step=24301 loss=1.1712 lr=3.01e-05
+11:39:53 [cont] step=24321 loss=1.0138 lr=2.72e-05
+11:40:16 [cont] step=24341 loss=1.0315 lr=2.43e-05
+11:40:40 [cont] step=24361 loss=1.1829 lr=2.15e-05
+11:41:02 [cont] step=24381 loss=0.9553 lr=1.91e-05
+11:41:24 [cont] step=24401 loss=1.0561 lr=1.68e-05
+11:41:49 [cont] step=24421 loss=1.3736 lr=1.44e-05
+11:42:12 [cont] step=24441 loss=0.9733 lr=1.24e-05
+11:42:35 [cont] step=24461 loss=1.1721 lr=1.04e-05
+11:42:57 [cont] step=24481 loss=1.2158 lr=8.71e-06
+11:43:18 [cont] step=24501 loss=0.8965 lr=7.26e-06
+11:43:39 [cont] step=24521 loss=1.1151 lr=5.94e-06
+11:44:00 [cont] step=24541 loss=1.0340 lr=4.72e-06
+11:44:23 [cont] step=24561 loss=1.1687 lr=3.54e-06
+11:44:49 [cont] step=24581 loss=1.0296 lr=2.45e-06
+11:45:14 [cont] step=24601 loss=1.2206 lr=1.55e-06
+11:45:39 [cont] step=24621 loss=1.1393 lr=8.64e-07
+11:46:04 [cont] step=24641 loss=1.1681 lr=3.74e-07
+11:46:30 [cont] step=24661 loss=1.2629 lr=8.63e-08
+11:46:53 [ckpt] cont_last.pt step=24679 phase=cont
+11:46:53 [cont] export cont_best.pt best_val=1.6581
+11:46:58 [export] D:/C++/LocalAI/ncm_gguf\code_ncm_q8_cont.gguf 149.8 MB max_abs_sample=0.3153
+11:46:58 [cont] samples 2/4
+  src\SpeedTest.h hit=0 \n//// deneed rererre hreeferencettthe e nnderereerer hreeereenent on theneent theneennt then therrererre ferenned tohat  that thonoe  an aand datiationn and anndd and and  daddoo\n// bool-oollatiooaitizationn bool oool
+  src\SystemTemps.cpp hit=1 \n#include <cstdnnnncllullluluulllulluulluuuluullulullulluuuluulllulluuulluuluulllulluullullluuuluullullllluluullluuluuullluluulluulluullluululllluuluuulluuluullululuulluuuluulllulluulluulllllllnlul>\n#include <strinnn
+  src\WindowCatalog.cpp hit=1 \n#include <cstdnnnnccluluuuluulllulluullluuluulluulul>\n#ulclddlluuluullluuluuullulluullululuulluuuluulllluluullluuluullluuluulluulluullluuluullluuluuulluuluulluuuluulluuuluullluuluulluuulululluuluulluuuluulllllluulon
+  CLAUDE.md hit=0 Erore hhore roore oooeoerrereen oo tool ook oole deedeeefereeded\n\n\n\nffool  ooool tool oool deededefereenent the hreferenced.\n\nbbool ollowininiggotainnoo\n\n\n\no\n\n\n\n\n\n\n\nftool lool  eeed  ne
+11:46:58 [cont] done
