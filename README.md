@@ -17,9 +17,8 @@ Scripts still point at `D:\C++\LocalAI`. This repo is private. `code_corpus.txt`
 Files over GitHub's 100 MB git limit are release assets on the tag `training-weights`. On the other machine, from the clone:
 
 ```
-gh release download training-weights -D code_artifacts_agent -p "data_p128.npz" -p "cont_best.pt" -p "cont_last.pt" -p "best_pretrain.pt" -p "best_tool.pt" -p "pretrain_end.pt" -p "last.pt"
-gh release download training-weights -D code_artifacts_scaled -p "generator.pt"
-gh release download training-weights -D ncm_gguf -p "code_ncm_q8.gguf" -p "code_ncm_q8_cont.gguf" -p "code_ncm_1b.gguf"
+gh release download training-weights -D code_artifacts_agent -p "data_p128.npz" -p "cont_best.pt"
+gh release download training-weights -D ncm_gguf -p "code_ncm_q8_cont.gguf"
 ```
 
-Continue from `code_artifacts_agent/cont_best.pt` with `data_p128.npz`. `cont_last.pt` and `last.pt` include Adam states whose learning rate has already decayed.
+Continue from `code_artifacts_agent/cont_best.pt` with `data_p128.npz`. The frozen tokenizer is already in `code_artifacts_scaled/vqvae.pt`. `code_ncm_q8_cont.gguf` is the Q8 export of that checkpoint.
