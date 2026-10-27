@@ -1,0 +1,120 @@
+# pyscg-0001: Control Numeric Precision
+
+Avoid floating-point and use integers or the `decimal` module to ensure precision in applications that require high accuracy, such as in financial or banking computations.
+
+In Python, floating-point types have limited precision. A Python `float` has `~15–17` significant decimal digits total as per _Build Changes_ in _What's New in Python 3.11_ [python.org 2022](https://docs.python.org/3/whatsnew/3.11.html)— not `~15–17` digits after the decimal point.  
+
+Significant decimal digits are shared between:  
+
+* Digits before the decimal point  
+* Digits after the decimal point  
+
+A number getting bigger before the decimal point results in loss of precision after the decimal point.
+
+Consequently, they cannot represent many numbers with full accuracy. For example, irrational numbers such as `√7` or `π` cannot be represented exactly. Additionally, due to their binary nature, floating-point types are incapable of exactly representing some terminating decimals in base 10, such as `0.3`, which has a repeating binary representation.  
+
+To ensure precision in applications requiring high accuracy, such as in financial or banking computations, it is recommended to avoid using floating-point types. Instead, integers or more precise data types like the `Decimal` class should be employed.
+
+## Non-compliant Code Example
+
+This `noncompliant01.py` demonstrates the use of floating-point arithmetic to simulate purchasing items and subsequent
+
+_[noncompliant01.py](noncompliant01.py):_
+
+```py
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Non-compliant Code Example """
+BALANCE = 3.00
+ITEM_COST = 0.33
+ITEM_COUNT = 5
+print(
+    f"{str(ITEM_COUNT)} items bought, ${ITEM_COST} each. "
+    f"Current account balance: "
+    f"${str(BALANCE - ITEM_COUNT * ITEM_COST)}"
+)
+```
+
+The imprecise `base 10` representation during the multiplication of `5` with `0.33`  results in an `account balance`  of  `$1.34999999999999993` in the `noncompliant01.py` code.
+
+**Example noncompliant01.py output:**
+
+```bash
+5 items bought, $0.33 each. Current account balance: $1.34999999999999993
+```
+
+## Compliant Solution (Integer)
+
+This compliant solution adheres more to standards by representing the account balance and item cost as `integers` in cents instead of using dollars. This approach eliminates the imprecision associated with floating-point numbers:
+
+_[compliant01.py](compliant01.py):
+
+```py
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Non-compliant Code Example """
+BALANCE = 300
+ITEM_COST = 33
+ITEM_COUNT = 5
+print(
+    f"{str(ITEM_COUNT)} items bought, ${ITEM_COST / 100} each. "
+    f"Current account balance: "
+    f"${str((BALANCE - ITEM_COUNT * ITEM_COST) / 100)}"
+)
+```
+
+**Example `compliant01.py` output:**
+
+```bash
+5 items bought, $0.33 each. Current account balance: $1.35
+```
+
+## Compliant Solution (Decimal)
+
+This compliant solution adheres to standards by utilizing the imported `Decimal` type, which allows for precise representation of decimal values. It's important to note that, on most platforms, calculations using `Decimal` tend to be less efficient compared to those using basic data types.
+
+_[compliant02.py](compliant02.py):_
+
+```py
+
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Compliant Code Example """
+from decimal import Decimal
+BALANCE = Decimal("3.00")
+ITEM_COST = Decimal("0.33")
+ITEM_COUNT = 5
+print(
+    f"{str(ITEM_COUNT)} items bought, ${ITEM_COST} each. "
+    f"Current account balance: "
+    F"${str(BALANCE - ITEM_COUNT * ITEM_COST)}"
+)
+```
+
+**Example `compliant02.py` output:**
+
+```bash
+5 items bought, $0.33 each. Current account balance: $1.35
+```
+
+## Automated Detection
+
+|Tool|Version|Checker|Description|
+|:----|:----|:----|:----|
+|[Pylint](https://pylint.pycqa.org/)|2023.10.1|Not Available|Not detected|
+
+## Related Guidelines
+
+|||
+|:---|:---|
+|[SEI CERT Oracle Coding Standard for Java](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java?src=breadcrumbs)|[NUM04-J. Do not use floating-point numbers if precise computation is required](https://wiki.sei.cmu.edu/confluence/display/java/NUM04-J.+Do+not+use+floating-point+numbers+if+precise+computation+is+required)|
+|[The CERT C Secure Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard)|FLP02-C. Avoid using floating-point numbers when precise computation is needed, available from: [https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152394](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=87152394), \[Accessed Dec 2024\]|
+|[ISO/IEC TR 24772:2010](https://www.iso.org/standard/61457.html)|Floating-Point Arithmetic \[PLF\]|
+|\[MITRE CWE Pillar\]|[CWE-682: Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html)|
+|\[MITRE CWE Base\]|[CWE - CWE-1339: Insufficient Precision or Accuracy of a Real Number](https://cwe.mitre.org/data/definitions/1339.html)|
+
+## Bibliography
+
+|||
+|:---|:---|
+|||

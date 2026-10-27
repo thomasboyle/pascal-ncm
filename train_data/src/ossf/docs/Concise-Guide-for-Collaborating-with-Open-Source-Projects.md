@@ -1,0 +1,211 @@
+# Concise Guide for Collaborating with Open Source Projects
+
+_by the [Open Source Security Foundation (OpenSSF)](https://openssf.org) [Best Practices Working Group](https://best.openssf.org/), work in progress_
+
+## Why This Guide Exists: The Impact of the Cyber Resilience Act (CRA)
+
+As the [Cyber Resilience Act (CRA)](https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng) enters into full force, commercial users of open source software face a new landscape of cybersecurity obligations. Complying with these regulations will inevitably require commercial developers to interact directly with open source maintainers - often for the first time.
+
+For example, these two obligations of commercial software vendors ("Manufacturers" in CRA terms) defined in the CRA will necessitate interaction:
+
+* **Security Due Diligence** ([CRA, article 13 (5)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#art_13)): Commercial users must now assess the security of the open source components they use. This process will uncover security issues — both real and perceived — triggering the need to report findings to the project maintainers. This security due diligence is both a step that must be performed when an OSS component is being evaluated, and also when such dependencies are updated. [OSPS Baseline](https://baseline.openssf.org/) can be a useful as a set of criteria to incorporate into such a due diligence process. This security due diligence is _distinct_ from any licence due diligence that you may already be performing.
+
+* **Sharing of Security Fixes** ([CRA, article 13 (6)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#art_13)): The CRA mandates that manufacturers share security fixes with the upstream open source projects.
+
+While increased corporate involvement is vital for the long-term sustainability of the open source ecosystem, it carries a risk of friction. Many commercial developers are accustomed to a "consumer" relationship with software, managed through procurement departments, contracts, and service-level agreements.
+
+Open source operates on a fundamentally different set of social norms and implicit best practices. When commercial teams attempt to engage with maintainers using a corporate mindset, miscommunication and frustration often follow. Even ambitious, well-intentioned efforts to improve a project’s security posture can backfire if the contributor is unfamiliar with the project's culture.
+
+This guide aims to bridge that gap, helping commercial developers navigate these interactions effectively.
+
+### Open Source Projects and the Cyber Resilience Act
+
+Open Source projects are collaborative communities that each have their own way of operating.
+More importantly, projects do not bear responsibility for performing any specific tasks that an individual or organization may want, including providing cyber security compliance information.
+
+When engaging with open source projects, don't expect having any CRA-related conversations _by default_.
+Project maintainers don’t have to do anything at all because of the CRA, if they're maintaining an open source project without commercial monetization or placing products on the EU market. Which applies to _almost all_ open source projects. The CRA does not impose obligations on individual open source developers or volunteer maintainers merely for publishing or maintaining code. However, maintainers _may voluntarily choose_ to implement widely accepted security best practices that align with modern secure development expectations and may assist downstream users who integrate your software into regulated products. Check [CRA Readiness Guide for Maintainers and Developers](https://policy.openssf.org/CRA/maintainers.html) developed by OpenSSF.
+
+## Scope and Purpose of this guide
+
+Drawing from established industry research on open source collaboration, this guide compiles a concise checklist of essential behaviors for organizations and developers. It is designed to cover the fundamental requirements for new contributors, acting as both a practical manual for immediate compliance and a gateway to more extensive educational resources.
+
+## Best practices for collaborating with open source projects
+
+The following recommendations are structured along the lifecycle of a typical engagement.
+
+### 1. Prepare by understanding how the project works
+
+* **Read the project's security policy:** Following a project's security policy for any disclosures is crucial. Unwarranted or accidental public vulnerability disclosures must be avoided. This is often in a file named `SECURITY.md` or similar.
+* **Read the project’s contribution guide:** Locate and carefully study files named `CONTRIBUTING.md` or similar documentation, as these outline the specific technical and procedural standards required for patches. These often include style requirements for code, documentation, and commit messsages. They also often document the required CI/CD checks. Ignoring these instructions is often viewed as disrespectful and is the most common reason for contributions being ignored or rejected.
+* **Determine the project's copyright policy:** Projects may use a DCO (Developer Certificate of Origin) or a CLA (Contributor License Agreement) to manage the copyright of the contributed code. Contributors must ensure that they have the necessary rights to make their contributions (e.g., because the contributor's company has the copyright and the contributor is authorized to contribute it). CLAs often require signing by a company representative and typically cannot be signed by developers on behalf of the company.
+* **Review the code of conduct**: Familiarize yourself with the project's Code of Conduct to understand the behavioral expectations and social norms of that specific community. Unlike a corporate environment governed by HR policies, open source projects relies on these documents to maintain a healthy collaboration space, and violating them can lead to immediate exclusion. This is often in a file named `CODE_OF_CONDUCT.md` or similar.
+* **Read through the project’s issue tracker to learn about related (past) discussions:** Before raising a new issue, perform a thorough search of closed tickets, pull requests, and/or merge requests to see if the topic has already been addressed or debated. This demonstrates respect for the maintainers' time and prevents you from potentially re-igniting settled arguments or reporting known duplicates.
+* **Find out how the project members communicate: GitHub issues, Slack, IRC, …:** Identify the preferred channels for different types of interaction, as many projects separate general support questions (often on Discord, Slack, or mailing lists) from technical bug tracking. Using the correct medium ensures your message reaches the right audience without cluttering the project's development workflow.
+
+The following recommendations apply in most cases, however, once you understand how the project works you may discover an exception and should apply that instead.
+
+### 2. Start participating
+
+* **Initiate a discussion by opening an issue:** Depending on the contribution policy of the project and the complexity of contribution, the best approach to initiate a contribution is open an issue rather than contributing via Pull Request / Merge Request / Change right away, in particular for non-trivial contributions.
+* **Describe why your contribution is important to you and the project:** In issues and PRs, always clearly articulate the problem your contribution solves, linking your specific commercial use case (such as a security vulnerability) to the broader benefit for the project's user base. Maintainers are more likely to accept changes when they understand the context and see how the improvement strengthens the software for everyone, not just for your organization.
+* **Make your motivations transparent and disclose your affiliation:** Openly state your employer and the reason for your involvement, such as compliance with the Cyber Resilience Act or internal security requirements. Transparency builds trust within the community, preventing suspicions of hidden agendas and helping maintainers understand the resources and constraints backing the contribution.
+* **Describe the design of your contribution and be willing to modify it based on feedback:** Provide a high-level summary of your technical approach alongside the code to help maintainers assess how well it fits the project's existing architecture. Be prepared to iterate on your solution. Viewing code review as a collaborative design process rather than a gatekeeping hurdle is essential for getting your changes merged.
+* **Always show respectful behavior:** Approach every interaction with patience and courtesy, recognizing that maintainers are often volunteers with limited time and competing priorities. Avoid demanding language or imposing corporate deadlines, as professional empathy is the most effective tool for fostering long-term cooperation and avoiding friction.
+
+### 3. End participation
+
+* **Wrapping up after the contribution landed:** If the contribution is of limited scope and there is no intention for a longer-term engagement with the project, clearly wrap up once the contribution has landed. Recognize the support of the maintainers and close remaining open issues such as bug reports or feature requests.
+* **End long-term participation gracefully by communicating early and wrapping up:**  In case of ending a longer-term engagement, for instance due to a change in internal priorities, inform the maintainers as soon as possible rather than simply abandoning open pull/merge requests or discussions ("ghosting"). Make an effort to either finalize outstanding work or clearly document the state of your contribution, ensuring you do not leave the community with the burden of deciphering or maintaining unfinished code.
+
+## Scenarios - When and Why to contribute
+
+This section describes selected scenarios of security-related contributions which may be triggered by CRA-obligations of manufacturers. Note that the scenarios listed here do not represent an exhaustive list: there are many more reasons for users of open source software to contribute, such as building competence and driving the evolution and adoption of a technology.
+
+### Updating dependencies
+
+Open source projects typically release vulnerability fixes promptly. However, modern software is composed of many components arranged in deep dependency trees, and a fix in a lower-level component can take considerable time to propagate upward. Users of a higher-level component therefore have a direct interest in helping intermediate projects update (or "bump") their dependencies soon after a new release becomes available.
+
+Subject to each project's established workflows, users can support maintainers in updating outdated dependencies in the following ways:
+
+* **For projects without automated dependency management** (e.g., Dependabot or Renovate), users can test a candidate version of a dependency, confirm that it does not introduce regressions, and, where regressions do occur, propose a fix. This offloads a substantial share of the validation effort, allowing maintainers to concentrate on cross-checking the results and on other, potentially more complex, development work such as functional improvements.
+
+* **For projects that use automated dependency management**, users can strengthen the project's test coverage. The effectiveness of automated tools depends on a robust suite of unit, functional, and integration tests. Improving that test suite is therefore valuable contribution towards enabling faster release cycles with confidence in the quality of the software.
+
+### Extending the test coverage
+
+A robust test suite is not only a prerequisite for the effective use of automated dependency management tools, but also a general means of maintaining software quality, including a project's security posture. Adequate test coverage helps prevent regressions and reduces the risk of inadvertently introducing vulnerabilities.
+
+Writing valuable test cases typically does not require the same level of deep familiarity with a project's internals as is required for implementing new features. Contributing additional tests is therefore a valuable and accessible way for security-minded users to support an open source project.
+
+### Fixing vulnerabilities (CVEs and 0-days)
+
+Contributing a fix for a vulnerability is one of the most direct security-focused contributions a commercial user can make. The appropriate process depends on whether the vulnerability has already been publicly disclosed or is still unknown outside a small group.
+
+#### Publicly disclosed vulnerabilities (CVEs)
+
+For vulnerabilities that have already been recorded publicly — for instance, in a CVE or a GitHub Security Advisory — confidentiality is no longer a concern, and remediation can be discussed openly through the project's regular channels, such as issues and pull/merge requests. Developing a fix typically requires deeper familiarity with the project's code than writing test cases, so contributors should be prepared to invest engineering time and to iterate with maintainers on the proposed patch. Where feasible, a contribution should also include a regression test that demonstrates the vulnerability is no longer exploitable.
+
+#### Previously undisclosed vulnerabilities ("0-days")
+
+For vulnerabilities that are not yet publicly known ("0-days"), confidentiality is typically essential: premature disclosure exposes downstream users to attack before a fix is available. Contributors should observe the following practices:
+
+* **Follow the project's security policy.** Consult the project's security policy — typically published in a `SECURITY.md` file — to determine the correct reporting channel. Many projects rely on GitHub's Private Vulnerability Reporting (PVR) feature or provide a dedicated security contact address for this purpose.
+* **Do not disclose the vulnerability through public channels.** Do not report a new vulnerability finding through a public issue, pull/merge request, discussion thread, chat channel, or social media post before a coordinated disclosure has taken place, unless expressly told otherwise.
+* **Coordinate disclosure and remediation timelines.** Once maintainers have acknowledged the report, agree on a reasonable timeline for developing the fix, releasing it, and publishing an advisory. Respect the embargo period the project defines and avoid unilateral disclosure.
+
+The [OpenSSF Vulnerability Disclosures Working Group](https://github.com/ossf/wg-vulnerability-disclosures) has published extensive [material](https://oss-vulnerability-guide.openssf.org/) on this topic, including guides targeting [open source projects](https://oss-vulnerability-guide.openssf.org/maintainer-guide.html) as well as [finders of vulnerabilities](https://oss-vulnerability-guide.openssf.org/finder-guide.html).
+
+In addition to reporting directly to maintainers, findings may also be submitted to industry initiatives dedicated to coordinated vulnerability disclosure for open source software, such as [Akrites](https://akrites.org/). Akrites acts as trusted intermediary between reporters and maintainers: it receives vulnerability reports affecting open source projects and processes them through a structured remediation and disclosure workflow. Akrites' objective is to shield maintainers from duplicated or poorly coordinated reports and to support them in jointly developing and releasing fixes.
+
+### Tools and methods for hardening the supply chain
+
+Contributors can help maintainers strengthen a project's security posture by proposing the adoption of supply chain security tooling in the project's development workflow and CI pipeline. In recent years, the OpenSSF and the wider open source community have produced a broad ecosystem of such tools, each addressing a distinct aspect of software supply chain security. A non-exhaustive set of examples includes:
+
+* **[OpenSSF Scorecard](https://scorecard.dev/):** assesses a project's development workflow against a set of established security checks, such as branch protection, dependency pinning, and signed releases.
+* **[SLSA](https://slsa.dev/) attestations:** capture verifiable provenance information for released artifacts, allowing downstream users to confirm how and from what source an artifact was built.
+* **[Sigstore](https://www.sigstore.dev/):** provides keyless signing of release artifacts and container images, together with a public transparency log for independent verification.
+
+Every additional tool, however, can introduce complexity into the development workflow and imposes an ongoing cost on maintainers, who must understand its purpose, integrate it, and act on its output. A well-intentioned but unsolicited proposal can therefore create more work for maintainers than it saves.
+
+Contributors proposing the adoption of new tooling should observe the following practices:
+
+* **Seek maintainer agreement before integrating.** Open a discussion or issue first, explain the security benefit the tool provides, and confirm that the maintainers are open to adopting it. Integration work should begin only once alignment has been reached.
+* **Avoid "drive-by" tooling contributions.** A new tool should not be introduced as a one-time contribution that the contributor does not intend to support. Automation should be the outcome of a conversation, not a surprise pull/merge request.
+* **Take responsibility for the tool's output.** Commit to helping maintainers act on the findings the tool surfaces — for example, by triaging alerts, tuning configurations to reduce noise, and contributing fixes for the issues identified.
+
+## Further Recommendations
+
+This section described further recommendations complementing the best practices outlined above.
+
+### Building trust through long-term engagement
+
+While the CRA obligations mentioned above can be met with in one-time contributions - for instance sharing of vulnerability fixes - organizations that depend on open source projects for their products benefit significantly from investing in sustained engagement. Long-term participation builds trust, earns reputation within the community, and ultimately makes it easier to get future contributions accepted. This in turn eases compliance with CRA obligations.
+
+#### Building reputation through consistent participation
+
+Trust in open source communities is earned incrementally through visible, reliable contributions over time. Contributors who have an established track record within a project will find that their future proposals receive more attention and goodwill. Organizations can encourage this by:
+
+* **Assigning dedicated engineers** to key open source projects rather than rotating contributors on a per-issue basis.
+* **Starting with smaller, lower-risk contributions:** bug fixes, documentation improvements, test cases before proposing larger architectural changes.
+* **Being responsive and following through:** remaining available for the subsequent discussion and review cycles after opening an issue or submit a pull/merge request.
+
+#### Contributing beyond code fixes
+
+Some of the most valuable contributions to an open source project are not code changes but rather ongoing support activities that reduce the maintenance burden on project maintainers:
+
+* **Issue triage:** Help categorize, reproduce, and prioritize incoming bug reports and feature requests. This is often one of the most time-consuming tasks for maintainers and is greatly appreciated.
+* **Code review:** Participate in reviewing other contributors' pull/merge requests. Thoughtful reviews demonstrate technical investment in the project and help maintainers manage their workload.
+* **CI and testing infrastructure:** Help maintain and improve the project's continuous integration pipelines, build systems, and test suites. This requires sustained attention but directly improves the project's ability to release with confidence.
+* **Documentation:** Improve user-facing and developer-facing documentation based on issues you or others have encountered. Good documentation reduces the support burden on maintainers.
+
+#### Organizational investment in project sustainability
+
+Finally, since this guide is in part motivated by CRA obligations, organizations that rely on open source components for commercial products should realize that investing in the long-term sustainability of those projects is in direct support of CRA compliance and thus a risk management activity. Therefore, potential additional actions supporting the long-term sustainability and maturity of projects include:
+
+* **Dedicating engineering time:** Allocation of a portion of engineering working hours explicitly for upstream open source contributions, including maintenance activities that are not directly tied to immediate product needs.
+* **Sponsoring of maintainers or projects:** Many projects and maintainers accept financial sponsorship through platforms such as GitHub Sponsors, Open Collective, or foundation membership programs. Financial support helps maintainers dedicate more time to the project.
+* **Funding security audits and improvements:** Commission and share the results of security audits with the project, or fund improvements to security tooling and infrastructure that benefit the entire community.
+* **Participating in project governance:** For projects that are critical to business, participation in governance structures, advisory boards, or working groups allows for long-term strategic alignment between the project's direction and a product's roadmap.
+
+## Navigating common pitfalls
+
+It is valuable for new open source contributors to be aware of common pitfalls to avoid misunderstandings and resulting friction and frustration among contributors and project maintainers.
+This section outlines situations that frequently arise and provides guidance on how to resolve them.
+
+### Release Management and Cadence
+
+After contributing a fix for a particular issue, such as a bug or a security vulnerability, product teams frequently request that a new release incorporating their fix be published shortly after the contribution has been merged. This urgency is driven by the desire to update the open source component in their product as soon as possible, and is further heightened by the CRA-mandated obligation for manufacturers to resolve vulnerabilities within specific deadlines.
+
+However, open source projects follow very diverse release patterns. Some projects do not create releases at all, while others only publish releases from the main branch. Very few projects issue dedicated bugfix releases or maintain stable branches, as supporting maintenance branches for older releases represents a significant burden and is therefore only practiced by the largest and most well-resourced projects, such as the Linux kernel. Most commonly, projects follow a regular release cadence with intervals of weeks or months between releases.
+
+Larger communities, such as the CNCF, are cognizant of the need to recommend [common release practices across their projects](https://github.com/cncf/toc/issues/1849).
+
+#### Possible Solutions
+
+The decision to create a release remains solely at the discretion of the project maintainers. Rather than requesting an expedited release, contributors should consider the following approaches:
+
+* Support the project maintainers in preparing the next scheduled release, for instance by running test suites and verifying release candidates.
+* Contribute improvements to the project's test coverage, helping to increase the maintainers' confidence in releasing more frequently.
+* Temporarily use a specific commit instead of a release as a dependency. Many package managers permit identifying and retrieving a specific commit instead of a formal release, specifically to deal with this situation. This avoids the problems of creating a fork. One risk is that any later security patches will not be incorporated, so monitor such situations and switch to a later commit or release when available.
+* Accept the responsibility of maintaining a temporary public fork, or a corresponding branch within the project's repository, until the fix is included in an official release.
+
+### Disagreements about the direction of a project
+
+Contributions from commercial organizations are sometimes rejected by project maintainers. A maintainer may consider the change too low quality, determine that the change doesn't fully address proposed new functionality, disagree with the technical approach, consider the change out of scope for the project, or determine that it introduces unwanted complexity or maintenance burden. This situation creates particular tension when the contributor feels compelled by the CRA or internal pressure to get a fix merged, while the maintainer declines for technical or architectural reasons.
+
+It is essential to recognize that maintainers have the final say over the direction of their project. Open source projects are not vendors, and maintainers are under no obligation to accept any contribution, regardless of the contributor's regulatory or business needs. Pressuring maintainers to accept changes that primarily serve commercial interests, or attempting to steer a project's roadmap to align with corporate goals, undermines the trust and collaborative spirit on which open source depends. Even when a contribution addresses a genuine security concern, the maintainers determine how — or whether — to address it within their project.
+
+#### Possible Solutions
+
+When a contribution is rejected, contributors should consider the following approaches rather than escalating pressure on the maintainers:
+
+* Engage constructively with the maintainer's feedback to understand the reasons for the rejection and explore whether an alternative approach could address both the project's concerns and your requirements. For example, if it adds new functionality but only deals with the special cases your application needs, discuss what it would take to fully address the new functionality.
+* Accept the responsibility of maintaining a public project fork that incorporates your changes. A fork is a legitimate mechanism in open source for pursuing a different direction without imposing on the original project. That said, this is expensive long-term unless others join in co-maintaining the fork; this should not be done lightly.
+* Re-evaluate whether the specific open source component is still the best fit for your product, considering the divergence in priorities between your organization's needs and the project's direction.
+
+## References
+
+More information is available
+
+* [Governance](https://contribute.cncf.io/projects/best-practices/governance/), guide, CNCF
+* [Guidance for Security Researchers to Coordinate Vulnerability Disclosures with Open Source Software Projects](https://oss-vulnerability-guide.openssf.org/finder-guide.html), guide, OpenSSF Vulnerability Disclosures WG
+* [Guide to implementing a coordinated vulnerability disclosure process for open source projects](https://oss-vulnerability-guide.openssf.org/maintainer-guide.html), guide, OpenSSF Vulnerability Disclosures WG
+* [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/), guide, GitHub
+* [HowTo: Make a Contributing Guide](https://contribute.cncf.io/projects/best-practices/templates/contributing/), guide, CNCF
+* [Participating in Open Source Communities](https://todogroup.org/resources/guides/participating-in-open-source-communities/), guide, TODO Group
+* [OpenSSF CRA Materials](https://policy.openssf.org/CRA/)
+* [Security Hygiene Guide for Project Maintainers](https://contribute.cncf.io/projects/best-practices/security/security-hygiene/), guide, CNCF
+* [Start Contributing to Open Source](https://contribute.cncf.io/contributors/getting-started/), guide, CNCF
+
+## Contributors
+
+This guide is a collaborative effort of the OpenSSF community. The following people have contributed to this guide (in alphabetical order):
+
+* Avishay Balter, Microsoft
+* Daniel Appelquist, Samsung
+* Dave Russo, Red Hat
+* David A. Wheeler, Linux Foundation
+* Georg Kunz, Ericsson
+* Roman Zhukov, Red Hat
+* Tuomo Tanskanen, Ericsson Software Technology

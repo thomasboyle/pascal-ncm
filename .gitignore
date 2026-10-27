@@ -1,6 +1,4 @@
 __pycache__/
 *.py[cod]
 .venv/
-code_corpus.txt
 *.npz
-prompts.json

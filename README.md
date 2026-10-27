@@ -10,12 +10,16 @@ Next-Concept Modeling experiments trained locally on a GTX 1070 Ti (Pascal, sm_6
 - `train_fast.py`, `train_agent.py`, `TRAINING_PLAN.md` — the 87M on-GPU agent run. Logs and the prompt-check report are in `code_artifacts_agent/`.
 - `export_gguf.py`, `export_scaled_gguf.py`, `verify_gguf.py`, `run_ncm.py`, `run_code_ncm.py` — export and generation.
 
-Scripts still point at `D:\C++\LocalAI`.
+Scripts still point at `D:\C++\LocalAI`. This repo is private. `code_corpus.txt` includes the C++ Core Guidelines, which are for personal or internal use only.
 
-## Left on the training machine
+## Large weights
 
-These files are not in this public repo:
+Files over GitHub's 100 MB git limit are release assets on the tag `training-weights`. On the other machine, from the clone:
 
-- `code_corpus.txt` and `train_data/src/`. The corpus includes the C++ Core Guidelines, which allow personal or internal use only.
-- Agent checkpoints and Q8 exports trained on that corpus: `cont_best.pt`, `code_ncm_q8.gguf`, and `code_ncm_q8_cont.gguf`.
-- Files over GitHub's 100 MB limit: `code_artifacts_scaled/generator.pt` (2.0 GB) and `ncm_gguf/code_ncm_1b.gguf` (2.0 GB), plus Adam states and `data_p128.npz`.
+```
+gh release download training-weights -D code_artifacts_agent -p "data_p128.npz" -p "cont_best.pt" -p "cont_last.pt" -p "best_pretrain.pt" -p "best_tool.pt" -p "pretrain_end.pt" -p "last.pt"
+gh release download training-weights -D code_artifacts_scaled -p "generator.pt"
+gh release download training-weights -D ncm_gguf -p "code_ncm_q8.gguf" -p "code_ncm_q8_cont.gguf" -p "code_ncm_1b.gguf"
+```
+
+Continue from `code_artifacts_agent/cont_best.pt` with `data_p128.npz`. `cont_last.pt` and `last.pt` include Adam states whose learning rate has already decayed.

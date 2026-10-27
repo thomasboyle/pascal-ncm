@@ -1,0 +1,153 @@
+# pyscg-0036: Check Return Values
+
+Return values of methods and functions should always be checked to ensure operations have been performed correctly.
+
+When immutable objects are used, methods that aim to modify them have to create a new object with the desired changed and return it. For the results of such methods to take place, the developer must remember to assign the new value to a variable, otherwise it won't be accessible. They can also be used to handle unexpected behaviors by returning specific values (such as `None` or a other default values) that may require additional safety checks.
+
+## Non-Compliant Code Example - Immutable objects
+
+This non-compliant code example shows a common mistake when trying to update an immutable object. Since `str` is an immutable type, `str.replace()` creates a new `str` object with the desired change [[Python Docs - str.replace](https://docs.python.org/3.9/library/stdtypes.html#str.replace)]. This object must be then assigned, typically in place of the original string. If not, the new value remains unused.
+
+*[noncompliant01.py](noncompliant01.py):*
+
+```python
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Non-compliant Code Example """
+
+
+def silly_string(user_input):
+    """Function that changes the content of a string"""
+    user_input.replace("un", "very ")
+    return user_input
+
+
+#####################
+# exploiting above code example
+#####################
+print(silly_string("unsafe string"))
+
+```
+
+Despite calling `silly_string()`, "unsafe string" is printed instead of the expected "very safe string" as the return value of `str.replace()` has been ignored.
+
+## Compliant Solution - Immutable objects
+
+This compliant solution correctly returns the value from `str.replace()` and then prints it:
+
+*[compliant01.py](compliant01.py):*
+
+```python
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Compliant Code Example """
+
+
+def silly_string(user_input):
+    """Function that changes the content of a string"""
+    return user_input.replace("un", "very ")
+
+
+#####################
+# exploiting above code example
+#####################
+print(silly_string("unsafe string"))
+
+```
+
+## Non-Compliant Code Example - Invalid value handling
+
+Return values are also important when they may be used as an alternative to raising exceptions. `str.find()`, unlike `str.index()` returns -1 [[Python Docs - str.find](https://docs.python.org/3/library/stdtypes.html#str.find)] instead of raising a `ValueError` [[Python Docs - str.index](https://docs.python.org/3/library/stdtypes.html#str.index)] when it cannot find the given sub-string.
+This non-compliant code example shows that using this value will point to the last element of the string regardless of what it is.
+
+*[noncompliant02.py](noncompliant02.py):*
+
+```python
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Non-compliant Code Example """
+
+
+def wrap_in_quotes(full_string, sub_string):
+    """Function that wraps a substring inside of a string in quotes"""
+    index_start = full_string.find(sub_string)
+    index_end = index_start + len(sub_string)
+    return (full_string[:index_start]
+            + "\""
+            + full_string[index_start:index_end]
+            + "\""
+            + full_string[index_end:])
+
+
+#####################
+# exploiting above code example
+#####################
+MY_STRING = "Secure Python coding"
+print(wrap_in_quotes(MY_STRING, "Secure"))
+print(wrap_in_quotes(MY_STRING, "I'm evil"))
+
+```
+
+Even though `I'm evil` is clearly not a part of "Secure Python coding", the `wrap_in_quotes()` method will attempt to insert the quotation marks anyway and will incorrectly reassemble the modified `full_string`.
+
+## Compliant Solution - Invalid value handling
+
+Because `str.find()` returns `-1` when the substring isn’t found, checking for `-1` is required before using the result as an index.
+
+*[compliant02.py](compliant02.py):*
+
+```python
+# SPDX-FileCopyrightText: OpenSSF project contributors
+# SPDX-License-Identifier: MIT
+""" Compliant Code Example """
+
+
+def wrap_in_quotes(full_string, sub_string):
+    """Function that wraps a substring inside of a string in quotes"""
+    index_start = full_string.find(sub_string)
+
+    if index_start < 0:
+        # Nothing to wrap, return unchanged string
+        return full_string
+
+    index_end = index_start + len(sub_string)
+    return (full_string[:index_start]
+            + "\""
+            + full_string[index_start:index_end]
+            + "\""
+            + full_string[index_end:])
+
+
+#####################
+# exploiting above code example
+#####################
+MY_STRING = "Secure Python coding"
+print(wrap_in_quotes(MY_STRING, "Secure"))
+print(wrap_in_quotes(MY_STRING, "I'm evil"))
+
+```
+
+Now, since there is no `I'm evil` in `Secure Python coding`, no quotes will be added to the string.
+
+## Automated Detection
+
+|Tool|Version|Checker|Description|
+|:---|:---|:---|:---|
+|Bandit|1.7.4 on Python 3.10.4|Not Available||
+|Flake8|8-4.0.1 on Python 3.10.4|Not Available||
+
+## Related Guidelines
+
+|||
+|:---|:---|
+|[MITRE CWE](http://cwe.mitre.org/)|Pillar: [CWE-703: Improper Check or Handling of Exceptional Conditions (4.13) (mitre.org)](https://cwe.mitre.org/data/definitions/703.html)|
+|[MITRE CWE](http://cwe.mitre.org/)|Base: [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html)|
+|[SEI CERT Coding Standard for Java](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)|[EXP00-J. Do not ignore values returned by methods](https://wiki.sei.cmu.edu/confluence/display/java/EXP00-J.+Do+not+ignore+values+returned+by+methods)|
+|[SEI CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard)|[EXP12-C. Do not ignore values returned by functions](https://wiki.sei.cmu.edu/confluence/display/c/EXP12-C.+Do+not+ignore+values+returned+by+functions)|
+|ISO/IEC TR 24772:2019|Passing Parameters and Return Values \[CSJ\]|
+
+## Bibliography
+
+|||
+|:---|:---|
+|[[Python Docs - str.replace](https://docs.python.org/3.9/library/stdtypes.html#str.replace)]<br>[[Python Docs - str.find](https://docs.python.org/3/library/stdtypes.html#str.find)]<br>[[Python Docs - str.index](https://docs.python.org/3/library/stdtypes.html#str.index)]|Python Software Foundation. (2025). Built-in Types [online]. Available from: [https://docs.python.org/3.9/library/stdtypes.html](https://docs.python.org/3.9/library/stdtypes.html) \[accessed 17 June 2025\] |
